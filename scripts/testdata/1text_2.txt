@@ -1,0 +1,68 @@
+<html>
+Obsessive-Compuslive Disorder
+<br>
+<br>
+(1)  Obsessive-compulsive disorder (OCD) manifests with recurrent obsessions or compulsions sufficiently severe to cause marked distress to the person. The obsessions or compulsions are time consuming and interfere significantly with the person's normal routine, occupational functioning, usual social activities or relationships. A patient with OCD may have an obsession or a compulsion or both.<br>
+<br>
+(2) An obsession is a recurrent and intrusive thought, feeling, idea or sensation. In contrast to an obsession which is a mental event, a compulsion is a behavior. A compulsion is a conscious, standardized, recurrent behavior, such as counting, checking, or avoiding. A patient with OCD realizes the irrationality of the obsession and experiences both the obsession and the compulsion as unwanted behavior. The completion of the compulsive act may not affect the anxiety and it may even increase the anxiety. Anxiety is also increased when a person resists carrying out a compulsion.<br>
+<br>
+
+(3) The lifetime prevalence of OCD in the general population is 2 - 3%. It is the 4th most common psychiatric diagnosis after phobias, substance-related disorders and major depressive disorders.<br>
+<br>
+ 
+(4) Among adults, men and women are equally likely to be affected, but among adolescents, boys are more commonly affected than girls. The average age of onset is about 20 years, although men have a slightly earlier age of onset. The onset of the disorder can occur in adolescence or childhood, in some cases as early as 2 years of age. Single persons are more frequently affected with OCD.<br>
+<br>
+
+(5) Persons with OCD are commonly affected by other mental disorders. Mental disorders commonly involved are major depressive disorders, social phobia, alcohol use disorders, anxiety disorders, panic disorders, eating disorders and personality disorders.<br>
+<br>
+
+(6) Several theories are postulated on the development of OCD. These theories are divided to biological factors, behavioral factors, and psychosocial factors.<br>
+<br>
+
+(7) The biological theory states that dysregulation of certain chemicals in the body cause OCD. Among these chemicals are serotonin and noradrenergic system. The biological theory also established a link between OCD and group A β-hemolytic streptococcal infection.<br>
+<br>
+
+(8) The behavioral theory states that obsessions are conditioned stimuli. A relatively neutral stimulus becomes associated with fear or anxiety through a process of respondent conditioning by being paired with events that are noxious or anxiety-producing. Thus, previously neutral objects and thoughts become conditioned stimuli capable of provoking anxiety or discomfort.<br>
+<br>
+
+(9) On the other hand, compulsions are established in a different way. When a person discovers that a certain action reduces anxiety attached to an obsessional thought, he or she develops active avoidance strategies in the form of compulsions or ritualistic behaviors to control the anxiety. Gradually, because of their efficacy in reducing anxiety, the avoidance strategies become fixed as learned patterns of compulsive behaviors.<br>
+<br>
+
+(10) The psychosocial theory is supported by Sigmund Freud who originally conceptualized OCD from its previous term: obsessional neurosis. Freud postulated that OCD patients become invested in maintaining the symptoms because of secondary gain. For example, a male patient whose mother stays home to take care of him, may unconsciously wish to hang on to his OCD symptoms because they keep the attention of his mother.<br>
+<br>
+
+(11) The psychosocial theory also explains the interpersonal dimensions in OCD patients. The relatives of OCD patients will accommodate the patient through active participation in rituals or significant modifications of their daily routines. Often, the family members are involved in an effort to reduce the patient's anxiety or to control the patient's expressions of anger.<br>
+<br>
+
+(12) OCD patients may exhibit obsessions or compulsions or both. Obsessions are recurrent and persistent thoughts, impulses or images that are experienced, at some time during the disturbance, as intrusive and inappropriate and can cause marked anxiety or distress. These are not simply excessive worries about real-life problems. The person attempts to ignore or suppress such thoughts, impulses, or images, or to neutralize them with some other thought or action. The person also recognizes that the obsessional thoughts are products of his or her own mind and not imposed from without.<br>
+<br>
+
+(13) Compulsions are repetitive behaviors that the person feels driven to perform in response to an obsession, or according to rules that must be applied rigidly. These behaviors or mental acts are aimed at preventing or reducing distress or preventing some dreaded event or situation; however, they are not connected in a realistic way with what they are designed to neutralize or prevent.<br>
+<br>
+
+(14) At some point, except for children, OCD patients recognize that obsessions and compulsions are excessive or unreasonable. These cause marked distress, are time consuming (takes more than an hour a day), and significantly interfere with the person's normal routine, occupational functioning, or usual social activities or relationships. If the above symptoms are present without the influence of any substance, then the diagnosis of OCD is made.<br>
+<br>
+
+(15) A patient is further subclassified as OCD with poor insight if for most of the time during the current episode; the person does not recognize that the obsessions and compulsions are excessive or unreasonable.<br>
+<br>
+
+(16) Most patients diagnosed with OCD have both obsessions and compulsions - up to 75%. They usually recognize it as absurd and irrational. Patients suffering from OCD usually feel a strong desire to resist them. The symptoms of OCD are divided into 4 symptom patterns which may overlap and change with time.<br>
+<br>
+
+(17) The most common symptom pattern is an obsession of contamination, followed by washing or accompanied by compulsive avoidance of the presumably contaminated object. The feared object is often hard to avoid, for example, dust. Patients may literally rub the skin off their hands by excessive hand washing. Although anxiety is the most common emotional response to the feared object, obsessive shame and disgust are also common. Patients with contamination obsessions usually believe that the contamination is spread from object to object or person to person by the slightest contact.<br>
+<br>
+
+(18) The second most common pattern is an obsession of doubt, followed by a compulsion of checking. The obsession often implies some danger of violence, for example, forgetting to turn off the stove. The checking may involve multiple trips back into the house to check the stove, for example. The patients have an obsessional self-doubt and always feel guilty about having forgotten or committed something.<br>
+<br>
+
+(19) In the third most common pattern, there are intrusive obsessional thoughts without a compulsion. Such obsessions are usually repetitious thoughts of a sexual or aggressive act that is reprehensible to the patient. Patients obsessed with thoughts of aggressive or sexual acts may report themselves to police or confess to a priest.<br>
+<br>
+
+(20) The fourth most common pattern is the need for symmetry or precision, which can lead to a compulsion or slowness. Patients can literally take hours to eat a meal or shave their faces.<br>
+<br>
+
+(21) More than half of patients with OCD have a sudden onset of symptoms. The onset of symptoms for about 50-70% of patients occurs after a stressful event, such as pregnancy or death. Because many persons manage to keep their symptoms secret, there is often a delay of 5 - 10 years before they seek consult. The course is usually long but variable; some patients experience a fluctuating course, and others experience a constant one.<br>
+<br>
+
+(22) About one third of patients with OCD have major depressive disorder, and suicide is a risk for all patients with OCD. A poor prognosis is indicated by yielding to compulsions, childhood onset, bizarre compulsions, the need for hospitalization, a coexisting major depressive disorder, delusional beliefs, and the presence of a personality disorder. A good prognosis is indicated by good social and occupational adjustment, the presence of a precipitating event, and an episodic nature of the symptoms.<br>
+</html>

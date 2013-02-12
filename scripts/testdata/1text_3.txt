@@ -1,0 +1,52 @@
+<html>
+Acute Viral Hepatitis
+<br>
+<br>
+
+(1) Acute viral hepatitis is a systemic infection affecting the liver predominantly. Hepatitis comes from the Greek word hepar- meaning liver.<br>
+<br>
+(2) Almost all cases of acute viral hepatitis are caused by one of five viral agents: hepatitis A virus (HAV), hepatitis B virus (HBV), hepatitis C virus (HCV), hepatitis D virus (HDV), and hepatitis E virus (HEV).<br>
+<br>
+(3) Hepatitis A virus belongs to the picornavirus family. HAV has an incubation period of approximately 4 weeks. Its replication is limited to the liver, but the virus is present in the liver, bile, stools and blood during the late incubation period and acute preicteric phase of the illness.<br>
+<br>
+(4) Icteric phase is the period where the patient experiences yellowing of the eyes and skin due to liver (hepatic) injury. This yellowing state of the body is also referred to as jaundice. The preicteric phase therefore, is the period immediately before the skin and eyes turns yellow.<br>
+<br>
+(5) HAV is transmitted almost exclusively by the fecal-oral route. Person-to-person spread of HAV is enhanced by poor personal hygiene and overcrowding; epidemics, contamination of food, water, milk, frozen products and shellfish.<br>
+<br>
+(6) Hepatitis B virus belongs to the hepadnaviruses. They replicate in the liver but can exist in extrahepatic sites. They are often associated with acute and chronic hepatitis and liver cancer. Unlike other hepatitis viruses, HBV has 3 different antigens expressed in its envelope.<br>
+<br>
+(7) The envelope antigen expressed on the outer surface of the virus is referred to as hepatitis B surface antigen (HBsAg) which indicates presence of hepatitis B infection in the body. After HBsAg disappears, antibody to HBsAg called anti-HBsAg becomes detectable, indicating recovery from the illness. In addition, anti-HBsAg is considered as the protective antibody. It is the antibody tested to determine the effectiveness of hepatitis B vaccine and the body's immunity against hepatitis B. If the level of anti-HBsAg is low, a booster dose of hepatitis B vaccine is given.<br>
+<br>
+(8) The antigen expressed on the core of the virus is hepatitis B core antigen (HBcAg), and its corresponding antibody is anti-HBc. Anti-HBcAg is seen within the first 1 - 2 weeks after the appearance of HBsAg and before anti-HBsAg appears. Thus, anti-HBcAg indicates the gap or window period between the appearance of HBsAg and its anti-body anti-HBsAg. Anti-HBcAg therefore does not indicate active virus replication but hepatitis B infection in the remote past.<br>
+<br>
+(9) The third HBV antigen is hepatitis B e antigen (HBeAg) which reflects the degree of infectivity of the virus. Thus, HBs-Ag positive patients containing HBeAg is more likely to be highly infectious than HBeAg negative patients. Early during the course of acute hepatitis B infection, HBeAg appears transiently; its disappearance may be a harbinger of clinical improvement and resolution of infection. Persistence of HBeAg beyond the first 3 months of infection is predictive of chronic infection.<br>
+<br>
+(10) Hepatitis B antigens have been identified in extrahepatic sites, including lymph nodes, bone marrow, spleen and pancreas. Although the virus does not appear to be associated with tissue injury in any of these extrahepatic sites, its presence in these organs may explain the recurrence of HBV infection after liver transplantation.<br>
+<br>
+(11) Most cases of HBV result from less obvious modes of nonpercutaneous transmission such as intimate (especially sexual) contact and perinatal transmission (i.e. mother to child through pregnancy). Other high risk groups include spouses of acutely infected persons, sexually promiscuous persons (especially promiscuous men having sex with men), health care workers exposed to blood, persons with repeated blood transfusions, prisoners, and family of chronically-infected persons.<br>
+<br>
+(12) The hepatitis D virus or sometimes called delta hepatitis agent (HDV) requires the helper function of HBV for its replication and expression. HDV can either infect a person simultaneously with HBV (co-infection) or superinfect a person already with HBV (superinfection). Because HDV relies absolutely on HBV, the duration of HDV infection is determined by the duration of (and cannot outlast) HBV infection.<br>
+<br>
+(13) HDV can be transmitted through blood, primarily injection drug users and hemophiliacs, and rarely through close personal contact. Infection is endemic among patients with hepatitis B.<br>
+<br>
+(14) Hepatitis C virus, previously termed as non-A, non-B hepatitis is the only member of the genus Hepacivirus in the family Flaviviridae. Unlike other viruses, HCV infection does not induce lasting immunity against reinfection.<br>
+<br>
+(15) HCV is commonly transmitted through blood, sexual contact and perinatal transmission. HCV is prevalent among those undergoing dialysis and those receiving blood transfusion during cancer chemotherapy.<br>
+<br>
+(16) Hepatitis E virus is previously labeled as epidemic or enterically transmitted non-A, non-B hepatitis. The term "enteric" refers to the digestive system route of infection, thus, Hepatitis E virus generally affects the digestive system of the body. It primarily occurs in India, Asia, Africa, and Central America. It was once thought to be related to caliciviruses. The virus has been detected in stool, bile, and liver and is excreted in the stool during the late incubation period.<br>
+<br>
+(17) HEV is common after contamination of water supplies such as after monsoon flooding. In contrast to HAV, HEV is rarely transmitted person-to-person from infected persons to their close contacts.<br>
+<br>
+(18) Acute viral hepatitis occurs after an incubation period that varies according to the responsible virus. Initial symptoms are systemic and quite variable. Constitutional symptoms of anorexia, nausea and vomiting, fatigue, body weakness, joint and muscle pains, headache, photophobia, sore throat, cough and colds may precede the onset of jaundice by 1 - 2 weeks. A low-grade fever is more often present in hepatitis A and E than in hepatitis B or C. Dark urine and clay-colored stools may be noticed by the patient from 1 - 5 days before the onset of jaundice.<br>
+<br>
+(19) With the onset of jaundice, the constitutional symptoms may diminish. Some patients experience weight loss which may continue during the icteric phase. The liver may be enlarged and tender causing pain and discomfort in the right upper side of abdomen. Spleen enlargement may be present in some patients. During the recovery phase, constitutional symptoms disappear ranging from 2 - 12 weeks, but is usually more prolonged in acute hepatitis B and C.<br>
+<br>
+(20) Virtually all previously healthy patients with hepatitis A recover completely from their illness with no clinical sequelae. Similarly, in acute hepatitis B, 95% - 99% of previously healthy adults have a favorable recovery. Patients of advanced age and with serious underlying medical disorders may have a prolonged course and are more likely to develop severe hepatitis.<br>
+<br>
+(21) In hepatitis B, among previously healthy adults who present with clinically apparent acute hepatitis, recovery occurs in approximately 99%; therefore, antiviral therapy is not likely to improve the rate of recovery and is not required. In rare cases of severe acute hepatitis, treatment with Lamivudine has been successful.<br>
+<br>
+(22) In typical cases of active hepatitis C, recovery is rare, and most patients progress to chronic hepatitis requiring anti-viral treatment with interferon alpha, which is still under further studies.<br>
+<br>
+(23) Notwithstanding these specific therapeutic considerations, in most cases of typical acute viral hepatitis, specific treatment generally is not necessary. Although hospitalization may be required for clinically severe illness, most patients do not require hospital care. A high-calorie diet is desirable, and because many patients may experience nausea late in the day, the major caloric intake is best tolerated in the morning. Intravenous feeding is necessary if there is persistent vomiting and cannot maintain oral intake. Drugs that have harmful effects to the liver should be avoided. Physical isolation of patients to a single room and bathroom is rarely necessary except in cases of fecal incontinence.
+<br>
+</html>

@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension">
+    <questionsCount>50</questionsCount>
+    <time>60</time>
+    <priority>4</priority>
+    <nextBreak>false</nextBreak>
+    <breakTime>0</breakTime>
+    <description>
+        <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>Tendons contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type I
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type XII
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Type IV
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>Cartilages contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type II
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type IX</text>
+                </option>
+                <option id="C">
+                    <text>Fibril-associated collagen
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+            <text>Blood vessels such as arteries contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type II
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type IX
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Fibril-forming collagen
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+           <question id="3">
+            <text>Brenda, a 25-year old female came into the clinic for check-up. Brenda was born with stretchy skin and loose joints. Brenda is 5 months pregnant and wanted to ask about her condition. Which of the following would you tell Brenda?
+</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Her disease resulted from an inheritable deficiency of collagen-processing enzymes.</text>
+                </option>
+                <option id="B">
+                    <text>Her disease may have resulted from mutations in the protein sequence of collagen types I, II or III.</text>
+                </option>
+                <option id="C">
+                    <text>Her disease only manifests with stretchy skin and loose joints; there are no other potentially lethal problems to worry about.</text>
+                </option>
+                <option id="D">
+                    <text>Collagen containing mutant chains is not secreted and is degraded or accumulated to high levels in extracellular compartments.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="4">
+            <text>In Ehlers-Danlos syndrome, the collagen types affected can manifest defects in:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Arteries
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Tendons
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Cartilages
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="5">
+            <text>Which of the following amino acids maximizes interchain hydrogen bond formation in the collagen
+                triple-helix structure?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Proline
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Glycine
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Hydroxylysine
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Hydroxyproline
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="6">
+            <text>Which of the following amino acids causes kinks in the peptide chain of the collagen triple-helix
+                structure?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Proline
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Glycine
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Hydroxylysine
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Hydroxyproline
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>Which of the following statements is NOT true about fibrous proteins?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They have axial ratios greater than 10.
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>They are soluble as hydrophobic side chains in the center of structure.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>They have long parallel polypeptide chains with cross linkages at intervals forming long
+                        sheets.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Its structure is obtained by combining specific amino acids into regular, secondary,
+                        structural elements.
+                    </text>
+                </option>
+            </answers>
+        </question>
+           <question id="8">
+            <text>Anna, a 20-year old female just had her prenatal ultrasound. Her obstetrician told her that the ultrasound revealed bowing of long bones. Which of the following is NOT true about the baby's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Her baby may have osteogenesis imperfecta.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>This type of disorder is severe and may die in utero due to lung problems.</text>
+                </option>
+                <option id="C">
+                    <text>Her baby may suffer from retarded wound healing and twisted spine in the future.</text>
+                </option>
+                <option id="D">
+                    <text>This type of disorder usually presents with fractures due to minor trauma in early infancy.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="9">
+            <text>Which of the following does NOT describe glycine?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It is the smallest amino acid</text>
+                </option>
+                <option id="B">
+                    <text>It is found in every 3rd position of the polypeptide chain.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>It is the most commonly mutated amino acid in Marfan's syndrome.</text>
+                </option>
+                <option id="D">
+                    <text>Its mutation prevents folding of the protein into a triple-helical structure.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="10">
+            <text>Which of the following promotes collapse of the alveolar walls if left unopposed?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C" correct="true">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="11">
+            <text>Marfan's syndrome results from mutation of which of the following?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E" correct="true">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="12">
+            <text>Marfan's syndrome results from mutation of which of the following?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D" correct="true">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="13">
+            <text>Which of the following statements does NOT describe type I collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They are found in supporting elements of high tensile strength.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>They form banding patterns under the electron microscope.
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>They are found in skin, bone, tendon, and cartilages.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Their structure reflects the regular staggered packing of individual collagen molecules.
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="14">
+            <text>True about the different functions of collagen:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>In bones, collagen may be bundled in tight, parallel fibers that provide great strength.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>In the cornea of the eye, collagen may be dispersed as a gel that gives support to the
+                        structure.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>In tendons, collagen fibers are arranged at an angle to each other to resist mechanical shear
+                        from any direction.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>All of the above
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+           <question id="15">
+            <text>Type III collagen:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Defects in type III collagen can cause potentially lethal blood vessel problems.</text>
+                </option>
+                <option id="B">
+                    <text>Belongs to network-forming group of collagens.</text>
+                </option>
+                <option id="C">
+                    <text>Can be found in distensible tissues such as cartilages and ligaments.</text>
+                </option>
+                <option id="D">
+                    <text>They link collagen fibrils to one another in the extracellular matrix.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>The kidneys and lungs contain sheet-like structures that can function as a semipermeable filtration
+                barrier for macromolecules. Which of the following statements does NOT describe these sheet-like
+                structures?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They contain fibril-forming collagens.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>They contain type VII collagens.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>They provide mechanical support for adjacent cells.
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+           <question id="17">
+            <text>Sophia, a 19 year-old cheerleader, came home from a one month vacation and gained weight from 45 kg to 53 kg. She currently experiences difficulty during their group exhibitions and stunts. Sophia now plans to lose weight by skipping dinner and having light breakfast. One morning, she experiences dizziness and body weakness and is rushed to the hospital. At the emergency room, Sophia is found to have hypoglycemia. At this point, which of the following substance is Sophia's main source of energy?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Glucagon</text>
+                </option>
+                <option id="B">
+                    <text>Insulin</text>
+                </option>
+                <option id="C">
+                    <text>Epinephrine</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Ketones</text>
+                </option>
+                 <option id="E">
+                    <text>Lipoprotein lipase</text>
+                </option>
+            </answers>
+        </question>
+           <question id="18">
+            <text>At the emergency room, medications were given to Sophia. She was also told to eat while in the hospital. After an hour, her blood sugar level increased and returned to normal. Which of the following substances helped to increase her blood sugar?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Glucagon</text>
+                </option>
+             <option id="B">
+                    <text>Insulin</text>
+                </option>
+                <option id="C">
+                    <text>Epinephrine</text>
+                </option>
+                <option id="D">
+                    <text>Ketones</text>
+                </option>
+                 <option id="E">
+                    <text>Lipoprotein lipase</text>
+                </option>
+            </answers>
+        </question>
+           <question id="19">
+            <text>Sophia's mother is a diagnosed diabetic since her childhood and has been treated with injectable medications since then. According to her, she has always been thin and has had frequent hospitalizations due to body weakness and loss of consciousness especially during febrile episodes. In this type of DM, which of the following substances is not stimulated which ultimately leads to fatal complications?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+             <option id="A">
+                    <text>Glucagon</text>
+                </option>
+             <option id="B">
+                    <text>Insulin</text>
+                </option>
+                <option id="C">
+                    <text>Epinephrine</text>
+                </option>
+                <option id="D">
+                    <text>Ketones</text>
+                </option>
+                 <option id="E" correct="true">
+                    <text>Lipoprotein lipase</text>
+                </option>
+            </answers>
+        </question>
+        <question id="20">
+            <text>Which of the following statements correctly describes insulin resistance?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It may pertain to the uncontrolled glucose production of the liver.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>It may pertain to decreased glucose uptake by the muscles.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>There may be low insulin present but the body does not react to its presence.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="21">
+            <text>Which of the following statements about insulin is NOT true?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Insulin promotes breakdown of fatty acids.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Initially, in obese, non-diabetic individuals, insulin levels are high.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Fat accumulation contributes to insulin resistance.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>All of the above
+                    </text>
+                </option>
+                <option id="E">
+                    <text>None of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="22">
+            <text>TRUE about beta cells:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Beta cells are located in the islets of Langerhans of the pancreas together with 4 other
+                        cells.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Beta cells are dysfunctional in type 2 DM because it fails to secrete enough insulin to
+                        correct hyperglycemia
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Beta cell function deteriorates in type 1 DM due to the toxic effects of sustained
+                        hyperglycemia and elevated fatty acids.
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="23">
+            <text>Which of the following statements does NOT describe fatty acids?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Fatty acids can be used as energy source.
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Breaking down fatty acids requires lipoprotein lipase.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Fatty acid accumulation can contribute to insulin resistance.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>All of the above
+                    </text>
+                </option>
+                <option id="E">
+                    <text>None of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="24">
+            <text>Which of the following contributes to insulin resistance?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Glucagon
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Glycogen
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Leptin
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Epinephrine
+                    </text>
+                </option>
+                <option id="E">
+                    <text>Ketones
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="25">
+            <text>Which of the following serves as storage form of glucose?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Glucagon
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Glycogen
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Leptin
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Epinephrine
+                    </text>
+                </option>
+                <option id="E">
+                    <text>Ketones
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="26">
+            <text>Jose, a 56 year old obese male and self-declared workaholic who works in the office all day and all
+                night long came in to the hospital one morning due to sudden onset of left-sided body weakness with
+                numbness and slurring of speech. Jose was found to have elevated blood pressure and blood sugar. Jose
+                also reported that his other siblings are all diabetic. He also disclosed that he is having difficulty
+                reading the newspaper lately. Based on these findings, which of the statements is TRUE?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Jose is suffering from non-insulin dependent DM.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Jose is suffering from insulin resistance.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Jose is suffering from diabetic ketoacidosis.
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="27">
+            <text>Which of the following factors are likely predisposing factors leading to Jose's condition?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Jose is obese
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Jose's siblings have diabetes.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Jose has sedentary lifestyle.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="28">
+            <text>Jose is suffering from which of the following complications of DM?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Stroke
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Retinopathy
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Nephropathy
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="29">
+            <text>Which of the following treatment(s) maybe applicable to Jose's persistently high blood glucose?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Oral medications
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Exercise
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Insulin therapy
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="30">
+            <text>While admitted at the ward, Jose said that his son, Mike, a twelve-year old boy is also diabetic. Jose
+                recalled that Mike was diagnosed 3 years ago when he was hospitalized due to high grade fever and lung
+                infection. Jose kept on blaming hims elf for Mike's condition. Jose said that if he wasn't diabetic
+                himself, Mike wouldn't experience the same condition. Which of the following statements would you tell
+                Jose to pacify him?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Mike's condition might have resulted from physical inactivity.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Mike's condition was a result of diabetes disease from Jose's siblings.
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Mike's condition is due to the autoimmune destruction of beta cells.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Mike's condition resulted from his high grade fever and lung infection.
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="31">
+            <text>Mike took the glucose tolerance test. Which of the following would be the likely result?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>After fasting for eight hours, his FBS is 125 mg/dL.
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Immediately after a glucose load, his blood glucose increased to 209 mg/dL.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>One hour after a glucose load, his blood glucose lowered to 139 mg/dL.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>None of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="32">
+            <text>Which of the following statements is NOT true?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Polyphagia is not common in non-insulin dependent DM.
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Insulin-dependent DM develops gradually without obvious symptoms.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Pregnant women are unable to sufficiently compensate for insulin resistance with increased
+                        insulin release.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Deterioration of beta cell functions in non-insulin dependent DM may be accelerated by the
+                        toxic effects of sustained hyperglycemia.
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="33">
+            <text> Which of the following statements describes Brucella species?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Brucella is an indigenous organism that may cause disease in other body sites.</text>
+                </option>
+                <option id="B">
+                    <text>Brucella is normally found in the skin and mucous membranes.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Brucella is a pathogenic organism that usually causes acute illness.</text>
+                </option>
+                <option id="D">
+                    <text>Brucella causes disease when present but disappears spontaneously.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="34">
+            <text>Which of the following organisms causes infection due to reduced production of complement components?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Salmonella</text>
+                </option>
+                <option id="B">
+                    <text>Streptococcus pneumonia</text>
+                </option>
+                <option id="C">
+                    <text>Legionella</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Neisseria </text>
+                </option>
+            </answers>
+        </question>
+        <question id="35">
+            <text>Which of the microbes easily infect otherwise healthy individuals who have normal host defences but no prior exposure to the microbe?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Measles</text>
+                </option>
+                <option id="B">
+                    <text>Giardia intestinalis</text>
+                </option>
+                <option id="C">
+                    <text>Hepatitis</text>
+                </option>
+                <option id="D">
+                    <text>Meningococcemia</text>
+                </option>
+            </answers>
+        </question>
+        <question id="36">
+            <text>Which of the following statements about the immune system are NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>T cells are involved in autoimmune diseases.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Adaptive immunity is found in invertebrates and leads to more rapid and vigorous immune responses.</text>
+                </option>
+                <option id="C">
+                    <text>Indigenous flora refers to commensal organisms that are not truly parasitic.</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="37">
+            <text>TRUE about Corynebacterium species:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Enters the body through a broken skin</text>
+                </option>
+                <option id="B">
+                    <text>Causes infection when neutrophils are decreased in number</text>
+                </option>
+                <option id="C">
+                    <text>Are resistant to macrophage killing</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Are indigenous organisms that seldom cause disease</text>
+                </option>
+            </answers>
+        </question>
+        <question id="38">
+            <text> Staphylococcus aureus, a catalase-producing organism causes infection when there is functional abnormality of:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>T cells</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Polymorphonuclear leukocytes</text>
+                </option>
+                <option id="C">
+                    <text>B cells</text>
+                </option>
+                <option id="D">
+                    <text>Monocytes</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="39">
+            <text>Which of the following cells of the immune system are responsible for delayed hypersensitivity?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>T cells</text>
+                </option>
+                <option id="B">
+                    <text>Polymorphonuclear leukocytes</text>
+                </option>
+                <option id="C">
+                    <text>B cells</text>
+                </option>
+                <option id="D">
+                    <text>Monocytes</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="40">
+            <text> Which of the following cells are responsible specifically for the production of immunoglobulins?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>T cells</text>
+                </option>
+                <option id="B">
+                    <text>Polymorphonuclear leukocytes</text>
+                </option>
+                <option id="C">
+                    <text>B cells</text>
+                </option>
+                <option id="D">
+                    <text>Monocytes</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="41">
+            <text>Annie, a 60-year old female, underwent left hip joint replacement last month due to repeated hip joint fractures. Annie was apparently stable and can walk around using her prosthetic joint. She was rushed to the hospital this morning due to high grade fever for three days now. Which of the following organisms might have caused infection in this case?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Staphylococcus epidermidis</text>
+                </option>
+                <option id="B">
+                    <text>Chlamydia</text>
+                </option>
+                <option id="C">
+                    <text>Cryptococcus</text>
+                </option>
+                <option id="D">
+                    <text>Staphylococcus aureus</text>
+                </option>
+            </answers>
+        </question>
+        <question id="42">
+            <text>Which of the following organisms require another organism to cause infection?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Escherichia coli</text>
+                </option>
+                <option id="B">
+                    <text>Legionella</text>
+                </option>
+                <option id="C">
+                    <text>Mycobacterium</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Hepatitis D</text>
+                </option>
+            </answers>
+        </question>
+        <question id="43">
+            <text>Which of the following statements does NOT describe Salmonella?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It is sometimes resistant to macrophage killing.</text>
+                </option>
+                <option id="B">
+                    <text>It produces a toxin that causes disease in humans.</text>
+                </option>
+                <option id="C">
+                    <text>It can cause infection if inoculated in the blood.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="44">
+            <text>Jerry, a 25 year old male came in for check-up due to occasional chest pain. He denies any history of heart disease in his family. He also reported on-off cough and sore throat three weeks ago but resolved spontaneously. Upon further examination, he was found to have a damaged heart valve. Which of the following is TRUE?
+</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Jerry's condition is caused by a transient invasion of foreign microbes in the heart and will disappear spontaneously once microbial invasion is treated.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Jerry's condition is caused by indigenous organisms that are non-infectious in the throat but pathogenic to the heart.</text>
+                </option>
+                <option id="C">
+                    <text>Jerry's condition is an isolated heart problem and needs further work-up.</text>
+                </option>
+                <option id="D">
+                    <text>None of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="45">
+            <text>Chickenpox, a well-known childhood disease infects humans only once and then builds antibodies against future infection with chickenpox. This is called:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Immunologic priming</text>
+                </option>
+                <option id="B">
+                    <text>Cellular immunity</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Immunologic memory</text>
+                </option>
+                <option id="D">
+                    <text>Delayed hypersensitivity</text>
+                </option>
+            </answers>
+        </question>
+        <question id="46">
+            <text>NOT true about indigenous organisms:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Indigenous organisms seldom cause disease.</text>
+                </option>
+                <option id="B">
+                    <text>Some indigenous organisms may cause disease in other body sites.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Indigenous organisms usually take the same food as the human host and are thus parasitic.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="47">
+            <text>Which of the following is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>CD4 cells up-regulate the immune response.</text>
+                </option>
+                <option id="B">
+                    <text>The absence of immunoglobulins leads to recurrent infections caused primarily by encapsulated bacteria.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Antibody-mediated immunity tags foreign materials to promote phagocytosis.</text>
+                </option>
+                <option id="D">
+                    <text>Contraction of the urinary bladder muscles contributes to its anatomic barrier against potential pathogens.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="48">
+            <text>Which of the following organisms cause disease only at the contact site with the host?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Staphylococcus aureus</text>
+                </option>
+                <option id="B">
+                    <text>Rickettsia</text>
+                </option>
+                <option id="C">
+                    <text>Hemophilus influenza</text>
+                </option>
+                <option id="D">
+                    <text>Herpes simplex</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Giardia intestinalis</text>
+                </option>
+            </answers>
+        </question>
+        <question id="49">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Activated T cells produce antibody after exposure to proper antigen.</text>
+                </option>
+                <option id="B">
+                    <text>Lazy leukocyte syndrome is a severe and recurrent infection due to functional abnormality of neutrophils.</text>
+                </option>
+                <option id="C">
+                    <text>Recognition of self molecules is essential to innate immune system.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

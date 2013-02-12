@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension">
+    <questionsCount>50</questionsCount>
+    <time>60</time>
+    <priority>4</priority>
+    <nextBreak>false</nextBreak>
+    <breakTime>0</breakTime>
+    <description>
+        <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>In the laboratory, which of the following enzymes is used to form cDNA from mRNA?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>DNA ligase</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Reverse transcriptase</text>
+                </option>
+                <option id="C">
+                    <text>Taq polymerase</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>Which of the following enzymes recognizes nucleotide sequences in a vector?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>DNA ligase</text>
+                </option>
+                <option id="B">
+                    <text>Reverse transcriptase</text>
+                </option>
+                <option id="C">
+                    <text>Taq polymerase</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+            <text>Which of the following enzymes is used to copy each DNA strand in vitro after annealing?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>DNA ligase</text>
+                </option>
+                <option id="B">
+                    <text>Reverse transcriptase</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Taq polymerase</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="3">
+            <text>Which of the following statements does NOT describe a vector?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Animal viruses can serve as vectors.</text>
+                </option>
+                <option id="B">
+                    <text>It contains an antibiotic resistance gene.</text>
+                </option>
+                <option id="C">
+                    <text>A vector can be a bacteriophage that has foreign DNA built into them using DNA ligase.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="4">
+            <text>Which of the following statements about cloning is/are TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>A genomic library is a collection of cloned restriction fragments of the DNA of an organism.</text>
+                </option>
+                <option id="B">
+                    <text>A bacteriophage lambda is mainly used to clone single expressible genes derived from cDNAs.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>A complete cDNA may contain all the information needed to synthesize an mRNA for a specific protein.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="5">
+            <text>Which of the following can be used to detect proteins immunologically?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Pulsed-field electrophoresis</text>
+                </option>
+                <option id="B">
+                    <text>Southern blotting</text>
+                </option>
+                <option id="C">
+                    <text>PCR</text>
+                </option>
+                <option id="D">
+                    <text>Northern blotting</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="6">
+            <text>Which of the following uses a special sequence to allow bacterial ribosomes to initiate translation of the resulting mRNA molecule?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Plasmids</text>
+                </option>
+                <option id="B">
+                    <text>Bacteriophage lambda</text>
+                </option>
+                <option id="C">
+                    <text>Cosmids</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Expression vectors</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>In cloning, some eukaryotic genomic genes have such long intervening sequences that their DNA may not fit into one phage head. Which of the following can be used instead?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Plasmids</text>
+                </option>
+                <option id="B">
+                    <text>Bacteriophage lambda</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Cosmids</text>
+                </option>
+                <option id="D">
+                    <text>Expression vectors</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>Which of the following differentiates cDNA from eukaryotic genome DNA?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>cDNA can be used as a probe to locate the gene that coded for the original mRNA in mixtures containing many unrelated DNA fragments.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>cDNA does not contain intervening sequences.</text>
+                </option>
+                <option id="C">
+                    <text>cDNA is much more complex then eukaryotic genome DNA.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>Which of the following differentiates cDNA library from genomic library?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>cDNA may use expression vectors.</text>
+                </option>
+                <option id="B">
+                    <text>Cloned cDNAs lack introns and the control regions of the genes.</text>
+                </option>
+                <option id="C">
+                    <text>cDNA library contains DNA sequences that appear as mRNA molecules which are identical to each other.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="10">
+            <text>Allen, a 25 year old male came in for consult. He was diagnosed with a blood disorder since childhood. He said that the blood disorder runs in his family. His wife is pregnant for 7 months now. Allen is worried if their baby will carry the same disease that he has. Which of the following can you suggest to Allen to diagnose the disease early while in utero?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Pulsed-field electrophoresis</text>
+                </option>
+                <option id="B">
+                    <text>Northern blotting</text>
+                </option>
+                <option id="C">
+                    <text>Southern blotting</text>
+                </option>
+                <option id="D">
+                    <text>Western blotting</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>PCR</text>
+                </option>
+            </answers>
+        </question>
+        <question id="11">
+            <text>Which of the following criteria is/are used to select a vector molecule?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It must be capable of autonomous replication outside a host cell.</text>
+                </option>
+                <option id="B">
+                    <text>It must contain at least one specific nucleotide sequence recognized by a reverse transcriptase.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>It must carry at least one gene that confers the ability to select for the vector.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="12">
+            <text>Which of the following vectors is/are very efficient vehicles for inserting DNA into E. coli cells but cannot make infectious particles in vivo?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Plasmids</text>
+                </option>
+                <option id="B">
+                    <text>Bacteriophage lambda</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Cosmids</text>
+                </option>
+                <option id="D">
+                    <text>Expression vectors</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="13">
+            <text>Which of the following techniques separates DNA using short pulses of current at alternating angels to the direction of movement of the DNA?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Pulsed- field electrophoresis</text>
+                </option>
+                <option id="B">
+                    <text>Northern blotting</text>
+                </option>
+                <option id="C">
+                    <text>Southern blotting</text>
+                </option>
+                <option id="D">
+                    <text>Western blotting</text>
+                </option>
+                <option id="E">
+                    <text>PCR</text>
+                </option>
+            </answers>
+        </question>
+        <question id="14">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>PCR is used for amplifying small amounts of DNA when only small amounts of human tissue or cells are available.</text>
+                </option>
+                <option id="B">
+                    <text>Reverse transcriptase prematurely terminates when copying long mRNAs.</text>
+                </option>
+                <option id="C">
+                    <text>Expression vectors can be used to obtain large quantities of protein that might be very difficult to isolate by conventional techniques.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="15">
+            <text>In expression vectors, the initiation of translation of the resulting mRNA molecule is possible because:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Bacterial cells contain many copies of the recombinant gene.</text>
+                </option>
+                <option id="B">
+                    <text>RNA and protein synthesis occur very rapidly in bacteria.</text>
+                </option>
+                <option id="C">
+                    <text>Reverse transcriptase prematurely terminates.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>Plasmids:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Can be used to subclone larger DNAs carried by phage vectors</text>
+                </option>
+                <option id="B">
+                    <text>Can be used to introduce recombinant DNA into yeast cells</text>
+                </option>
+                <option id="C">
+                    <text>Can be amplified to approximately 20 copies per cell</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="17">
+            <text>Which of the following enzymes is used to join broken strands of DNA?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>DNA ligase</text>
+                </option>
+                <option id="B">
+                    <text>Restriction endonuclease</text>
+                </option>
+                <option id="C">
+                    <text>Reverse transcriptase</text>
+                </option>
+                <option id="D">
+                    <text>Taq polymerase</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="18">
+            <text>TRUE about embryogenesis:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The process of cleavage partitions the egg substance into an increasing number of smaller cells with smaller number of chromosomes.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>At the end of gastrulation, when all the endoderm is inside, the original egg has rotated about 90 degrees.</text>
+                </option>
+                <option id="C">
+                    <text>Epiboly and invagination causes a change in the overall mass of the embryo.</text>
+                </option>
+                <option id="D">
+                    <text>Amphibians, like frogs, undergo meroblastic cleavage.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="19">
+            <text>The mesoderm gives rise to which part(s) of the body?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Muscles</text>
+                </option>
+                <option id="B">
+                    <text>Cartilage elements</text>
+                </option>
+                <option id="C">
+                    <text>Nervous system</text>
+                </option>
+                <option id="D">
+                    <text>Mouth</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="20">
+            <text>Bert, a 20 year-old male, came into the veterinarian's clinic to consult something regarding his dog named Troy. According to Bert, Troy seemed “not to hear” anything since his puppy days. Bert also reported that he also had a hard time calling Troy and that Troy seldom barks. After some tests, the veterinarian said that Troy is deaf and that Troy did not develop his sense organ for hearing. Defect in which germ layer caused Troy's deafness?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Endoderm</text>
+                </option>
+                <option id="B">
+                    <text>Mesoderm</text>
+                </option>
+                <option id="C">
+                    <text>Entoderm</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Ectoderm </text>
+                </option>
+                <option id="E">
+                    <text>Chordamesoderm </text>
+                </option>
+            </answers>
+        </question>
+           <question id="21">
+            <text>Knowing a defect in this germ layer, what other body parts of Troy could also have been affected?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Anal canal</text>
+                </option>
+                <option id="B">
+                    <text>Myotomes</text>
+                </option>
+                <option id="C">
+                    <text>Visceral peritoneum</text>
+                </option>
+                <option id="D">
+                    <text>Larynx</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Nervous system</text>
+                </option>
+            </answers>
+        </question>
+           <question id="22">
+            <text>Bert also asked the veterinarian if Troy's deafness would affect his reproductive system. According to Bert, he wants to have puppies from Troy that's why he is concerned about this matter. The veterinarian told Bert that Troy can still have puppies because the reproductive system arises from a different germ layer called:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Endoderm</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Mesoderm</text>
+                </option>
+                <option id="C">
+                    <text>Entoderm</text>
+                </option>
+                <option id="D">
+                    <text>Ectoderm</text>
+                </option>
+                <option id="E">
+                    <text>Chordamesoderm</text>
+                </option>
+            </answers>
+        </question>
+        <question id="23">
+            <text>Which of the following processes causes obliteration of the blastocoel?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Cleavage</text>
+                </option>
+                <option id="B">
+                    <text>Epiboly</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Invagination</text>
+                </option>
+                <option id="D">
+                    <text>Gastrulation</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="24">
+            <text>Which of the following is NOT true about the nervous system formation?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The nervous system starts dorsally as a pair of neural folds.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Motor roots grow out dorsally from the cord.</text>
+                </option>
+                <option id="C">
+                    <text>The nervous system originates from the ectoderm.</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="25">
+            <text>Which of the following is the counterpart of the mouth cavity during the embryonic stage?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Epimere</text>
+                </option>
+                <option id="B">
+                    <text>Proctodeum</text>
+                </option>
+                <option id="C">
+                    <text>Neural crest</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Stomodeum</text>
+                </option>
+                <option id="E">
+                    <text>Hypomere</text>
+                </option>
+            </answers>
+        </question>
+        <question id="26">
+            <text>NOT true about gastrulation:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The gastrula consists of an outer layer of ectoderm from cells of the animal hemisphere.</text>
+                </option>
+                <option id="B">
+                    <text>At the end of gastrulation, the former lower end of the axis then at the completed blastopore marks the posterior the end of the future animal.</text>
+                </option>
+                <option id="C">
+                    <text>After gastrulation major differentiation of the embryo begins.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="27">
+            <text>The notochord gives rise to which of the following?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Bile duct</text>
+                </option>
+                <option id="B">
+                    <text>Smooth muscles of the gut</text>
+                </option>
+                <option id="C">
+                    <text>Excretory organs</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="28">
+            <text>Which of the following processes forms a ring of involuting tissue, moves over and increasingly encloses the yolk-laden vegetal hemisphere?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Cleavage</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Epiboly</text>
+                </option>
+                <option id="C">
+                    <text>Invagination</text>
+                </option>
+                <option id="D">
+                    <text>Gastrulation</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="29">
+            <text>Which of the following is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The outer surface of the optic vesicle becomes concave by invagination and forms the retina.</text>
+                </option>
+                <option id="B">
+                    <text>The upper most mesoderm is called hypomere at the either side of the nerve tube and notochord and forms the somites.</text>
+                </option>
+                <option id="C">
+                    <text>The ectoderm of the primitive gut becomes the lining of the digestive tract.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="30">
+            <text>In each stage of embryonic development, different germ layers are formed. Which of the following stages correctly matches the germ layers?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Blastula: hypomere, mesomere, epimere</text>
+                </option>
+                <option id="B">
+                    <text>Gastrula: neural folds, neural crests, neural tubes</text>
+                </option>
+                <option id="C">
+                    <text>Notochord: ectoderm, mesoderm, endoderm</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="31">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Cleavage of the zygote forms the blastomeres with an equal number of chromosomes.</text>
+                </option>
+                <option id="B">
+                    <text>Involution of cells away from the blastopore leads to the formation of archenteron.</text>
+                </option>
+                <option id="C">
+                    <text>The entoderm is derived from the cells of the vegetal hemisphere.</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="32">
+            <text>Peacocks are well known for their feathers which are of crescent sheens of blue and green. These external coverings of peacocks are a derivative of which germ layer?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Ectoderm</text>
+                </option>
+                <option id="B">
+                    <text>Mesoderm</text>
+                </option>
+                <option id="C">
+                    <text>Endoderm</text>
+                </option>
+                <option id="D">
+                    <text>Entoderm</text>
+                </option>
+                <option id="E">
+                    <text>Chordamesoderm</text>
+                </option>
+            </answers>
+        </question>
+        <question id="33">
+            <text>If an abnormality in embryonic development occurred in the notochord, which of the following might happen?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The developing animal might be blind.</text>
+                </option>
+                <option id="B">
+                    <text>The developing animal might not have a patent anus.</text>
+                </option>
+                <option id="C">
+                    <text>The developing animal might have soft, brittle and/or weak vertebrae.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="34">
+            <text>Which of the following is correct?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Sclerotomes give rise to voluntary muscles.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>The endoderm gives rise to the linings of the digestive tract.</text>
+                </option>
+                <option id="C">
+                    <text>The mesoderm gives rise to the trachea.</text>
+                </option>
+                <option id="D">
+                    <text>The hindbrain gives rise to the diencephalon.</text>
+                </option>
+                <option id="E">
+                    <text>The ectoderm gives rise to the larynx.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="35">
+            <text>Which of the following statements about emphysema is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Emphysema is defined in terms of anatomic nature of lesion.</text>
+                </option>
+                <option id="B">
+                    <text>The diagnosis and classification of emphysema is based on the naked eye examination of the lungs.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>The terminal respiratory unit is elongated in shape with a diameter of about 7 mm.</text>
+                </option>
+                <option id="D">
+                    <text>The clinical manifestations of emphysema appear only if at least one third of the functioning pulmonary tissues are incapacitated.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="36">
+            <text>Which type of emphysema has enlarged airspaces sometimes forming cyst-like structures?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Centrilobular</text>
+                </option>
+                <option id="B">
+                    <text>Panacinar</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Paraseptal</text>
+                </option>
+                <option id="D">
+                    <text>Irregular</text>
+                </option>
+                <option id="E">
+                    <text>Bullous</text>
+                </option>
+            </answers>
+        </question>
+        <question id="37">
+            <text>Which type of emphysema does not usually present with symptoms?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Centriacinar</text>
+                </option>
+                <option id="B">
+                    <text>Panlobular</text>
+                </option>
+                <option id="C">
+                    <text>Distal acinar</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Irregular</text>
+                </option>
+                <option id="E">
+                    <text>Senile</text>
+                </option>
+            </answers>
+        </question>
+        <question id="38">
+            <text>Which of the following forms elastase?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Macrophages</text>
+                </option>
+                <option id="B">
+                    <text>Neutrophils</text>
+                </option>
+                <option id="C">
+                    <text>Pancreas</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="39">
+            <text>Larry, a 56-year old male was rushed to the emergency room this morning due to increasing difficulty of breathing. Upon further examination and laboratory work-up, he was diagnosed with emphysema. Based on this diagnosis, which of the following may be manifested by Larry?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Considerable weight loss in the past few weeks</text>
+                </option>
+                <option id="B">
+                    <text>Sitting in a hunched-over position</text>
+                </option>
+                <option id="C">
+                    <text>Shortened expiration</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="40">
+            <text>During the interview, Larry disclosed that he's been smoking for the past 30 years, started with one to two sticks a day which gradually increased to one pack a day at present. With this in mind, which of the following is Larry's type of emphysema? </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Centriacinar</text>
+                </option>
+                <option id="B">
+                    <text>Panacinar</text>
+                </option>
+                <option id="C">
+                    <text>Distal acinar</text>
+                </option>
+                <option id="D">
+                    <text>Irregular</text>
+                </option>
+                <option id="E">
+                    <text>Interstitial</text>
+                </option>
+            </answers>
+        </question>
+           <question id="41">
+            <text>In Larry's illness, which of the following mechanisms might have led him to develop emphysema?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Genetic deficiency of the protease inhibitor &#945;1-AT</html>]]></text>
+                </option>
+                <option id="B">
+                    <text>Decreased perfusion of the lungs</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Influx of macrophages</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="42">
+            <text>Larry was admitted at the hospital for seven days. On the seventh day, Larry died. His family requested for an autopsy of his lungs. Based on the information above, which of the following is expected from the autopsy?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The lungs are voluminous and overlap the heart.</text>
+                </option>
+                <option id="B">
+                    <text>There are large apical blebs or bullae.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>The upper two thirds of the lungs are severely affected.</text>
+                </option>
+                <option id="D">
+                    <text>There is marked scarring in the lung tissues.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="43">
+            <text>Which of the following is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Centrilobular and panlobular emphysema produces clinically significant airflow obstruction.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Emphysema is characterized by temporary enlargement of airspaces distal to the terminal bronchiole.</text>
+                </option>
+                <option id="C">
+                    <text>Lung perfusion is greatest at the lung bases.</text>
+                </option>
+                <option id="D">
+                    <text>Paraseptal emphysema affects the upper half of the lungs.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="44">
+            <text>TRUE about the respiratory system:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Bronchioles have cartilage and submucosal glands within their walls.</text>
+                </option>
+                <option id="B">
+                    <text>Terminal bronchioles have diameters greater than 2 mm.</text>
+                </option>
+                <option id="C">
+                    <text>The acinus is located proximal from the terminal bronchiole.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>The alveolus is the site of gas exchange.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="45">
+            <text>Lisa, a 35-year old housewife came in for check-up due to her 1 week cough. Lisa is currently having interrupted sleep due to productive cough which she assumed as a developing asthma. Lisa denied any smoking history in the past. However, she admitted that she had a history of tuberculosis several years ago and underwent treatment for a year. The present diagnosis turned out to be emphysema. Based on these findings, which type of emphysema is Lisa suffering from?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Compensatory</text>
+                </option>
+                <option id="B">
+                    <text>Irregular</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Bullous</text>
+                </option>
+                <option id="D">
+                    <text>Panacinar</text>
+                </option>
+                <option id="E">
+                    <text>Interstitial </text>
+                </option>
+            </answers>
+        </question>
+           <question id="46">
+            <text>In Lisa's case, which of the following may be present?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>There is dilation of the alveoli but not destruction of the septal walls.</text>
+                </option>
+                <option id="B">
+                    <text>Emphysema is more striking adjacent to the pleura.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>There are large subpleural blebs most often near the apex.</text>
+                </option>
+                <option id="D">
+                    <text>The acinus is uniformly enlarged from the level of the respiratory bronchiole to the terminal blind alveoli.</text>
+                </option>
+                <option id="E">
+                    <text>There is increased pressure within the alveolar sacs.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="47">
+            <text>John, a 70-year old male recently underwent removal of the upper lobe of the right lung due to lung cancer. He is apparently well until one day prior to consult, he developed cough and increasing difficulty of breathing. He was rushed to the emergency room this morning. Chest x-ray revealed emphysema. Which type of emphysema is John suffering from?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Compensatory</text>
+                </option>
+                <option id="B">
+                    <text>Irregular</text>
+                </option>
+                <option id="C">
+                    <text>Bullous</text>
+                </option>
+                <option id="D">
+                    <text>Panacinar</text>
+                </option>
+                <option id="E">
+                    <text>Interstitial</text>
+                </option>
+            </answers>
+        </question>
+        <question id="48">
+            <text>In John's case, which of the following may be present?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>There is dilation of the alveoli but not destruction of the septal walls.</text>
+                </option>
+                <option id="B">
+                    <text>Emphysema is more striking adjacent to the pleura.</text>
+                </option>
+                <option id="C">
+                    <text>There are large subpleural blebs most often near the apex.</text>
+                </option>
+                <option id="D">
+                    <text>The acinus is uniformly enlarged from the level of the respiratory bronchiole to the terminal blind alveoli.</text>
+                </option>
+                <option id="E">
+                    <text>There is increased pressure within the alveolar sacs.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="49">
+            <text>In John's case, which of the following may be present?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>There is dilation of the alveoli but not destruction of the septal walls.</text>
+                </option>
+                <option id="B">
+                    <text>Emphysema is more striking adjacent to the pleura.</text>
+                </option>
+                <option id="C">
+                    <text>There are large subpleural blebs most often near the apex.</text>
+                </option>
+                <option id="D">
+                    <text>The acinus is uniformly enlarged from the level of the respiratory bronchiole to the terminal blind alveoli.</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>There is increased pressure within the alveolar sacs.</text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

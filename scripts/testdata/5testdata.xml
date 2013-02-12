@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension">
+    <questionsCount>50</questionsCount>
+    <time>60</time>
+    <priority>4</priority>
+    <nextBreak>false</nextBreak>
+    <breakTime>0</breakTime>
+    <description>
+        <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>What is the most common type of leukemia in adults?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Acute lymphoblastic leukemia</text>
+                </option>
+                <option id="B">
+                    <text>Acute myeloblastic leukemia</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Chronic lymphocytic leukemia</text>
+                </option>
+                <option id="D">
+                    <text>Chronic myelocytic leukemia</text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>What type of leukemia is most responsive to therapy?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Acute lymphoblastic leukemia</text>
+                </option>
+                <option id="B">
+                    <text>Acute myeloblastic leukemia</text>
+                </option>
+                <option id="C">
+                    <text>Chronic lymphocytic leukemia</text>
+                </option>
+                <option id="D">
+                    <text>Chronic myelocytic leukemia</text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+            <text>Deli, a 4 year old girl is recently diagnosed with leukemia with predominance of pre-B cells. Which of the following further describes this type of leukemia?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It has extensive bone marrow involvement.</text>
+                </option>
+                <option id="B">
+                    <text>It responds poorly to therapy.</text>
+                </option>
+                <option id="C">
+                    <text>There is marked reduction in leukocyte alkaline phosphatase activity in the leukemic leukocyte.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="3">
+            <text>Deli's laboratory examinations may reveal the following:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Leukocytosis</text>
+                </option>
+                <option id="B">
+                    <text>Sea-blue histiocytes</text>
+                </option>
+                <option id="C">
+                    <text>Auer rods</text>
+                </option>
+                <option id="D">
+                    <text>Smudge cells</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="4">
+            <text>Vicky, a 16-year old sophomore cheerleader sought consult today at the school clinic. She was sent by the team coach due to bone pains. During exhibitions, Vicky refused to be on top of the pyramid as she was feeling bone pains every time her team mates would hold her up on top of the formation. She was also noted to be pale which she attributed to on-off fever for a week now accompanied with headache. The school physician suspected leukemia and sent Vicky to a nearby hospital. If proven true, this type of leukemia would manifest with the following EXCEPT:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Leukocytosis</text>
+                </option>
+                <option id="B">
+                    <text>Neutropenia</text>
+                </option>
+                <option id="C">
+                    <text>Hepatomegaly</text>
+                </option>
+                <option id="D">
+                    <text>Nerve palsies</text>
+                </option>
+                <option id="E">
+                    <text>Bone marrow expansion</text>
+                </option>
+            </answers>
+        </question>
+        <question id="5">
+            <text>Which of the following is TRUE regarding Vicky's type of leukemia?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It is usually associated with chromosomal translocation in chromosomes 9 and 22.</text>
+                </option>
+                <option id="B">
+                    <text>It can proceed to blast crisis.</text>
+                </option>
+                <option id="C">
+                    <text>Most patients survive within 3 to 7 years.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>t is subdivided depending on the degree of maturation of cells.</text>
+                </option>
+                <option id="E">
+                    <text>It can also occur in adolescent males often involving the thymus gland.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="6">
+            <text>Microscopic examination of Vicky's peripheral blood smear would reveal the following EXCEPT:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Early promyelocytes</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Metamyelocytes</text>
+                </option>
+                <option id="C">
+                    <text>Auer rods</text>
+                </option>
+                <option id="D">
+                    <text>Thrombocytopenia</text>
+                </option>
+                <option id="E">
+                    <text>Decreased neutrophils</text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>Both Vicky and Deli would have a poor prognosis if:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>There is presence of Philadelphia chromosome</text>
+                </option>
+                <option id="B">
+                    <text>It presented before 2 years old</text>
+                </option>
+                <option id="C">
+                    <text>There is persistent bleeding</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>Leukemic cells that are fragile and susceptible to mechanical disruption in the process of making a smear is called:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Auer rods</text>
+                </option>
+                <option id="B">
+                    <text>Sea-blue histiocytes</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Smudge cells</text>
+                </option>
+                <option id="D">
+                    <text>Blast cells</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>What type of leukemia is subdivided based on the T-cell receptor geners?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Acute lymphoblastic leukemia</text>
+                </option>
+                <option id="B">
+                    <text>Acute myeloblastic leukemia</text>
+                </option>
+                <option id="C">
+                    <text>Chronic lymphocytic leukemia</text>
+                </option>
+                <option id="D">
+                    <text>Chronic myelocytic leukemia</text>
+                </option>
+            </answers>
+        </question>
+        <question id="10">
+            <text>Johnny, a 65-year old carpenter failed his annual physical examination today. According to the physician, he is severely underweight for his age and height. His blood examinations also revealed abnormal results. Johnny then confided that he is suffering from decreased appetite and easy fatigability for a month now. The physician's initial impression is leukemia causing him to request another series of tests which may reveal the following:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Proliferation of neoplastic lymphoid cells</text>
+                </option>
+                <option id="B">
+                    <text>Auer rods</text>
+                </option>
+                <option id="C">
+                    <text>Metamyelocytes</text>
+                </option>
+                <option id="D">
+                    <text>Early promyelocytes</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="11">
+            <text>Johnny is suffering from what type of leukemia?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Acute lymphoblastic leukemia</text>
+                </option>
+                <option id="B">
+                    <text>Acute myeloblastic leukemia</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Chronic lymphocytic leukemia</text>
+                </option>
+                <option id="D">
+                    <text>Chronic myelocytic leukemia</text>
+                </option>
+            </answers>
+        </question>
+           <question id="12">
+            <text>Which of the following is/are NOT true regarding Johnny's illness?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It disrupts immune functions making the body susceptible to bacterial infection.</text>
+                </option>
+                <option id="B">
+                    <text>It has a tendency to transform to more aggressive neoplasms.</text>
+                </option>
+                <option id="C">
+                    <text>Peripheral blood contains increased small, round lymphocytes with scant cytoplasm.</text>
+                </option>
+                <option id="D">
+                    <text>Treatment would only relieve the symptoms but has little effect on overall survival.</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="13">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Myeloid tissue gives rise to the cells of the immune system.</text>
+                </option>
+                <option id="B">
+                    <text>A neoplasm is any new abnormal growth in the tissues that is malignant.</text>
+                </option>
+                <option id="C">
+                    <text>Any precursor cells that predominate in the peripheral blood are considered normal.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="14">
+            <text>Which type of cells predominates during blast crisis?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Granulocytes</text>
+                </option>
+                <option id="B">
+                    <text>Myelocytes</text>
+                </option>
+                <option id="C">
+                    <text>Leukocytes</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Promyelocytes</text>
+                </option>
+            </answers>
+        </question>
+        <question id="15">
+            <text>Which of the following is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Blood flows from the right atrium to the mitral valve then to the right ventricle.</text>
+                </option>
+                <option id="B">
+                    <text>Contractile dysfunction happens during diastole.</text>
+                </option>
+                <option id="C">
+                    <text>Deoxygenated blood enters the heart through the right atrium.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>Which of the following may cause reversible dilated cardiomyopathy?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Sickle cell anemia</text>
+                </option>
+                <option id="B">
+                    <text>Genetic abnormalities</text>
+                </option>
+                <option id="C">
+                    <text>High-dose catecholamines</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="17">
+            <text>The following can be used to diagnose cardiomyopathies EXCEPT:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Electrocardiography</text>
+                </option>
+                <option id="B">
+                    <text>Chest x-ray</text>
+                </option>
+                <option id="C">
+                    <text>Echocardiography</text>
+                </option>
+                <option id="D">
+                    <text>Cardiac catheterization</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="18">
+            <text>Charissa, a 45-year old mother was recently diagnosed with cardiomyopathy. Her ECG showed abnormalities together with her chest x-ray which revealed congestion with normal heart size. She also underwent 2D-echo which showed thickening of left and right ventricles but with normal size. Based on these findings, what type of cardiomyopathy is Charissa suffering from?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Dilated cardiomyopathy</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Restrictive cardiomyopathy</text>
+                </option>
+                <option id="C">
+                    <text>Hypertrophic obstructive cardiomyopathy</text>
+                </option>
+                <option id="D">
+                    <text>Pregnancy-induced cardiomyopathy</text>
+                </option>
+            </answers>
+        </question>
+        <question id="19">
+            <text>Which of the following does NOT describe Charissa's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>The ventricular cavities are usually dilated and the myocardium is soft.</text>
+                </option>
+                <option id="B">
+                    <text>Left-sided heart failure symptoms are less prominent.</text>
+                </option>
+                <option id="C">
+                    <text>The left ventricular systolic function fails in the later stages of the disease.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="20">
+            <text>What are the possible causes of Charissa's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Too much alcohol intake</text>
+                </option>
+                <option id="B">
+                    <text>Metabolic disorders</text>
+                </option>
+                <option id="C">
+                    <text>Pregnancy</text>
+                </option>
+                <option id="D">
+                    <text>Genetic origin</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Infiltrative process</text>
+                </option>
+            </answers>
+        </question>
+           <question id="21">
+            <text>Jeff, a 20-year old team captain of the basketball varsity team was rushed to the school clinic due to syncope. Based on his records, he had syncope episodes since last year and this is his fourth attack. After a few minutes, Jeffrey woke up as if nothing happened. He wasn't allowed to go back to practice and was sent to the hospital for further work-up. After days of laboratory exams, Jeffrey was diagnosed with cardiomyopathy. Which of the following is TRUE regarding Jeffrey's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>It is genetic in origin.</text>
+                </option>
+                <option id="B">
+                    <text>The dysfunction is primarily systolic.</text>
+                </option>
+                <option id="C">
+                    <text>The increased stiffness of the myocardium restricts left ventricular filling.</text>
+                </option>
+                <option id="D">
+                    <text>The classic pattern is said to be symmetric septal hypertrophy.</text>
+                </option>
+				<option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="22">
+            <text>Which of the following does NOT characterize Jeff's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The interventricular septum hypertrophies excessively.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>The tricuspid valve plays an active role in creating the obstruction.</text>
+                </option>
+                <option id="C">
+                    <text>The heart hypercontracting.</text>
+                </option>
+                <option id="D">
+                    <text>The septum does not shorten and does not thicken.</text>
+                </option>
+				<option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="23">
+            <text>Jeff's condition typically presents with the following signs and symptoms EXCEPT:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Chest pain even at rest</text>
+                </option>
+                <option id="B">
+                    <text>Loss of consciousness after exercise</text>
+                </option>
+                <option id="C">
+                    <text>Sudden unexplained death</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Left-sided heart failure</text>
+                </option>
+				<option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="24">
+            <text>Jeff's laboratory findings will show the following:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>ECG establishes the diagnosis with left ventricular hypertrophy and left atrial enlargement.</text>
+                </option>
+                <option id="B">
+                    <text>2D-echo reveals restriction to blood filling preventing cardiac dilatation.</text>
+                </option>
+                <option id="C">
+                    <text>Chest x-ray may show signs of congestion.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+				<option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="25">
+            <text>If Jeff asks about the possible treatment options for his condition, what would you tell him?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>There is no conclusive evidence that surgical relief of the dysfunction will prolong life.</text>
+                </option>
+                <option id="B">
+                    <text>Medical therapy is not useful in this case.</text>
+                </option>
+                <option id="C">
+                    <text>Removing the offending would reverse his condition back to normal.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+				<option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="26">
+            <text>What type of cardiomyopathy is often advised to undergo heart transplant?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Dilated cardiomyopathy</text>
+                </option>
+                <option id="B">
+                    <text>Restrictive cardiomyopathy</text>
+                </option>
+                <option id="C">
+                    <text>Hypertrophic obstructive cardiomyopathy</text>
+                </option>
+                <option id="D">
+                    <text>Pregnancy-induced cardiomyopathy</text>
+                </option>
+            </answers>
+        </question>
+        <question id="27">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Bernoulli Effect happens during diastole when a low-pressure zone develops as blood flow accelerates through the narrowed area between the septum and the mitral valve.</text>
+                </option>
+                <option id="B">
+                    <text>Hypertrophy is defined as an abnormality in a tissue as a result of an increase in the number of individual cells.</text>
+                </option>
+                <option id="C">
+                    <text>During diastole, the ventricles pump out blood from the heart to the lungs.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="28">
+            <text>What is the most common type of cardiomyopathy?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Dilated cardiomyopathy</text>
+                </option>
+                <option id="B">
+                    <text>Restrictive cardiomyopathy</text>
+                </option>
+                <option id="C">
+                    <text>Hypertrophic obstructive cardiomyopathy</text>
+                </option>
+                <option id="D">
+                    <text>Pregnancy-induced cardiomyopathy</text>
+                </option>
+            </answers>
+        </question>
+        <question id="29">
+            <text><![CDATA[<html>Rhiane, a 26-year old female is currently on her 7<sup>th</sup> month of pregnancy. She is frequently experiencing on-off chest pains especially at night. This month, her chest pains became increasingly troublesome that she had to wake up at night just to "get some air". She disclosed this to her obstetrician who then requested further examinations which revealed cardiomyopathy. Which of the following is NOT true regarding Rhiane's condition?</html>]]></text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It is slowly progressive.</text>
+                </option>
+                <option id="B">
+                    <text>Most muscle cells are hypertrophied with enlarged nuclei.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>There is a primary decrease in ventricular compliance.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="30">
+            <text>Chest pain in Rhiane's condition is brought about by:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Increasing size of the fetus</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Excessive oxygen demands of a thin-walled ventricle</text>
+                </option>
+                <option id="C">
+                    <text>Restriction to blood filling</text>
+                </option>
+                <option id="D">
+                    <text>Outflow obstruction</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="31">
+            <text>Rhiane's laboratory examinations will reveal which of the following?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Left ventricular hypertrophy</text>
+                </option>
+                <option id="B">
+                    <text>Heart blocks</text>
+                </option>
+                <option id="C">
+                    <text>Normal sized heart</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="32">
+            <text>Which of the following should be ruled out as causative agents to Rhiane's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Hypothyroidism</text>
+                </option>
+                <option id="B">
+                    <text>Elevated calcium</text>
+                </option>
+                <option id="C">
+                    <text>Doxorubicin use</text>
+                </option>
+                <option id="D">
+                    <text>Prolonged arrhythmia</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="33">
+            <text>Which of the following is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Pseudohermaphroditism is considered an obstetrical emergency.</text>
+                </option>
+                <option id="B">
+                    <text>Cross-dressers have a persistent preoccupation with getting rid of their primary and secondary sex characteristics.</text>
+                </option>
+                <option id="C">
+                    <text>Strong and persistent cross gender-identification in girls is manifested as rejection of urinating in a sitting position.</text>
+                </option>
+                <option id="D">
+                    <text>Patients with preoccupation with castration have a strong desire to acquire the sex characteristics of the opposite sex.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="34">
+            <text>It is considered an extreme form of gender identity disorder:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Dual role transvestism</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Transexualism</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Transvestic fetishism</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="35">
+            <text>This form of gender identity disorder produces sexual excitement and is not related to stress:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Dual role transvestism</text>
+                </option>
+                <option id="B">
+                    <text>Transexualism</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Transvestic fetishism</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="36">
+            <text>In this type of gender identity disorder, the individual wears clothes of the opposite sex in order to experience temporarily membership of the opposite sex:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Dual role transvestism</text>
+                </option>
+                <option id="B">
+                    <text>Transexualism</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Transvestic fetishism</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="37">
+            <text>It is defined as discontent with one's biological sex, the desire to possess the body of the opposite sex, and the wish to be regarded as a member of the opposite sex:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Dual role transvestism</text>
+                </option>
+                <option id="B">
+                    <text>Transexualism</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Transvestic fetishism</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="38">
+            <text>A 45-year old married male was admitted to the hospital after amputating the glans of his penis with a carving knife. Although married, he had repeated homosexual encounters since adolescence. He was able to function in the community when taking antipsychotic medications, but at the time of the event, he had not taken medication for over 1 year. Which type of gender identity disorder is present?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="B">
+                    <text>Transsexualism</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Gender identity disorder not otherwise specified</text>
+                </option>
+                <option id="D">
+                    <text>Dual role transvestism</text>
+                </option>
+				<option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="39">
+            <text>Anna, a 17-year old college student consulted with an OB-gynecologist today. She's worried because she's the only girl among her friends who haven't menstruated yet. She also noticed that she's not growing her breasts just as the other girls in her school. She also looked different having a webbed neck, low hairline margin and short stature. Physical examination, blood tests, urine and stool exams and ultrasound were done. The ob-gynecologist diagnosed Anna with:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>True hermaphroditism</text>
+                </option>
+                <option id="B">
+                    <text>Pseuhermaphroditism</text>
+                </option>
+                <option id="C">
+                    <text>Klinefelter's syndrome</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Turner's syndrome</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="40">
+            <text>Which of the following findings would describe Anna's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Laboratory examinations revealed XO chromosome.</text>
+                </option>
+                <option id="B">
+                    <text>Laboratory examinations revealed XXY chromosome.</text>
+                </option>
+                <option id="C">
+                    <text>Physical examination revealed presence of testes and ultrasound results revealed presence of ovaries.</text>
+                </option>
+                <option id="D">
+                    <text>Physical examination revealed gynecomastia.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="41">
+            <text>Allan, a 19 year-old male and a self-confessed homosexual consulted at the E.R today due to abdominal pain. Physical examination, blood tests, urine and stool exams were done. Allan's parents also requested for an ultrasound of his whole abdomen for further work-up. At the end of the examinations, the doctor told the parents that Allan is a true hermaphrodite. Which of the following would prove the doctor's findings?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Laboratory examinations revealed XO chromosome.</text>
+                </option>
+                <option id="B">
+                    <text>Laboratory examinations revealed XXY chromosome.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Physical examination revealed presence of testes and ultrasound results revealed presence of ovaries.</text>
+                </option>
+                <option id="D">
+                    <text>Physical examination revealed gynecomastia.</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="42">
+            <text>Helene came to the clinic today with her son, Mario, a 12-year old high school student. Helene is concerned with the feminine-appearing contours in Mario's body. Mario confided that he is having low self-esteem in school as he was regarded as part of the female population due to his enlarged breasts. He also refused to urinate together with the other guys due to the small size of his penis. Mario also had poor performance in his academics as proven by his report card. Physical examination, blood tests, urine and stool exams and ultrasound were done. Which of the following is NOT TRUE about Mario's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Mario's sexual desire is very high and intense.</text>
+                </option>
+                <option id="B">
+                    <text>This is considered an obstetrical emergency.</text>
+                </option>
+                <option id="C">
+                    <text>Presence of mental retardation should be tested in this case.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+				<option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="43">
+            <text>Which of the following findings would describe Mario's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Laboratory examinations revealed XO chromosome.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Laboratory examinations revealed XXY chromosome.</text>
+                </option>
+                <option id="C">
+                    <text>Physical examination revealed presence of testes and ultrasound results revealed presence of ovaries.</text>
+                </option>
+                <option id="D">
+                    <text>Physical examination revealed gynecomastia.</text>
+                </option>
+				<option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="44">
+            <text>It is a psychological state that reflects a person's sense of being male of female:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Gender identity</text>
+                </option>
+                <option id="B">
+                    <text>Gender role</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Gender fetishism</text>
+                </option>
+                <option id="E">
+                    <text>Gender Identity disorder</text>
+                </option>
+            </answers>
+        </question>
+        <question id="45">
+            <text>It is the external behavioural pattern that reflects the person's inner sense of "I am a male" or "I am a female":</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Gender identity</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Gender role</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Gender fetishism</text>
+                </option>
+                <option id="E">
+                    <text>Gender identity disorder</text>
+                </option>
+            </answers>
+        </question>
+        <question id="46">
+            <text>It involves the persistent desire to be, or the insistence that one is, of the other sex and extreme discomfort with one's assigned sex and gender role:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Gender identity</text>
+                </option>
+                <option id="B">
+                    <text>Gender role</text>
+                </option>
+                <option id="C">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Gender fetishism</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Gender identity disorder</text>
+                </option>
+            </answers>
+        </question>
+        <question id="47">
+            <text>It is considered as the affective component of gender identity disorder:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Gender identity</text>
+                </option>
+                <option id="B">
+                    <text>Gender role</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Gender dysphoria</text>
+                </option>
+                <option id="D">
+                    <text>Gender fetishism</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="48">
+            <text>Which of the following criteria defines gender identity disorder?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Strong and persistent desire for any perceived cultural advantages of being the other sex</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Sense of inappropriateness in his/her gender role</text>
+                </option>
+                <option id="C">
+                    <text>The disturbance may be concurrent with a physical intersex condition</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="49">
+            <text>Which of the following conditions belong to the category "Gender identity disorder not otherwise specified"?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Klinefelter's syndrome</text>
+                </option>
+                <option id="B">
+                    <text>True hermaphroditism</text>
+                </option>
+                <option id="C">
+                    <text>Castration and acquiring the sex characteristics of the other sex</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

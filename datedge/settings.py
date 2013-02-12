@@ -13,7 +13,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 DATABASES = {
-    'default': dj_database_url.config(env='DATABASE_URL')
+    'default': dj_database_url.config()
 }
 
 # Local time zone for this installation. Choices can be found here:
@@ -114,9 +114,11 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
+    'datedge',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'registration',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

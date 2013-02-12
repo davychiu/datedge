@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension">
+    <questionsCount>50</questionsCount>
+    <time>60</time>
+    <priority>4</priority>
+    <nextBreak>false</nextBreak>
+    <breakTime>0</breakTime>
+    <description>
+        <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>Which of the following statements about TB is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>TB is caused by Mycosporidium tuberculosis.</text>
+                </option>
+                <option id="B">
+                    <text>It is also called Koch's Infection.</text>
+                </option>
+                <option id="C">
+                    <text>It can infect any organs of the body.</text>
+                </option>
+                <option id="D">
+                    <text>The most common form of TB is pulmonary TB.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>According to WHO, what region had the largest number of new TB cases in 2008?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Romania</text>
+                </option>
+                <option id="B">
+                    <text>United States</text>
+                </option>
+                <option id="C">
+                    <text>Africa</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>South-East Asia</text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+                 <text>Bob, a 20-year old college student, initially presented with cough for more than 1 week followed by body weakness, and night fever accompanied with chills. On the 2nd week of illness, blood-streaked sputum is present. Which of the following statements is possible? </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>He is suffering from Primary Koch's infection which can be treated for 6 months.</text>
+                </option>
+                <option id="B">g
+                    <text>Positive PPD for this patient will be seen at the end of 24 hours.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Spread of infection to the kidney could present with painful urination.</text>
+                </option>
+                <option id="D">
+                    <text>None of the above.</text>
+                </option>
+            </answers>
+        </question>   
+
+        <question id="3">
+            <text>After 2 weeks, Bob's fever resolved without treatment. However, there was noticeable weight loss. Cough was still present with increasing difficulty of breathing. Bob also refused to eat throughout the day and is unable to walk. This alarmed his parents prompting them to bring him to the nearby hospital. Which of the following statements about Bob's illness is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Chest x-ray may reveal pleural effusion which may require thoracostomy.</text>
+                </option>
+                <option id="B">
+                    <text>The infection has spread towards Bob's bones causing paralysis.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>He is suffering from TB meningitis.</text>
+                </option>
+                <option id="D">
+                    <text>Cavities maybe present in Bob's lungs indicating extensive infection.</text>
+                </option>
+            </answers>
+        </question>
+                <question id="4">
+                 <text>Which of the following statements does NOT describe primary TB?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Also called Primary Koch's Infection</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Usually transmissible</text>
+                </option>
+                <option id="C">
+                    <text>Common among children up to 4 years of age</text>
+                </option>
+                <option id="D">
+                    <text>Maybe severe and disseminated</text>
+                </option>
+            </answers>
+        </question>   
+        <question id="5">
+            <text>Which of the following statement is NOT true regarding incidence of TB?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Elderly has increased risk</text>
+                </option>
+                <option id="B">
+                    <text>Cigarette smoking increases risk among men at older age</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Incidence is highest in childhood</text>
+                </option>
+                <option id="D">
+                    <text>Incidence in women peaks at 25-34 years of age</text>
+                </option>
+            </answers>
+        </question>
+        <question id="6">
+            <text>What type of infectious TB is developed due to reactivation of primary dormant bacteria?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Primary</text>
+                </option>
+                <option id="B">
+                    <text>Postprimary</text>
+                </option>
+                <option id="C">
+                    <text>Secondary</text>
+                </option>
+                <option id="D">
+                    <text>Primary Koch's Infection</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Both B and C</text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>Sarah, a 3-year old girl was brought to the clinic due to an enlarged painful mass in the neck noted
+                for 2 days. She also presented with weight loss, recurrent low grade fever and cough for 1 month now.
+                Which of the following is NOT true?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Chest x-ray is not necessary for this age.</text>
+                </option>
+                <option id="B">
+                    <text>Sarah may require treatment for 6 months.</text>
+                </option>
+                <option id="C">
+                    <text>PPD exam may reveal positive results after 72 hours.</text>
+                </option>
+                <option id="D">
+                    <text>Physical exam may reveal enlarged lymph nodes indicating early stage of infection.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>While discussing the treatment for Sarah, which advice should NOT be given to her parents?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Sarah, being 3 years old, can transmit her illness to her other siblings so isolation is
+                        necessary.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Treatment would consist of 3 different drugs.</text>
+                </option>
+                <option id="C">
+                    <text>Sarah's illness may progress towards severe and disseminated type of infection so early
+                        treatment is necessary.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Dosage of the drugs may vary every month according to Sarah's weight.</text>
+                </option>
+                <option id="E">
+                    <text>Stopping the treatment in the middle of therapy may cause drug resistance.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>At any stage, TB can present as all of the following except:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Chills</text>
+                </option>
+                <option id="B">
+                    <text>Chest pain</text>
+                </option>
+                <option id="C">
+                    <text>Fever</text>
+                </option>
+                <option id="D">
+                    <text>Body weakness</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="10">
+            <text>Scar formation seen in chest x-ray of infected individuals is called:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Necrosis</text>
+                </option>
+                <option id="B">
+                    <text>Caseous formation</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Fibrosis</text>
+                </option>
+                <option id="D">
+                    <text>Koch's infection</text>
+                </option>
+            </answers>
+        </question>
+        <question id="11">
+            <text>Why do patients with extensive TB present with blood-streaked sputum during coughing?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Due to the destruction of tubercles</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Due to the destruction of blood vessels</text>
+                </option>
+                <option id="C">
+                    <text>Due to the destruction of airways</text>
+                </option>
+                <option id="D">
+                    <text>Due to the destruction of caseous necrosis</text>
+                </option>
+            </answers>
+        </question>
+        <question id="12">
+            <text>Lesions seen in lung tissue of TB patients is called:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Fibrosis</text>
+                </option>
+                <option id="B">
+                    <text>Koch's infection</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Tubercles</text>
+                </option>
+                <option id="D">
+                    <text>Scar tissue</text>
+                </option>
+            </answers>
+        </question>
+         <question id="13">
+            <text>The most common extrapulmonary site for TB are the:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Meninges</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Lymph nodes</text>
+                </option>
+                <option id="C">
+                    <text>Bones</text>
+                </option>
+                <option id="D">
+                    <text>Kidneys</text>
+                </option>
+            </answers>
+        </question>
+        <question id="14">
+            <text>Which of the following statements about extrapulmonary TB is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>TB of the kidneys usually present with bloody urine.</text>
+                </option>
+                <option id="B">
+                    <text>TB of the bones can lead to paralysis of the legs.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>TB meningitis is more common in the elderly.</text>
+                </option>
+                <option id="D">
+                    <text>TB meningitis can present as neck rigidity.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="15">
+            <text>TB in children:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Commonly spreads to the lymph nodes diagnosed with biopsy.</text>
+                </option>
+                <option id="B">
+                    <text>May lead to TB meningitis.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>Which of the following statements correctly describes the treatment for TB?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Accomplished for a minimum of 6 months</text>
+                </option>
+                <option id="B">
+                    <text>Uses oral medications with single drug regimen</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Duration of treatment is fixed on all patients regardless of severity of infection</text>
+                </option>
+                <option id="D">
+                    <text>Drug dosage is computed according to patient's weight and height</text>
+                </option>
+            </answers>
+        </question>
+        <question id="17">
+            <text>WHO designed the DOTS program to:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>To ensure patient compliance</text>
+                </option>
+                <option id="B">
+                    <text>To prevent reinfection and drug resistance</text>
+                </option>
+                <option id="C">
+                    <text>To properly compute the drug according to patient's weight</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="18">
+            <text>During one-on-one Math tutorials, Nina noted her student Emil, 9 years old, to be constantly going to
+                the bathroom every 10 minutes. When asked, Emil said that he is wary of the stain of ink while using the
+                pen that's why he kept on washing his hands every 10 minutes. Nina told Emil's parents that:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Emil could be suffering from an obsession of doubt. He constantly doubts the presence of ink
+                        in his hands while using the pen.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Emil may not recognize that he is suffering from OCD.</text>
+                </option>
+                <option id="C">
+                    <text>Emil should be tested for presence of other mental disorders.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="19">
+            <text>After Nina's conversation with Emil's parents, they eventually disclosed that he is also suffering
+                from another mental disorder. Which of the following is a possible mental disorder accompanying Emil's
+                condition?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Eating disorder</text>
+                </option>
+                <option id="B">
+                    <text>Social phobia</text>
+                </option>
+                <option id="C">
+                    <text>Panic disorder</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="20">
+            <text>Emil's parents started to inquire about his condition. They were curious what brought about Emil's
+                condition. They brought Emil to a psychiatrist who postulated the following causes:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Possible increase in the levels of adrenaline</text>
+                </option>
+                <option id="B">
+                    <text>Possible dysregulation of the chemical serotonin</text>
+                </option>
+                <option id="C">
+                    <text>Previous infection with group A &#946;-hemolytic streptococcal infection</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="21">
+            <text>What is the most common symptom pattern in OCD?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Obsession of contamination</text>
+                </option>
+                <option id="B">
+                    <text>Obsessional thought</text>
+                </option>
+                <option id="C">
+                    <text>Obsession of doubt</text>
+                </option>
+                <option id="D">
+                    <text>Obsession of symmetry</text>
+                </option>
+            </answers>
+        </question>
+        <question id="22">
+            <text>Lisa, an 18-year old college student, takes a daily 30-minute walk to the school. According to her,
+                she enjoys this exercise because she is always walking on the lines painted on the road. But this
+                morning, she noticed that the lines on the pedestrian lane were erased but still passable. There was a
+                major re-painting on the road. As a result, she looked for another route where the lines on the
+                pedestrian lane are visible. Instead of the usual 30 minute walk, it took her 1 hour to reach the
+                school, causing her to miss her exam. She knows that she is suffering from OCD? What symptom pattern is
+                present?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Obsession of contamination</text>
+                </option>
+                <option id="B">
+                    <text>Obsessional thoughts</text>
+                </option>
+                <option id="C">
+                    <text>Obsession of doubt</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Obsession of precision</text>
+                </option>
+            </answers>
+        </question>
+        <question id="23">
+            <text>When asked about her habit of walking on lines, Lisa confessed that:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>She does not recognize it as excessive.</text>
+                </option>
+                <option id="B">
+                    <text>It reduces her anxiety.</text>
+                </option>
+                <option id="C">
+                    <text>She had previous attempts to avoid such habit, but simply can't.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="24">
+            <text>Lisa inquired regarding the risks and possibility of recovery from her condition. You tell her that:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Presence of major depressive disorder mean poor prognosis.</text>
+                </option>
+                <option id="B">
+                    <text>Suicide is a risk for patients like her.</text>
+                </option>
+                <option id="C">
+                    <text>If the symptoms started early during childhood, then recovery is poor. </text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="25">
+            <text>Which of the following statements about OCD is true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The average age of onset is about 10 years of age.</text>
+                </option>
+                <option id="B">
+                    <text>It does not occur in young children.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Among adults, men and women are equally likely to be affected.</text>
+                </option>
+                <option id="D">
+                    <text>OCD is more common among married persons than single ones.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="26">
+            <text>Arnold, a 15-year old boy, came to the police station to report a crime he has committed. According to
+                him, he repeatedly raped his mother six times last night around 10 pm and tied her hands to a pole and
+                stabbed her to death. When his parents were interviewed, they said that Arnold was asleep during that
+                time and that no crime has been committed. They also confessed that this is the 5th time that Arnold
+                came to the police to report such "crime." They apologized for Arnold's behavior and were advised to see
+                a psychiatrist. What obsession pattern is present?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Obsession of contamination from immorality</text>
+                </option>
+                <option id="B">
+                    <text>Obsession of doubting oneself</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Obsessional thoughts of sexual acts</text>
+                </option>
+                <option id="D">
+                    <text>Obsession of precision of reporting</text>
+                </option>
+            </answers>
+        </question>
+        <question id="27">
+            <text>Even though Arnold was assured by his parents that he did not commit any crime, Arnold insisted that
+                his father be at his side at all times to prevent him from doing anything "sinful." He even tagged his
+                father while taking a bath. As a result, Arnold's father stopped working and stayed at home taking care
+                of Arnold. Arnold, in return, loved the attention he was getting. He continued this behavior to keep his
+                father by his side every day. Which of the following statements is true?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>This situation is explained in the behavioral theory of OCD</text>
+                </option>
+                <option id="B">
+                    <text>His father's presence served as the conditioned stimulus causing Arnold to retain the obsession.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text> This is previously called obsessional neurosis wherein Arnold maintains the symptom due to secondary gain.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="28">
+            <text>Arnold is considered to have poor insight if:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>He does not recognize the presence of obsessions</text>
+                </option>
+                <option id="B">
+                    <text>He does not recognize the presence of compulsions</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>He does not recognize that he is unreasonable</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="29">
+            <text>Which of the following is true about obsessive-compulsive disorder:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Both should be present to make a diagnosis of OCD</text>
+                </option>
+                <option id="B">
+                    <text>Presence of compulsion even without obsession can be diagnosed as OCD</text>
+                </option>
+                <option id="C">
+                    <text>Presence of obsession even without compulsion can be diagnosed as OCD</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+            </answers>
+        </question>
+        <question id="30">
+            <text>Which of the following statements about symptoms of OCD is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Symptoms may occur after pregnancy.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>More than half of patients with OCD have a gradual onset of symptoms.</text>
+                </option>
+                <option id="C">
+                    <text>There is usually a delay of consult.</text>
+                </option>
+                <option id="D">
+                    <text>Some patients experience fluctuating course.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="31">
+            <text>Peter, an English teacher, admitted that he is obsessed with the color green. He prefers color green for his stapler, his chalk, his trash can, and in other things possible. But in times of crisis of supplies, he said that other colors would do. Given the time constraints, he also buys things even if they are not color green. One day, his co-teachers started to label him as obsessive-compulsive. This prompted Peter to consult a psychiatrist who said he was normal. Which of the following statements would support the psychiatrist's diagnosis?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Peter recognized his obsessions.</text>
+                </option>
+                <option id="B">
+                    <text>Peter does not easily give in to his obsessions.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Peter's obsessions do not significantly interfere with his daily functioning.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="32">
+            <text>These are repetitive behaviors aimed at preventing a dreaded situation:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Obsessions</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Compulsions</text>
+                </option>
+                <option id="C">
+                    <text>Both A and B</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="33">
+            <text>Poor prognosis is indicated by which of the following?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Bizarre compulsions</text>
+                </option>
+                <option id="B">
+                    <text>Late onset</text>
+                </option>
+                <option id="C">
+                    <text>Episodic nature of symptoms</text>
+                </option>
+                <option id="D">
+                    <text>Presence of precipitating event</text>
+                </option>
+            </answers>
+        </question>
+        <question id="34">
+            <text>The following viruses can cause acute viral hepatitis:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HAV</text>
+                </option>
+                <option id="B">
+                    <text>HBV</text>
+                </option>
+                <option id="C">
+                    <text>HCV</text>
+                </option>
+                <option id="D">
+                    <text>Only A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="35">
+            <text>Which of the following correctly describes HAV?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Belongs to hepadnaviruses</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Its replication is limited to the liver</text>
+                </option>
+                <option id="C">
+                    <text>Transmitted through blood transfusion</text>
+                </option>
+                <option id="D">
+                    <text>Maybe present in the bile, and stools during recovery phase</text>
+                </option>
+            </answers>
+        </question>
+           <question id="36">
+            <text>Which of the following viruses belongs to picornavirus family and is transmitted exclusively through fecal-oral route?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HEV</text>
+                </option>
+                <option id="B">
+                    <text>HDV</text>
+                </option>
+                <option id="C">
+                    <text>HCV</text>
+                </option>
+                <option id="D">
+                    <text>HBV</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>HAV</text>
+                </option>
+            </answers>
+        </question>
+        <question id="37">
+            <text>Which viral agent belongs to hepadnaviruses and is associated with 3 different antigens?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HCV</text>
+                </option>
+                <option id="B">
+                    <text>HDV</text>
+                </option>
+                <option id="C">
+                    <text>HEV</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="38">
+            <text>What antibody is tested to determine the effectiveness of Hepatitis B vaccine?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Anti-HBc</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Anti-HBsAg</text>
+                </option>
+                <option id="C">
+                    <text>Anti-HBe</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="39">
+            <text>What antigen is expressed in the core of Hepatitis B virus which usually indicates the window period in Hepatitis B?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HBsAg</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>HBcAg</text>
+                </option>
+                <option id="C">
+                    <text>HBeAg</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="40">
+            <text>Which antigen is present in the outer surface of HBV indicating Hepatitis B infection?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>HBsAg</text>
+                </option>
+                <option id="B">
+                    <text>HBcAg</text>
+                </option>
+                <option id="C">
+                    <text>HBeAg</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="41">
+            <text>Which of the following statements about HBeAg is true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It indicates hepatitis B infection in the remote past.</text>
+                </option>
+                <option id="B">
+                    <text>It indicates immunity from Hepatitis B infection.</text>
+                </option>
+                <option id="C">
+                    <text>It indicates possible recovery from Hepatitis B infection.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>It indicates highly infectious type of hepatitis B.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="42">
+            <text>Which of the following statements about Hepatitis B is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Hepatitis B replicates in the liver and can never be found in extrahepatic sites.</text>
+                </option>
+                <option id="B">
+                    <text>Hepatitis B can be transmitted through sexual contact.</text>
+                </option>
+                <option id="C">
+                    <text>Patients with hepatitis B recover in 99% of cases.</text>
+                </option>
+                <option id="D">
+                    <text>Severe cases of hepatitis B may require treatment with Lamivudine.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="43">
+            <text>Which of the following is NOT a method of transmission of hepatitis B?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Promiscuous sexual contact</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Oral-fecal route</text>
+                </option>
+                <option id="C">
+                    <text>Perinatal transmission</text>
+                </option>
+                <option id="D">
+                    <text>Repeated blood transfusion</text>
+                </option>
+            </answers>
+        </question>
+        <question id="44">
+            <text>Hepatitis C virus is the only member of which family of viruses?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Hepadnaviruses</text>
+                </option>
+                <option id="B">
+                    <text>Hepacivirus</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Flaviviridae</text>
+                </option>
+                <option id="D">
+                    <text>Caliciviruses</text>
+                </option>
+            </answers>
+        </question>
+        <question id="45">
+            <text>Hepatitis C virus can never be transmitted through:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Perinatal transmission</text>
+                </option>
+                <option id="B">
+                    <text>Sexual contact</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Oral-fecal route</text>
+                </option>
+                <option id="D">
+                    <text>Blood transfusion</text>
+                </option>
+            </answers>
+        </question>
+        <question id="46">
+            <text>This type of virus was previously labeled as enterically transmitted non-A, non-B hepatitis and can be detected in the stool during late incubation period:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HAV</text>
+                </option>
+                <option id="B">
+                    <text>HBV</text>
+                </option>
+                <option id="C">
+                    <text>HCV</text>
+                </option>
+                <option id="D">
+                    <text>HDV</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>HEV</text>
+                </option>
+            </answers>
+        </question>
+        <question id="47">
+            <text>Low-grade fever is more often present in what type of hepatitis?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Hepatitis A</text>
+                </option>
+                <option id="B">
+                    <text>Hepatitis B</text>
+                </option>
+                <option id="C">
+                    <text>Hepatitis C</text>
+                </option>
+                <option id="D">
+                    <text>Hepatitis D</text>
+                </option>
+            </answers>
+        </question>
+           <question id="48">
+            <text>Which of the following symptoms are NOT present in hepatitis?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Body weakness</text>
+                </option>
+                <option id="B">
+                    <text>Dark-colored urine</text>
+                </option>
+                <option id="C">
+                    <text>Jaundice</text>
+                </option>
+                <option id="D">
+                    <text>Bloody diarrhea</text>
+                </option>
+            </answers>
+        </question>
+        <question id="49">
+            <text>Which of the following statements about recovery from hepatitis is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>All previously healthy patients with hepatitis C recover completely from their illness.</text>
+                </option>
+                <option id="B">
+                    <text>In acute hepatitis B, 95%-99% of previously healthy adults have a favorable recovery.</text>
+                </option>
+                <option id="C">
+                    <text>A high-calorie diet is desirable.</text>
+                </option>
+                <option id="D">
+                    <text>Patients with chronic hepatitis C may require treatment with interferon alpha.</text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

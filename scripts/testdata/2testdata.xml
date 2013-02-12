@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension">
+    <questionsCount>50</questionsCount>
+    <time>60</time>
+    <priority>4</priority>
+    <nextBreak>false</nextBreak>
+    <breakTime>0</breakTime>
+    <description>
+        <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>Which of the following statements about antioxidants is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Antioxidants contain polyphenols.</text>
+                </option>
+                <option id="B">
+                    <text>Increasing the gastric pH increases antioxidant absorption.</text>
+                </option>
+                <option id="C">
+                    <text>Preventive antioxidants such as urate reduce the rate of chain initiation.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>Which of the following statements about free radicals is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Most common form of free radicals is the very reactive molecule: hydroxyl radicals.</text>
+                </option>
+                <option id="B">
+                    <text>Free radicals are capable of giving away their outer electrons.</text>
+                </option>
+                <option id="C">
+                    <text>Malnourishment can lead to proliferation of free radicals and oxidative stress.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+            <text>Which of the following statements does NOT describe vitamin E?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Vitamin E oxidative by-product reacts with ascorbic acid to regenerate phenoxy free radical.</text>
+                </option>
+                <option id="B">
+                    <text>Vitamin E reacts with free radicals forming a non-free radical which is excreted in the bile where it forms new tocopherol.</text>
+                </option>
+                <option id="C">
+                    <text>Vitamin E acts as antioxidant in the retina due to its low oxygen concentration.</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="3">
+            <text>Jake, 25 year-old obese male medical student sought consult last week due to increased cholesterol. His doctor prescribed him with cholestyramine. Jake learned from his class that his current medication can interfere with the absorption of the following antioxidants:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Gamma-tocopherol</text>
+                </option>
+                <option id="B">
+                    <text>Beta-cryptoxanthin</text>
+                </option>
+                <option id="C">
+                    <text>Vitamin E</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="4">
+            <text>Jake takes beta-carotene supplements in doses a bit higher than usual. He is not worried about vitamin A toxicity because:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Beta-carotene is only active at low oxygen pressures.</text>
+                </option>
+                <option id="B">
+                    <text>Conversion of beta-carotene to vitamin A is decreased when body stores of vitamin A are high.</text>
+                </option>
+                <option id="C">
+                    <text>He is also taking cholestyramine.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="5">
+            <text>After 1 year, Jake lost some weight and his repeat cholesterol exam revealed normal results. He was advised to stop taking cholestyramine and to continue taking in healthy foods. To ensure good absorption of antioxidants, which of the following should NOT be included in his diet?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Iced tea</text>
+                </option>
+                <option id="B">
+                    <text>Coffee creamer</text>
+                </option>
+                <option id="C">
+                    <text>Yogurt</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="6">
+            <text>If Jake wants to reduce his risk of developing prostate cancer in the future, which of the following should be added in his diet?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Egg yolks</text>
+                </option>
+                <option id="B">
+                    <text>Mangoes</text>
+                </option>
+                <option id="C">
+                    <text>Sweet potatoes</text>
+                </option>
+                <option id="D">
+                    <text>Parsley</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>To normalize the colon function, which antioxidant is advised?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Selenium</text>
+                </option>
+                <option id="B">
+                    <text>Carotenoids</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Coffee</text>
+                </option>
+                <option id="D">
+                    <text>Green tea</text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>Cancer cells proliferate when:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>There is communication between cells promoting cancer cell growth.</text>
+                </option>
+                <option id="B">
+                    <text>HIF-1 is decreased thereby decreasing available sugar to the cells.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Too many oxygen species are produced due to radiation.</text>
+                </option>
+                <option id="D">
+                    <text>There is too much neurotransmitter dopamine promoting Parkinson's disease.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>To prevent complications in the cardiovascular system, one has to increase intake of which antioxidant?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Coffee</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Beta-cryptoxanthin</text>
+                </option>
+                <option id="C">
+                    <text>Lycopene</text>
+                </option>
+                <option id="D">
+                    <text>Lutein</text>
+                </option>
+            </answers>
+        </question>
+        <question id="10">
+            <text>This chemical protects cerebral neurons:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Epigallocatechin</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Caffeic acid</text>
+                </option>
+                <option id="C">
+                    <text>Trigonellin</text>
+                </option>
+                <option id="D">
+                    <text>Connexin</text>
+                </option>
+            </answers>
+        </question>
+        <question id="11">
+            <text>In Brazil, where wheat and other plant foods like rice are the major sources of diet, the following can be hypothesized:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The antioxidant present can be selenium and carotenoids.</text>
+                </option>
+                <option id="B">
+                    <text>Antioxidants from wheat can be seen in the muscles.</text>
+                </option>
+                <option id="C">
+                    <text>Antioxidants present in this place can be deficient in other places.</text>
+                </option>
+                <option id="D">
+                    <text>Both B and C.</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="12">
+            <text>Which of the following chain-breaking antioxidants act in the aqueous phase?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Tocopherol</text>
+                </option>
+                <option id="B">
+                    <text>Urate</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Superoxide dismutase</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="13">
+            <text>Which of the following antioxidants should be taken in with water?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Tocopherols</text>
+                </option>
+                <option id="B">
+                    <text>Selenium</text>
+                </option>
+                <option id="C">
+                    <text>Beta-carotene</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Ascorbic Acid</text>
+                </option>
+                <option id="E">
+                    <text>Coffee</text>
+                </option>
+            </answers>
+        </question>
+           <question id="14">
+            <text>Mike, a 34-year old smoker is fond of eating carrots. Which of the following can be hypothesized?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Mike has increased gene expression for connexins.</text>
+                </option>
+                <option id="B">
+                    <text>Carrots should not be taken in with fats for better absorption.</text>
+                </option>
+                <option id="C">
+                    <text>Mike has decreased risk for cardiovascular diseases and lung cancer.</text>
+                </option>
+                <option id="D">
+                    <text>Mike has increased protection against gallstone formation.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="15">
+            <text>If Mike is concerned with his eye health, he will add which of the following to his diet:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Spinach </text>
+                </option>
+                <option id="B">
+                    <text>Almonds </text>
+                </option>
+                <option id="C">
+                    <text>Bread</text>
+                </option>
+                <option id="D">
+                    <text>Watermelon</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>True about free radicals:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Being by-products of oxidation, they are not capable of forming new free radicals</text>
+                </option>
+                <option id="B">
+                    <text>Can be brought about by too much x-ray exposure</text>
+                </option>
+                <option id="C">
+                    <text>Can be produced by our bodies anytime</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="17">
+            <text>Which of the following statements about HIV is NOT true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Chronic, persistent infection is the hallmark of HIV disease.</text>
+                </option>
+                <option id="B">
+                    <text>HIV can infect any age group even newborns.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Just like other viruses, HIV is cleared from the body and the host develops immunity from subsequent infection.</text>
+                </option>
+                <option id="D">
+                    <text>CD4+ T cell count increases at the start of HIV infection.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="18">
+            <text>Which of the following statements about HIV is TRUE?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>HIV needs CD4 receptor before entering the host cell.</text>
+                </option>
+                <option id="B">
+                    <text>HIV is a DNA virus whose hallmark is the reverse transcriptase enzyme.</text>
+                </option>
+                <option id="C">
+                    <text>HIV is a unique virus because it rarely kills the host during primary infection.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="19">
+            <text>CD4+ T cell count:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>&lt;200/uL is susceptible to opportunistic disease.</text>
+                </option>
+                <option id="B">
+                    <text>&gt;350/uL can present with symptoms of dementia.</text>
+                </option>
+                <option id="C">
+                    <text>May drop to zero during chronic infection instantly leading to death.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B.</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="20">
+            <text>Albert, a 20-year old sexually active male recently sought consult at the school clinic regarding his susceptibility to AIDS. Albert disclosed that he had unprotected sexual activity with both men and women since the age of 15. He now presented with cough and progressive weight loss for the last 2 weeks. During routine physical examination, there were enlarged lymph nodes palpated on Albert's neck. Which of the following statements is true?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Albert's cough and progressive weight loss are definitely pneumocystis carinii pnenomia.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Albert is categorized under category A.</text>
+                </option>
+                <option id="C">
+                    <text>Albert is not showing any symptoms of AIDS and should therefore not be tested for HIV.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="21">
+            <text>Albert, afraid of any sexual disease, requested for a test to be done in your laboratory. The first test to be done should be:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Enzyme immune assay</text>
+                </option>
+                <option id="B">
+                    <text>Enzyme-linked immunosorbent assay</text>
+                </option>
+                <option id="C">
+                    <text>Western blot</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="22">
+            <text>Albert further asked the possibility of HIV disease in his case. Which of the following would you tell Albert?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>HIV can infect any age group even in his 20s.</text>
+                </option>
+                <option id="B">
+                    <text>The symptoms of HIV can be seen late in the disease even 10 years after onset of infection.</text>
+                </option>
+                <option id="C">
+                    <text>Recurrent cough may present as symptom of HIV since it can affect almost all organs of the body.</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="23">
+            <text>Albert later on disclosed that his long-time partner recently got pregnant and was found positive for HIV. Which of the following drugs should be used to treat Albert's partner?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Zalcitabine</text>
+                </option>
+                <option id="B">
+                    <text>Zalcitabine, in combination with other drugs</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Zidovudine</text>
+                </option>
+                <option id="D">
+                    <text>Zidovudine, in combination with other drugs</text>
+                </option>
+            </answers>
+        </question>
+        <question id="24">
+            <text>Which of the following is NOT an opportunistic disease?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Lymphoma</text>
+                </option>
+                <option id="B">
+                    <text>Recurrent pneumonia</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Mycoplasma tuberculosis</text>
+                </option>
+                <option id="D">
+                    <text>Cytomegalovirus disease</text>
+                </option>
+            </answers>
+        </question>
+        <question id="25">
+            <text>The hallmark of HIV acts to:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Transcribe RNA to DNA</text>
+                </option>
+                <option id="B">
+                    <text>Incorporate DNA to the host cell chromosome</text>
+                </option>
+                <option id="C">
+                    <text>Activate the cell infected with HIV</text>
+                </option>
+                <option id="D">
+                    <text>Help DNA bud off from the cell to infect other cells</text>
+                </option>
+            </answers>
+        </question>
+        <question id="26">
+            <text>Lisa, 40 years old, single, was recently diagnosed with HIV. During history taking, she denied any history of sexual contact from either men or women. However, she admitted that she had several boyfriends in the past and also had some form of intimacy with them particularly torrid kissing, and fondling. No other pertinent information was disclosed during the interview except for a history of operation due to ruptured appendicitis 5 years ago. What could be the possible cause for Lisa's diagnosis?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Transmission from her mother to her during pregnancy</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Blood transfusion during her operation</text>
+                </option>
+                <option id="C">
+                    <text>Very intimate, torrid kissing with exchange of body fluids particularly saliva</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="27">
+            <text>Lisa originally sought consult due to progressive difficulty reading and walking for several months. Lisa also needed to use a cane while walking outside the house prompting her to just stay at home most of the time. At home, she needed to prop one hand on walls or furniture to navigate herself around the house. Lisa was previously an achiever and a teacher and these symptoms alarmed her family prompting consult. Based on the clinical presentation of Lisa, she is currently in what category of HIV infection?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Category A</text>
+                </option>
+                <option id="B">
+                    <text>Category B</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Category C</text>
+                </option>
+            </answers>
+        </question>
+        <question id="28">
+            <text>Based on Lisa's cognitive function and motor skills, she is in what stage of AIDS dementia complex?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Stage 0</text>
+                </option>
+                <option id="B">
+                    <text>Stage 0.5</text>
+                </option>
+                <option id="C">
+                    <text>Stage 1</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Stage 2</text>
+                </option>
+                <option id="E">
+                    <text>Stage 3</text>
+                </option>
+                <option id="F">
+                    <text>Stage 4</text>
+                </option>
+            </answers>
+        </question>
+        <question id="29">
+            <text>At this stage, her CD4 count may be:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>&lt;200/uL; Lisa is currently presenting as a case of AIDS</text>
+                </option>
+                <option id="B">
+                    <text>&gt;350/uL; Lisa is just in the early stage of AIDS dementia complex</text>
+                </option>
+                <option id="C">
+                    <text>Between 200 - 350/uL; Lisa is near the end-stage of AIDS</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>At any level, Lisa is still a case of HIV and diagnosis of AIDS is still unknown.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="30">
+            <text>During initiation of treatment, multiple drug therapy was proposed using Didanosine, Indinavir and Stavudine. Which of the following adverse drug reactions might be present?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Neuromuscular weakness</text>
+                </option>
+                <option id="B">
+                    <text>Increased blood sugar</text>
+                </option>
+                <option id="C">
+                    <text>Kidney stones</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="31">
+            <text>After months of treatment, drug combinations were continuously modified to treat the ongoing infection. Lisa noted numbness and tingling sensation on her lips. There was also noted skin rash on her arms. The possible drugs for these side effects are:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Amprenavir</text>
+                </option>
+                <option id="B">
+                    <text>Tenofovir</text>
+                </option>
+                <option id="C">
+                    <text>Ritonavir</text>
+                </option>
+                <option id="D">
+                    <text>Both A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+           <question id="32">
+            <text>After 2 years of continuous treatment, Lisa and her family went back for confinement. Lisa is now unable to control her urine prompting the use of adult diaper. Lisa is also wheelchair-borne and cannot converse properly most of the time. Lisa had recurrent cough for almost a year now. Upon laboratory testing, Lisa's CD4 count revealed 50/uL. Based on her symptoms, what will you tell Lisa's family?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_2.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Lisa is currently in stage 3 of AIDS dementia complex.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>Lisa is now suffering from AIDS.</text>
+                </option>
+                <option id="C">
+                    <text>Lisa's low CD4 count makes it impossible for her to survive even for a year.</text>
+                </option>
+                <option id="D">
+                    <text>Therapy is not useful in this stage of progressive disease.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="33">
+            <text>Which of the following statements describe deoxyhemoglobin?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>It has greater affinity for protons.</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>The salt bridges help stabilize deoxyhemoglobin.</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>The two &alpha;&beta; dimers interact through hydrogen bonds to constrain the movement of
+polypeptide chains in deoxyhemoglobin.</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Only A and B</html>]]></text>
+                </option>
+                <option id="E" correct="true">
+                    <text><![CDATA[<html>All of the above</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="34">
+            <text>Which type of hemoglobin starts synthesis in the bone marrow at about eighth month
+of pregnancy and is held together by nonconvalent interactions?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text><![CDATA[<html>HbA</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>HbA<sub>2</sub></html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>HbF</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>HbA<sub>1c</sub></html>]]></text>
+                </option>
+            </answers>
+        </question>
+           <question id="35">
+            <text>Kevin, a 45-year old male who is suffering from diabetes mellitus came in for annual check-up. He is asking for a blood work-up to test his blood sugar. Which type of hemoglobin would you request for?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>HbA</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>HbA<sub>2</sub></html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>HbF</html>]]></text>
+                </option>
+                <option id="D" correct="true">
+                    <text><![CDATA[<html>HbA<sub>1c</sub></html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="36">
+            <text>Which type of hemoglobin appears about twelve weeks after birth?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>HbA</html>]]></text>
+                </option>
+                <option id="B" correct="true">
+                    <text><![CDATA[<html>HbA<sub>2</sub></html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>HbF</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>HbA<sub>1c</sub></html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="37">
+            <text>Which type of hemoglobin is synthesized in the developing bone marrow composed of 2
+gamma chains?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>HbA</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>HbA<sub>2</sub></html>]]></text>
+                </option>
+                <option id="C" correct="true">
+                    <text><![CDATA[<html>HbF</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>HbA<sub>1c</sub></html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="38">
+            <text>During exercise, the pH of blood is lowered thus enhancing oxygen release from hemoglobin. Which of the following happens due to low pH?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>There is increase in the concentration of protons.</text>
+                </option>
+                <option id="B">
+                    <text>There is a shift to the right in the oxygen-dissociation curve.</text>
+                </option>
+                <option id="C">
+                    <text>The hemoglobin assumes the relaxed form of hemoglobin which has higher oxygen affinity.</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Only A and B</text>
+                </option>
+                <option id="E">
+                    <text>All of the above.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="39">
+            <text>Which of the following is NOT true about hemoglobin?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>The hemoglobin tetramer has two identical dimers whose polypeptide chains are held tightly together primarily by hydrogen bonds.</text>
+                </option>
+                <option id="B">
+                    <text>The binding of oxygen to hemoglobin causes the rupture of some ionic bonds between the dimers.</text>
+                </option>
+                <option id="C">
+                    <text>Both A and B</text>
+                </option>
+                <option id="D">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="40">
+            <text>Which of the following describes the oxygen-dissociation curve?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Partial pressure of oxygen is plotted at the y-axis against hemoglobin?s percent saturation with oxygen at the x-axis.</text>
+                </option>
+                <option id="B">
+                    <text>The shape of the curve reflects cooperative binding of oxygen of the three subunits of hemoglobin.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>The shape of the curve indicates that the affinity of hemoglobin for the last oxygen bound is greater than its affinity for the first oxygen bound.</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="41">
+            <text>Which of the following describes cooperative binding of oxygen?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It allows hemoglobin to deliver more oxygen to the tissues in response to relatively small changes in the arterial pressure of oxygen.</text>
+                </option>
+                <option id="B">
+                    <text>The binding of an oxygen molecule at one heme group increases the oxygen affinity of the remaining heme groups in the same hemoglobin molecule.</text>
+                </option>
+                <option id="C">
+                    <text>It reflects the steep upward curve.</text>
+                </option>
+                <option id="D">
+                    <text>Only A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="42">
+            <text>Which of the following does NOT affect the binding of hemoglobin to oxygen?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Partial pressure of oxygen</text>
+                </option>
+                <option id="B">
+                    <text>pH of the environment</text>
+                </option>
+                <option id="C">
+                    <text>2,3-bisphospholycerate</text>
+                </option>
+                <option id="D">
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="43">
+            <text>Which of the following does NOT describe oxygen-dissociation curve?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>An increase in partial pressure of CO<sub>2</sub> causes oxygen release from hemoglobin.</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>A decrease in pH shifts the curve to the right.</html>]]></text>
+                </option>
+                <option id="C" correct="true">
+                    <text><![CDATA[<html>A lower CO<sub>2</sub> concentration results in lower affinity for oxygen.</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>An increase in pH results in greater affinity for oxygen.</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="44">
+            <text>Hemoglobin has a quaternary structure. Which of the following happens as a result of hemoglobin's structure?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The binding of oxygen to hemoglobin causes the rupture of some of the ionic bonds between the dimers.</text>
+                </option>
+                <option id="B">
+                    <text>The degree of saturation of the oxygen-binding sites on all hemoglobin molecules vary from zero to 100%.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>The two dimers are able to move with respect to each other, being held together primarily by polar bonds.</text>
+                </option>
+                <option id="D">
+                    <text>The two dimers interact through a network of ionic and hydrogen bonds that constrain the movement of polypeptide chains.</text>
+                </option>
+            </answers>
+        </question>
+           <question id="45">
+            <text>The steep upward shape of the oxygen-dissociation curve indicates what?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Cooperative binding of oxygen by the four subunits of hemoglobin.</text>
+                </option>
+                <option id="B">
+                    <text>Heme-heme interaction.</text>
+                </option>
+                <option id="C">
+                    <text>Higher affinity of subsequent oxygen binding to hemoglobin.</text>
+                </option>
+                <option id="D">
+                    <text>Only A and B</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="46">
+            <text>Which of the following shows cooperative binding of oxygen?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>The binding of an oxygen molecule at one heme group decreases the oxygen affinity of the remaining heme groups in the same hemoglobin molecule.</html>]]></text>
+                </option>
+                <option id="B" correct="true">
+                    <text><![CDATA[<html>In the lungs, the concentration of oxygen is high and hemoglobin becomes virtually saturated with oxygen.</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>In the peripheral tissues, deoxyhemoglobin releases much of its oxygen for use in the oxidative metabolism.</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>It permits oxygen delivery to respond to small changes in CO<sub>2</sub>.</html>]]></text>
+                </option>
+            </answers>
+        </question>
+           <question id="47">
+            <text>Which of the following statements describe the Bohr Effect?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>At a lower pH, a smaller pO<sub>2</sub> is required to achieve any given oxygen saturation.</html>]]></text>
+                </option>
+                <option id="B" correct="true">
+                    <text>The deoxy form of hemoglobin has a greater affinity for protons than oxyhemoglobin.</text>
+                </option>
+                <option id="C">
+                    <text>Raising the pH results in lower affinity for oxygen.</text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Release of oxygen from hemoglobin is enhanced when there is lower CO<sub>2</sub>.</html>]]></text>
+                </option>
+            </answers>
+        </question>
+           <question id="48">
+            <text>Which of the following statements support the steep upward curve or sigmoid shape of the oxygen-dissociation curve?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The presence of allosteric effectors affects the binding of oxygen to heme groups at other locations on the molecule causing the sigmoid shape.</text>
+                </option>
+                <option id="B">
+                    <text>It ensures hemoglobin to be virtually saturated with oxygen in the lungs.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>The steep upward curve reflects the higher affinity of subsequent oxygen binding to hemoglobin.</text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>The curve permits oxygen delivery to respond to small changes in CO<sub>2</sub>.</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="49">
+            <text>Which type of hemoglobin constitutes about two percent of the total hemoglobin and is composed of two alpha and two delta chains?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_3.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>HbA</html>]]></text>
+                </option>
+                <option id="B" correct="true">
+                    <text><![CDATA[<html>HbA<sub>2</sub></html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>HbF</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>HbA<sub>1c</sub></html>]]></text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

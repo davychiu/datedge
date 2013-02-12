@@ -1,0 +1,3 @@
+cat ../datedge/sql/test.sql | python ../manage.py dbshell
+cat ../datedge/sql/question.sql | python ../manage.py dbshell
+cat ../datedge/sql/scaling.sql | python ../manage.py dbshell
