@@ -32,8 +32,9 @@ class Sitting(models.Model):
 
 class Answer(models.Model):
     sitting = models.ForeignKey(Sitting)
-    question = models.ManyToManyField(Question)
+    question = models.ForeignKey(Question)
     answer_idx = models.IntegerField(default=0)
+    is_marked = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
