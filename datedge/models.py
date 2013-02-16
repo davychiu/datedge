@@ -26,17 +26,46 @@ class Question(models.Model):
 class Sitting(models.Model):
     user = models.ForeignKey(User)
     test = models.ForeignKey(Test)
+    is_timed = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
+    def _score(self):
+        score = 0
+        for q in self.test.question_set.filter(answer__sitting=self):
+            if q.answer_idx == self.test.question_set.get(id=q.id).answer_set.get(question=q).answer_idx:
+                score += 1
+        return score
+
+    def _score_scaled(self):
+        score = self.score
+        return Scaling.objects.get(max_score__lte=score, min_score__gte=score).scaled
+
+    def _score_percent(self):
+        return "%.0f%%" % (float(self.score) / 50 * 100)
+
+    def _marked(self):
+        return self.test.question_set.filter(answer__is_marked=True)
+    
+    def _incomplete(self):
+        return self.test.question_set.filter(answer__answer_idx=None)
+
+    score = property(_score)
+    score_scaled = property(_score_scaled)
+    score_percent = property(_score_percent)
+
 class Answer(models.Model):
     sitting = models.ForeignKey(Sitting)
     question = models.ForeignKey(Question)
-    answer_idx = models.IntegerField(default=0)
+    user = models.ForeignKey(User)
+    answer_idx = models.IntegerField(null=True)
     is_marked = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
+
+    def __unicode__(self):
+        return u's: %s q: %s u: %s a: %s'%(self.sitting.id, self.question.id, self.user.id, self.answer_idx)
 
 class Activation(models.Model):
     user = models.ForeignKey(User)

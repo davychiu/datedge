@@ -1,0 +1,5 @@
+echo "delete from datedge_answer;" | ./manage.py dbshell
+echo "delete from datedge_sitting;" | ./manage.py dbshell
+echo "delete from datedge_question;" | ./manage.py dbshell
+echo "delete from datedge_test;" | ./manage.py dbshell
+echo "delete from datedge_scaling;" | ./manage.py dbshell

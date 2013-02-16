@@ -14,7 +14,7 @@ for idx, score in enumerate(scaled_scores):
     min_score = score[1]
     max_score = score[0]
     scaling = score[2]
-    score = ", ".join([str(idx), str(min_score), str(max_score), str(scaling)])
+    score = ", ".join([str(idx+1), str(min_score), str(max_score), str(scaling)])
     scalings_out += "INSERT INTO datedge_scaling (id, min_score, max_score, scaled) VALUES (" + score + ");\n"
 
 for n in range(1,6):
@@ -25,7 +25,7 @@ for n in range(1,6):
     test_id = "1"
     questions =  test.findall('.//question')
 
-    tests_out += "INSERT INTO datedge_test (id, text1, text2, text3) VALUES (" + str(n-1) + ", " + text1 + ", " + text2 + ", " + text3 + ");\n"
+    tests_out += "INSERT INTO datedge_test (id, text1, text2, text3) VALUES (" + str(n) + ", " + text1 + ", " + text2 + ", " + text3 + ");\n"
 
     for q_id, q in enumerate(questions):
         answers = q.findall('.//option')
@@ -47,7 +47,7 @@ for n in range(1,6):
         description = "\"" + " ".join(q.find('text').text.replace('\n','').replace('"',"'").replace("<html>","").replace("</html>","").split()) + "\""
         text_id = q.find('additionalTextPath').text[11]
 
-        values = ", ".join([str(q_id+(n-1)*50), test_id, text_id, answer_id, opt1, opt2, opt3, opt4, opt5, description])
+        values = ", ".join([str(q_id+(n-1)*50+1), str(n), text_id, answer_id, opt1, opt2, opt3, opt4, opt5, description])
         questions_out += "INSERT INTO datedge_question (id, test_id, text_idx, answer_idx, option1, option2, option3, option4, option5, description) VALUES (" + values.encode('utf-8', 'ignore') + ");\n"
 
 f_test.write(tests_out.decode('windows-1252').encode('utf-8', 'ignore'))

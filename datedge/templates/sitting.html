@@ -1,0 +1,21 @@
+{{ sitting.is_timed }}<br />
+{{ question.description }}
+<ul>
+{% if question.option1 %}
+<li>{{ question.option1 }}</li>
+{% endif %}
+{% if question.option2 %}
+<li>{{ question.option2 }}</li>
+{% endif %}
+{% if question.option3 %}
+<li>{{ question.option3 }}</li>
+{% endif %}
+{% if question.option4 %}
+<li>{{ question.option4 }}</li>
+{% endif %}
+{% if question.option5 %}
+<li>{{ question.option5 }}</li>
+{% endif %}
+</ul>
+
+{{ sitting.test.text1|safe }}
