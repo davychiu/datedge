@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import date
 
 class Test(models.Model):
     text1 = models.TextField()
@@ -54,6 +55,8 @@ class Sitting(models.Model):
     score = property(_score)
     score_scaled = property(_score_scaled)
     score_percent = property(_score_percent)
+    marked = property(_marked)
+    incomplete = property(_incomplete)
 
 class Answer(models.Model):
     sitting = models.ForeignKey(Sitting)
@@ -72,6 +75,16 @@ class Activation(models.Model):
     expiry = models.DateField()
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
+
+    def __unicode__(self):
+        return self.user.username
+
+    def _is_active(self):
+        today = date.today()
+        if self.objects.filter(user=self.user, expiry__gte=today):
+            return True
+        else:
+            return False
 
 class Scaling(models.Model):
     min_score = models.IntegerField()
