@@ -12,6 +12,12 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+STRIPE_PUBLISHABLE = "pk_test_9yKiV2FAgKYWmVHuCxqHz2JH"
+STRIPE_SECRET = "sk_test_mzf2V9NBalTc9EzBic0n8MTN"
+
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/home/'
+
 DATABASES = {
     'default': dj_database_url.config()
 }

@@ -1,7 +1,7 @@
 {% load url from future %}
 <h1>review</h1>
-{% for question in sitting.test.question_set.all %}
-<a href="{% url 'sitting_question' sitting.id question.id %}">Question {{ forloop.counter }}</a>{{ question.description }}<br />
+{% for item in question_data %}
+<a href="{% url 'sitting_question' sitting.id item.question.id %}">Question {{ forloop.counter }}</a>{{ item.marked }} {{ item.completed }} {{item.skipped }}<br />
 {% endfor %}
 <br />
 marked: {{ sitting.marked.count }}<br />

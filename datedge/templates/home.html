@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block base_content %}
+<h1>home</h1>
+{% for item in test_data %}
+<h2>Test {{ forloop.counter }}</h2>
+    {% for sitting in item.sittings %}
+        {{ sitting.test_id }} {{ sitting.is_active }} {{ sitting.modified_date|timesince }}<br />
+    {% empty %}
+        Not yet attempted.
+    {% endfor %}
+{% endfor %}
+{% endblock %}
