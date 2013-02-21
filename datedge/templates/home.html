@@ -5,9 +5,15 @@
 {% block base_content %}
 <h1>home</h1>
 {% for item in test_data %}
-<h2>Test {{ forloop.counter }}</h2>
+<h2>Practice Test {{ forloop.counter }}</h2>
+    {% if item.sittings.0 %}
+    scaled: {{ item.sittings.0.score_scaled }}<br />
+    score: {{ item.sittings.0.score }}<br />
+    percent: {{item.sittings.0.score_percent }}<br />
+    {{ item.sittings.0.modified_date|timesince }} ago<br />
+    {% endif %}
     {% for sitting in item.sittings %}
-        {{ sitting.test_id }} {{ sitting.is_active }} {{ sitting.modified_date|timesince }}<br />
+        Prior Attempt: ({{ sitting.score_scaled }}) {{ sitting.modified_date|timesince }}<br />
     {% empty %}
         Not yet attempted.
     {% endfor %}

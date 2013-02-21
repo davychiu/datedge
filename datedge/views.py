@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from datedge.models import Sitting, Question, Answer, Scaling, Activation, Test
+from datedge.forms import QuestionForm
 from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import date
 from datedge.helpers import activation_required
@@ -12,7 +13,7 @@ def home(request):
     test_data = []
     tests = Test.objects.exclude(id=6)
     for test in tests:
-        test_data.append({'test': test, 'sittings': request.user.sitting_set.filter(test=test)})
+        test_data.append({'test': test, 'sittings': request.user.sitting_set.filter(test=test)[:5]})
     return render(request, 'home.html', {'test_data': test_data})
 
 def account_activate(request, user_id=None):
@@ -63,7 +64,9 @@ def sitting_question(request, sitting_id, question_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question = sitting.test.question_set.all()[int(question_id)-1]
     question.text = getattr(sitting.test, 'text' + str(question.text_idx))
-    return render(request, 'question.html', {'sitting': sitting, 'question': question})
+    options = [getattr(question, 'option' + str(idx)) for idx in range(1,5)]
+    form = QuestionForm(options, initial=1, auto_id=False)
+    return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
 
 @login_required
 @user_passes_test(activation_required, '/purchase/')

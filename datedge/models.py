@@ -44,7 +44,11 @@ class Sitting(models.Model):
 
     def _score_scaled(self):
         score = self.score
-        return Scaling.objects.get(max_score__lte=score, min_score__gte=score).scaled
+        try:
+            scaled = Scaling.objects.get(max_score__lte=score, min_score__gte=score).scaled
+        except Scaling.DoesNotExist:
+            scaled = 0
+        return scaled
 
     def _score_percent(self):
         return "%.0f%%" % (float(self.score) / 50 * 100)
