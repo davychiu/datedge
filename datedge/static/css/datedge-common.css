@@ -1,0 +1,27 @@
+div #test {
+    margin: 0 auto;
+    width: 96%;
+    overflow: hidden;
+}
+
+div #test_question {
+    padding-top: 20px;
+    min-height: 250px;
+}
+
+div #test_question_description {
+    padding-bottom: 25px;
+}
+
+div #test_question_answer {
+    padding-bottom: 15px;
+}
+
+div #test_question li {
+    list-style: none;
+    vertical-align: center;
+}
+
+div #test_question_text {
+    overflow: auto;
+}

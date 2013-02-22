@@ -1,9 +1,37 @@
-{{ question.description }}
-<form action="" method="post">
-<ul>
-{% for item in form.answer %}
-    <li>{{ item }}</li>
-{% endfor %}
-</ul>
+{% extends 'base.html' %}
+{% block jquery %}
+var window_height = $(window).height()-380;
+$('div#test_question_text').css({'height': window_height + 'px'});
+$(window).resize(function() {
+    var window_height = $(window).height()-380;
+    $('div#test_question_text').css({'height': window_height + 'px'});
 
-{{ question.text|safe }}
+});
+{% endblock %}
+{% block base_content %}
+<div id="test">
+    <div id="test_question">
+        <div id="test_question_description">{{ question.description }}</div>
+            <div id="test_question_answer">
+            <form action="" method="post">
+            {% csrf_token %}
+            <ul>
+            {% for item in form.answer %}
+                <li>{{ item }}</li>
+            {% endfor %}
+            </ul>
+            {% if question.back %}
+            <input type="submit" name="submit_back" value="back" />
+            {% endif %}
+            {% if question.next %}
+            <input type="submit" name="submit_next" value="next" />
+            {% endif %}
+            </form>
+            </div>
+        </div>
+    <div id="test_question_text">
+    {{ question.text|safe }}
+    </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}
