@@ -2,6 +2,7 @@
 {% block jquery %}
 var window_height = $(window).height()-380;
 $('div#test_question_text').css({'height': window_height + 'px'});
+$('div#test_question_text').tinyscrollbar();
 $(window).resize(function() {
     var window_height = $(window).height()-380;
     $('div#test_question_text').css({'height': window_height + 'px'});
@@ -30,7 +31,12 @@ $(window).resize(function() {
             </div>
         </div>
     <div id="test_question_text">
-    {{ question.text|safe }}
+        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+        <div class="viewport">
+            <div class="overview">
+            {{ question.text|safe }}
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
