@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Your Site</title>
+    <title>DATEdge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -34,7 +34,8 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
      -->
      <script src="{{STATIC_URL|default:"/s/"}}js/jquery-1.9.0.js"></script>
-     <script src="{{STATIC_URL|default:"/s/"}}js/jquery.tinyscrollbar.min.js"></script>
+     <script src="{{STATIC_URL|default:"/s/"}}js/jquery.nanoscroller.min.js"></script>
+     <link rel="stylesheet" href="{{STATIC_URL|default:"/s/"}}css/nanoscroller.css" /> 
      <script type="text/javascript">
      {% block javascript %}
      $(function(){
@@ -88,9 +89,12 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a href="/"><img src="{{STATIC_URL|default:"/s/"}}img/DATEdge_logo.png" width="120px" /></a>
+          <a href="/"><img src="{{STATIC_URL|default:"/s/"}}img/DATEdge_logo.png" width="160px" /></a>
           {% if user.is_authenticated %}
           <ul class="nav pull-right">
+            <li class="active"><a href="#">Buy Now</a></li>
+            <li><a href="#about">Free Trial</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>{{user.first_name}} <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -133,35 +137,64 @@
 {% block base_content %}
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>Get 5 DAT Reading Comprehension Tests</h1>
+        <p>Use DATEdge to prepare for the most difficult section of the DAT.</p>
+        <p><a class="btn btn-primary btn-large">Buy Now $47 &raquo;</a> <a class="btn btn-info btn-large">Free Trial &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
+      <ul class="thumbnails">
+        <li class="span4">
+          <div class="thumbnail">
+          <h2>5 Practice Tests</h2>
+          <p>Five DAT computer-based tests with standardized scoring.</p>
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+          <h2>250 Questions</h2>
+          <p>All 15 Reading passages and 250 questions reflect the difficulty of the exam.</p>          
+          </div>
+        </li>
+        <li class="span4">
+          <div class="thumbnail">
+          <h2>6-month License</h2>
+          <p>You'll have unlimited access to practice tests for 6 full months.</p>
+          </div>
+        </li>
+      </div>
       <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+        <div class="span12">
+        <h2>Frequently Asked Questions</h2>
+        <p>Q. What are my payment options?<br />
+A. We accept payments through Visa, Mastercard, and American Express.</p>
+<p>Q. What is your refund policy?<br />
+A. We at DATEdge want you to be completely happy with your purchase. If you have any questions, concerns, or problems, please let us know in the Contact section.</p>
+<p>We are so confident with DATEdge will refund your money in full if you receive a score below 19 in the Reading Comprehension of the DAT after using our DATEdge test preparation material. We back up our claims of success with a full money back guarantee.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="span4">
+        <ul>
+            <li><a href="{% url 'refund' %}">Refund Policy</a></li>
+            <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
+            <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+        </ul>
+        </div>
+        <div class="span4">
+            <h3>Payment Methods</h3>
+        </div>
+        <div class="span4">
+            <h3>Contact Us</h3>
+        </div>
+      </div>
+
 {% endblock %}
       
 {% block footer %}
       <hr />
       <footer>
-        <p>&copy; Your Site 2012</p>
+        <p>&copy; DATEdge 2013</p>
       </footer>
 {% endblock %}
 

@@ -2,7 +2,7 @@
 {% block jquery %}
 var window_height = $(window).height()-380;
 $('div#test_question_text').css({'height': window_height + 'px'});
-$('div#test_question_text').tinyscrollbar();
+$('div#test_question_text').nanoScroller();
 $(window).resize(function() {
     var window_height = $(window).height()-380;
     $('div#test_question_text').css({'height': window_height + 'px'});
@@ -30,12 +30,9 @@ $(window).resize(function() {
             </form>
             </div>
         </div>
-    <div id="test_question_text">
-        <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-        <div class="viewport">
-            <div class="overview">
-            {{ question.text|safe }}
-            </div>
+    <div id="test_question_text" class="nano">
+        <div class="content">
+        {{ question.text|safe }}
         </div>
     </div>
 </div>

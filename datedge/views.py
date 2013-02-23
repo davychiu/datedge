@@ -64,19 +64,37 @@ def sitting_question(request, sitting_id, question_id):
 
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question = sitting.test.question_set.all()[int(question_id)-1]
-    question.back = sitting.test.question_set.all()[int(question_id)-2] if int(question_id) > 1 else None
-    question.next = sitting.test.question_set.all()[int(question_id)] if int(question_id) < 50 else None
+    try:
+        answer = Answer.objects.get(sitting=sitting, question=question, user=request.user) 
+    except Answer.DoesNotExist:
+        answer = None
+    try:
+        question.back = sitting.test.question_set.all()[int(question_id)-2] if int(question_id) > 1 else None
+        question.next = sitting.test.question_set.all()[int(question_id)] if int(question_id) < 50 else None
+    except IndexError:
+        question.next = None
     question.text = getattr(sitting.test, 'text' + str(question.text_idx))
     options = [getattr(question, 'option' + str(idx)) for idx in range(1,5)]
     if request.POST:
         form = QuestionForm(request.POST, options=options)
         if form.is_valid():
+            #save answer
+            answer_idx = form.cleaned_data['answer'] or None
+            if not answer:
+                answer = Answer(sitting=sitting, question=question, user=request.user, answer_idx=answer_idx)
+                answer.save()
+            if answer.answer_idx is not answer_idx:
+                answer.answer_idx = answer_idx
+                answer.save()
+            #return next/prev question
             offset = 1 if "submit_next" in request.POST else -1
             return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
         else:
             return HttpResponse(str(form.errors)) 
-    form = QuestionForm(options=options, initial={'answer': 1}, auto_id=False)
-    return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
+    else:
+        answer_idx = answer.answer_idx if hasattr(answer, 'answer_idx') else None
+        form = QuestionForm(options=options, initial={'answer': answer_idx}, auto_id=False)
+        return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
 
 @login_required
 @user_passes_test(activation_required, '/purchase/')

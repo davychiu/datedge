@@ -38,14 +38,14 @@ class Sitting(models.Model):
     def _score(self):
         score = 0
         for q in self.test.question_set.filter(answer__sitting=self):
-            if q.answer_idx == self.test.question_set.get(id=q.id).answer_set.get(question=q).answer_idx:
+            if q.answer_idx == self.test.question_set.get(id=q.id).answer_set.get(sitting=self,question=q).answer_idx:
                 score += 1
         return score
 
     def _score_scaled(self):
         score = self.score
         try:
-            scaled = Scaling.objects.get(max_score__lte=score, min_score__gte=score).scaled
+            scaled = Scaling.objects.get(max_score__gte=score, min_score__lte=score).scaled
         except Scaling.DoesNotExist:
             scaled = 0
         return scaled
@@ -69,7 +69,7 @@ class Answer(models.Model):
     sitting = models.ForeignKey(Sitting)
     question = models.ForeignKey(Question)
     user = models.ForeignKey(User)
-    answer_idx = models.IntegerField(null=True)
+    answer_idx = models.IntegerField(null=True, blank=True)
     is_marked = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
