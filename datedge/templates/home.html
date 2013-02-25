@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
+{% load url from future %}
 
 {% block title %}Home{% endblock %}
 
 {% block base_content %}
 <h1>home</h1>
+<div class="row userhome">
 {% for item in test_data %}
-<h2>Practice Test {{ forloop.counter }}</h2>
+<div class="span8 testpanel">
+<h4>Practice Test {{ forloop.counter }}</h4>
+<div class="tp_content">
     {% if item.sittings.0 %}
-    scaled: {{ item.sittings.0.score_scaled }}<br />
-    score: {{ item.sittings.0.score }}<br />
-    percent: {{item.sittings.0.score_percent }}<br />
-    {{ item.sittings.0.modified_date|timesince }} ago<br />
+    <span class="span2 pull-left">
+    <strong>last sitting results</strong>
+    </span>
+    <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
+    <span class="score">{{ item.sittings.0.score }} / {{ item.sittings.0.test.question_set.count }}</span><br />
+    <span class="percent">{{item.sittings.0.score_percent }}</span><br />
+    <span class="timesince pull-right"><strong>{{ item.sittings.0.modified_date|timesince }} ago</strong></span><br />
     {% endif %}
     {% for sitting in item.sittings %}
         Prior Attempt: ({{ sitting.score_scaled }}) {{ sitting.modified_date|timesince }}<br />
     {% empty %}
-        Not yet attempted.
+        <span class="notattempted">Not yet attempted.</span>
     {% endfor %}
+    <div class="newsitting"><a href="{% url 'sitting_new' forloop.counter %}">new sitting</a></div>
+</div>
+ </div>
 {% endfor %}
+</div>
+
 {% endblock %}

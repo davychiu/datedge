@@ -117,7 +117,7 @@ def sitting_review(request, sitting_id):
     question_data = []
     for question in sitting.test.question_set.all():
         marked = True if question in sitting.test.question_set.filter(answer__is_marked=True, answer__sitting=sitting) else False
-        completed = True if question in sitting.test.question_set.exclude(answer__answer_idx=None, answer__sitting=sitting) else False
+        completed = True if question in sitting.test.question_set.filter(answer__answer_idx__isnull=False, answer__sitting=sitting, answer__question=question) else False
         skipped = True if question in sitting.test.question_set.filter(answer__answer_idx=None, answer__sitting=sitting) else False
         question_data.append({'question': question, 
                             'marked': marked, 

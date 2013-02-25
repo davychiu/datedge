@@ -1,8 +1,42 @@
+{% extends 'base.html' %}
 {% load url from future %}
+
+{% block jquery %}
+var window_height = $(window).height()-300;
+$('div#test_review_content').css({'height': window_height + 'px'});
+$('div#test_review_content').nanoScroller();
+$(window).resize(function() {
+    var window_height = $(window).height()-300;
+    $('div#test_question_text').css({'height': window_height + 'px'});
+
+});
+{% endblock %}
+
+{% block base_content %}
 <h1>review</h1>
-{% for item in question_data %}
-<a href="{% url 'sitting_question' sitting.id item.question.id %}">Question {{ forloop.counter }}</a>{{ item.marked }} {{ item.completed }} {{item.skipped }}<br />
-{% endfor %}
+<div id="test_review_content" class="nano">
+    <div class="content">
+    <table class="table table-condensed">
+    <tr>
+        <th></th>
+        <th>Marked</th>
+        <th>Completed</th>
+        <th>Skipped</th>
+    </tr>
+    {% for item in question_data %}
+    {% if not item.completed %}
+    <tr class="error">
+    {% elif item.marked %}
+    <tr class="warning">
+    {% else %}
+    <tr>
+    {% endif %}
+    <td><a href="{% url 'sitting_question' sitting.id item.question.id %}">Question {{ forloop.counter }}</a></td><td>{% if item.marked %}<i class="icon-ok"></i>{% endif %}</td><td>{% if item.completed %}<i class="icon-ok"></i>{% endif %}</td><td>{% if item.skipped %}<i class="icon-ok"></i>{% endif %}</td>
+    {% endfor %}
+    </table>
+    </div>
+</div>
 <br />
 marked: {{ sitting.marked.count }}<br />
 incomplete: {{ sitting.incomplete.count }}
+{% endblock %}

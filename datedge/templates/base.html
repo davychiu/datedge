@@ -48,53 +48,15 @@
   </head>
 
   <body>
-{% comment %}
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-{% endcomment %}
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a href="/"><img src="{{STATIC_URL|default:"/s/"}}img/DATEdge_logo.png" width="160px" /></a>
           {% if user.is_authenticated %}
           <ul class="nav pull-right">
-            <li class="active"><a href="#">Buy Now</a></li>
-            <li><a href="#about">Free Trial</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="/purchase">Buy Now</a></li>
+            <li><a href="/trial">Free Trial</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>{{user.first_name}} <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -162,32 +124,43 @@
           <p>You'll have unlimited access to practice tests for 6 full months.</p>
           </div>
         </li>
-      </div>
-      <div class="row">
-        <div class="span12">
+      </ul>
+      <div class="well">
         <h2>Frequently Asked Questions</h2>
         <p>Q. What are my payment options?<br />
 A. We accept payments through Visa, Mastercard, and American Express.</p>
 <p>Q. What is your refund policy?<br />
 A. We at DATEdge want you to be completely happy with your purchase. If you have any questions, concerns, or problems, please let us know in the Contact section.</p>
 <p>We are so confident with DATEdge will refund your money in full if you receive a score below 19 in the Reading Comprehension of the DAT after using our DATEdge test preparation material. We back up our claims of success with a full money back guarantee.</p>
-        </div>
       </div>
-      <div class="row">
-        <div class="span4">
+      <ul class="thumbnails">
+        <li class="span4">
+        <div class="thumbnail">
         <ul>
             <li><a href="{% url 'refund' %}">Refund Policy</a></li>
             <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
             <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
         </ul>
         </div>
-        <div class="span4">
+        </li>
+        <li class="span4">
+        <div class="thumbnail">
             <h3>Payment Methods</h3>
+            <img src="{{STATIC_URL|default:"/s/"}}img/creditcardlogos.jpg" width="250px" />
         </div>
-        <div class="span4">
+        </li>
+        <li class="span4">
+        <div class="thumbnail">
             <h3>Contact Us</h3>
+            <form action="" method="post">
+            <input type="text" name="name" maxlength="100" placeholder="Name" />
+            <input type="text" name="email" maxlength="100" placeholder="Email" />
+            <textarea name="message" maxlength="1000" placeholder="Your message"></textarea><br />
+            <input type="submit" value="send" class="btn" />
+            </form>
         </div>
-      </div>
+        </li>
+      </ul>
 
 {% endblock %}
       

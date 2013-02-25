@@ -1,8 +1,32 @@
 footer {
     text-align: right;
 }
-
-
+div .userhome {
+}
+div .userhome .testpanel {
+    margin-bottom: 16px;
+}
+div .userhome .testpanel h4 {
+    background-color: #378d42;
+    padding: 3px 20px;
+    color: #fff;
+    margin: 0;
+}
+div .userhome .testpanel .tp_content {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 30px 10px 5px 10px;
+}
+div .userhome .testpanel .tp_content .scaled {
+    margin-top: 18px;
+    margin-right: 30px;
+    font-size: 80px;
+}
+div .userhome .testpanel .tp_content .score, div .userhome .testpanel .tp_content .percent {
+    color: grey;
+    font-size: 30px;
+}
 div #test {
     margin: 0 auto;
     width: 96%;
@@ -31,10 +55,14 @@ div #test_question_text {
     overflow: hidden;
 }
 
-div #test_question_text .content {
+div #test_question_text .content, #test_review_content .content {
     padding-right: 10px;
 }
 
-div #test_question_text .pane {
+div #test_question_text .pane, div #test_review_content .pane {
     background: transparent;
+}
+
+div #test_review_content {
+    width: 80%;
 }

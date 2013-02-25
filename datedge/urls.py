@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.views.generic.base import TemplateView
 from django.contrib import admin
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from datedge import views
 admin.autodiscover()
 
@@ -24,7 +25,7 @@ urlpatterns = patterns('',
     url(r'^process/$', views.process, name='process'),
     url(r'^success/$', views.success, name='success'),
     url(r'^sitting/new/(?P<test_id>\d+)/timed/$', views.sitting_new, {'is_timed': True}),
-    url(r'^sitting/new/(?P<test_id>\d+)/$', views.sitting_new, name='new'),
+    url(r'^sitting/new/(?P<test_id>\d+)/$', views.sitting_new, name='sitting_new'),
     url(r'^sitting/(?P<sitting_id>\d+)/question/(?P<question_id>\d+)/$', views.sitting_question, name='sitting_question'),
     url(r'^sitting/(?P<sitting_id>\d+)/question/(?P<question_id>\d+)/mark/$', views.sitting_mark),
     url(r'^sitting/(?P<sitting_id>\d+)/review/$', views.sitting_review),
@@ -35,3 +36,6 @@ urlpatterns = patterns('',
     url(r'^accounts/activate/(?P<user_id>\d+)/$', views.account_activate),
     url(r'^accounts/', include('registration.backends.simple.urls')),
 )
+
+#monkey patch for django admin static files on heroku
+urlpatterns += staticfiles_urlpatterns()
