@@ -2,3 +2,4 @@ venv
 *.pyc
 *.swp
 database.sql
+local_settings.py
