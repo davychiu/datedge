@@ -159,6 +159,6 @@ LOGGING = {
 try:
     from local_settings import *
 except:
-    print "import failed"
+#    print "import failed"
     pass
 
