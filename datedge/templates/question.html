@@ -1,33 +1,43 @@
 {% extends 'base.html' %}
 {% block jquery %}
-var window_height = $(window).height()-380;
+var window_height = $(window).height()-400;
 $('div#test_question_text').css({'height': window_height + 'px'});
 $('div#test_question_text').nanoScroller();
 $(window).resize(function() {
-    var window_height = $(window).height()-380;
-    $('div#test_question_text').css({'height': window_height + 'px'});
+    var window_height = $(window).height()-400;
+    $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller();
 
 });
 {% endblock %}
 {% block base_content %}
+<div id="test_container">
+<div id="backarrow">
+<img src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" />
+</div>
 <div id="test">
+    <div id="timer" class="pull-right">
+    <i class="icon-time"> </i>12:45
+    </div>
     <div id="test_question">
-        <div id="test_question_description">{{ question.description }}</div>
+        <div id="test_question_description">{{ question.description|safe }}</div>
             <div id="test_question_answer">
             <form action="" method="post">
             {% csrf_token %}
             <ul>
             {% for item in form.answer %}
-                <li>{{ item }}</li>
+                <li>{{ item|safe }}</li>
             {% endfor %}
             </ul>
             {% if question.back %}
-            <input type="submit" name="submit_back" value="back" />
+            <input type="submit" name="submit_back" value="back" class="btn" />
             {% endif %}
             {% if question.next %}
-            <input type="submit" name="submit_next" value="next" />
+            <input type="submit" name="submit_next" value="next" class="btn" />
             {% endif %}
             </form>
+            </div>
+            <div class="text-center">
+            <img src="{{STATIC_URL|default:"/s/"}}img/divider.png" alt="" />
             </div>
         </div>
     <div id="test_question_text" class="nano">
@@ -35,6 +45,7 @@ $(window).resize(function() {
         {{ question.text|safe }}
         </div>
     </div>
+</div>
 </div>
 {% endblock %}
 {% block footer %}{% endblock %}

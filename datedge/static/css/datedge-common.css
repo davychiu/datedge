@@ -1,10 +1,20 @@
 footer {
     text-align: right;
 }
+.text-center, td.cell-center, th.cell-center {
+    text-align: center;
+}
+.table-center {
+    margin: 0 auto !important;
+    float: none !important;
+}
 div .userhome {
 }
 div .userhome .testpanel {
     margin-bottom: 16px;
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 div .userhome .testpanel h4 {
     background-color: #378d42;
@@ -13,9 +23,6 @@ div .userhome .testpanel h4 {
     margin: 0;
 }
 div .userhome .testpanel .tp_content {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
     padding: 30px 10px 5px 10px;
 }
 div .userhome .testpanel .tp_content .scaled {
@@ -27,15 +34,31 @@ div .userhome .testpanel .tp_content .score, div .userhome .testpanel .tp_conten
     color: grey;
     font-size: 30px;
 }
+div #test_container {
+    position: relative;
+    margin: 0 18px;
+}
 div #test {
-    margin: 0 auto;
-    width: 96%;
+    padding: 10px 60px;
     overflow: hidden;
+    min-height: 500px;
+    background-color: #ffc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+div #test h1 {
+    color: #868686;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 }
 
 div #test_question {
     padding-top: 20px;
-    min-height: 250px;
+    padding-bottom: 16px;
+    min-height: 230px;
 }
 
 div #test_question_description {
@@ -55,6 +78,12 @@ div #test_question_text {
     overflow: hidden;
 }
 
+div #backarrow {
+    position: absolute;
+    left: -18px;
+    top: 100px;
+}
+
 div #test_question_text .content, #test_review_content .content {
     padding-right: 10px;
 }
@@ -64,5 +93,5 @@ div #test_question_text .pane, div #test_review_content .pane {
 }
 
 div #test_review_content {
-    width: 80%;
+    width: 70%;
 }

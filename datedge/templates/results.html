@@ -1,6 +1,14 @@
+{% extends 'base.html' %}
+{% load url from future %}
+
+{% block base_content %}
+<div id="test">
 <h1>results</h1>
 <div>
 scaled: {{ sitting.score_scaled }}<br />
 score: {{ sitting.score }} / 50<br />
 percent: {{ sitting.score_percent }}
 </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}
