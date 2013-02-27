@@ -8,6 +8,11 @@ $(window).resize(function() {
     $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller();
 
 });
+$('#timer').countdown({until: new Date(2013,1,27,7,30,0), onExpiry: timerCallback, layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
+
+function timerCallback() {
+    alert('times up');
+}
 {% endblock %}
 {% block base_content %}
 <div id="test_container">

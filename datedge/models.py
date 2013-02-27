@@ -32,6 +32,9 @@ class Sitting(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     modified_date = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        ordering = ('-created_date',)
+
     def __unicode__(self):
         return u't: %s a: %s c: %s m: %s' % (self.test_id, self.is_active, self.created_date, self.modified_date)
 
