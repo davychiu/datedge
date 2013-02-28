@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from datetime import date
+from datetime import date, datetime
+import time
 
 class Test(models.Model):
     text1 = models.TextField()
@@ -62,11 +63,18 @@ class Sitting(models.Model):
     def _incomplete(self):
         return self.test.question_set.filter(answer__answer_idx=None)
 
+    def _timerstring(self):
+        t = self.created_date
+        offset = time.timezone if (time.localtime().tm_isdst == 0) else time.altzone
+        offset = offset / 60 / 60 * -1
+        return u'%i, %i, %i, %i, %i, %i, %i' % (0, t.year, t.month-1, t.day, t.hour+1, t.minute, t.second)
+
     score = property(_score)
     score_scaled = property(_score_scaled)
     score_percent = property(_score_percent)
     marked = property(_marked)
     incomplete = property(_incomplete)
+    timerstring = property(_timerstring)
 
 class Answer(models.Model):
     sitting = models.ForeignKey(Sitting)

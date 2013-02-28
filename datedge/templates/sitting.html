@@ -1,3 +1,17 @@
+{% extends 'base.html' %}
 {% load url from future %}
-{{ sitting.is_timed }}<br />
+{% block base_content %}
+<div id="test_container">
+<div id="test">
+<br /><br />
+<h1>Reading Comprehension</h1>
+{% if sitting.is_timed %}<h4>(timed)</h4>{% endif %}<br /><br /><br />
+<p>This section is comprised of 50 questions and must be completed within 60 minutes.</p>
+<p>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.</p>
+<p>The reading passages are longer than the screen, so they are placed in a window. A scroll bar to the right of the passage can be used to scroll down to read the full passage.</P>
 <a href="{% url 'sitting_question' sitting.id 1 %}">begin</a>
+</div>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

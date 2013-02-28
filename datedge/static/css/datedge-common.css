@@ -71,7 +71,10 @@ div #test_question_answer {
 
 div #test_question li {
     list-style: none;
-    vertical-align: center;
+    vertical-align: middle;
+}
+div #test_question_answer input {
+    vertical-align: top;
 }
 
 div #test_question_text {
@@ -94,4 +97,8 @@ div #test_question_text .pane, div #test_review_content .pane {
 
 div #test_review_content {
     width: 70%;
+}
+span.test_review_checkmark {
+    position: absolute;
+    left: 64px;
 }

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load url from future %}
 {% block jquery %}
 var window_height = $(window).height()-400;
 $('div#test_question_text').css({'height': window_height + 'px'});
@@ -8,7 +9,9 @@ $(window).resize(function() {
     $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller();
 
 });
-$('#timer').countdown({until: new Date(2013,1,27,7,30,0), onExpiry: timerCallback, layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
+{% if sitting.is_timed %}
+$('#timer').countdown({until: new $.countdown.UTCDate({{ sitting.timerstring }}), expiryUrl: '{% url 'sitting_end' sitting.id %}', layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
+{% endif %}
 
 function timerCallback() {
     alert('times up');
@@ -20,9 +23,7 @@ function timerCallback() {
 <img src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" />
 </div>
 <div id="test">
-    <div id="timer" class="pull-right">
-    <i class="icon-time"> </i>12:45
-    </div>
+    <div id="timer" class="pull-right"></div>
     <div id="test_question">
         <div id="test_question_description">{{ question.description|safe }}</div>
             <div id="test_question_answer">
@@ -30,7 +31,7 @@ function timerCallback() {
             {% csrf_token %}
             <ul>
             {% for item in form.answer %}
-                <li>{{ item|safe }}</li>
+                <li><span class="test_review_checkmark">{% if not sitting.is_active %}{% if forloop.counter0 == question.answer_idx %}<i class="icon-ok"> </i>{% endif %}{% endif %}</span>{{ item|safe }}</li>
             {% endfor %}
             </ul>
             {% if question.back %}

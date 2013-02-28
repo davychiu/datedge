@@ -19,9 +19,9 @@ for idx, score in enumerate(scaled_scores):
 
 for n in range(1,6):
     test = ET.parse('testdata/' + str(n) + 'testdata.xml')
-    text1 = "'" + open('testdata/' + str(n) + 'text_1.txt','r').read().replace("'","&#39;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
-    text2 = "'" + open('testdata/' + str(n) + 'text_2.txt','r').read().replace("'","&#39;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
-    text3 = "'" + open('testdata/' + str(n) + 'text_3.txt','r').read().replace("'","&#39;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
+    text1 = "'" + open('testdata/' + str(n) + 'text_1.txt','r').read().replace("'","&apos;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
+    text2 = "'" + open('testdata/' + str(n) + 'text_2.txt','r').read().replace("'","&apos;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
+    text3 = "'" + open('testdata/' + str(n) + 'text_3.txt','r').read().replace("'","&apos;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
     test_id = "1"
     questions =  test.findall('.//question')
 
@@ -33,18 +33,18 @@ for n in range(1,6):
         for i, a in enumerate(answers):
             if a.get('correct') == "true":
                 answer_id = str(i)
-        opt1 = "'" + " ".join(answers[0][0].text.replace('\n','').replace("'","&#39;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
-        opt2 = "'" + " ".join(answers[1][0].text.replace('\n','').replace("'","&#39;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
-        opt3 = "'" + " ".join(answers[2][0].text.replace('\n','').replace("'","&#39;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
+        opt1 = "'" + " ".join(answers[0][0].text.replace('\n','').replace("'","&apos;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
+        opt2 = "'" + " ".join(answers[1][0].text.replace('\n','').replace("'","&apos;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
+        opt3 = "'" + " ".join(answers[2][0].text.replace('\n','').replace("'","&apos;").replace('"',"&quot;").split()).replace("<html>","").replace("</html>","") + "'"
         try:
-            opt4 = "'" + " ".join(answers[3][0].text.replace('\n','').split()).replace("'","&#39;").replace('"',"&quot;").replace("<html>","").replace("</html>","") + "'"
+            opt4 = "'" + " ".join(answers[3][0].text.replace('\n','').split()).replace("'","&apos;").replace('"',"&quot;").replace("<html>","").replace("</html>","") + "'"
         except IndexError:
             opt4 = "''"
         try:
-            opt5 = "'" + " ".join(answers[4][0].text.replace('\n','').split()).replace("'","&#39;").replace('"',"&quot;").replace("<html>","").replace("</html>","") + "'"
+            opt5 = "'" + " ".join(answers[4][0].text.replace('\n','').split()).replace("'","&apos;").replace('"',"&quot;").replace("<html>","").replace("</html>","") + "'"
         except IndexError:
             opt5 = "''"
-        description = "'" + " ".join(q.find('text').text.replace('\n','').replace("'","&#39;").replace('"',"&quot;").replace("<html>","").replace("</html>","").split()) + "'"
+        description = "'" + " ".join(q.find('text').text.replace('\n','').replace("'","&apos;").replace('"',"&quot;").replace("<html>","").replace("</html>","").split()) + "'"
         text_id = q.find('additionalTextPath').text[11]
 
         values = ", ".join([str(q_id+(n-1)*50+1), str(n), text_id, answer_id, opt1, opt2, opt3, opt4, opt5, description])

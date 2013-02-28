@@ -17,13 +17,20 @@
     <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
     <span class="score">{{ item.sittings.0.score }} / {{ item.sittings.0.test.question_set.count }}</span><br />
     <span class="percent">{{item.sittings.0.score_percent }}</span><br />
-    <span class="timesince pull-right"><strong>{{ item.sittings.0.modified_date|timesince }} ago</strong></span><br />
+    <span class="timesince pull-right"><strong>{{ item.sittings.0.created_date|timesince }} ago</strong></span><br />
     {% endif %}
+    {% if item.sittings.count == 0 %}
+    <span class="notattempted">Not yet attempted.</span>
+    {% elif item.sittings.count > 1 %}
+    <div id="tp_history{{ forloop.counter }}" class="collapse">
     {% for sitting in item.sittings %}
-        Prior Attempt: ({{ sitting.score_scaled }}) {{ sitting.modified_date|timesince }}<br />
-    {% empty %}
-        <span class="notattempted">Not yet attempted.</span>
+        {% if sitting != item.sittings.0 %}
+        Prior Attempt: ({{ sitting.score_scaled }}) {{ sitting.created_date|timesince }}<br />
+        {% endif %}
     {% endfor %}
+    </div>
+    <button type="button" class="btn" data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}">history</button>
+    {% endif %}
     <div class="newsitting"><a href="{% url 'sitting_new' forloop.counter %}">new sitting</a></div>
 </div>
  </div>

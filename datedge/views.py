@@ -5,7 +5,7 @@ from datedge.models import Sitting, Question, Answer, Scaling, Activation, Test
 from datedge.forms import QuestionForm
 from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import date
-from datedge.helpers import activation_required
+from datedge.helpers import activation_required, valid_sitting_required
 import stripe
 
 @login_required
@@ -18,16 +18,12 @@ def home(request):
 
 def account_activate(request, user_id=None):
     today = date.today()
-    expiry = date(today.year + 1, today.month, today.day)
+    expiry = date(today.year, today.month + 6, today.day)
     if not user_id:
         activation = Activation(user=request.user, expiry=expiry)
         activation.save()
     # else check admin and activate user
     return HttpResponse("account_activate")
-
-@login_required
-def account_home(request):
-    return HttpResponse("account_home")
 
 @login_required
 def trial(request):
@@ -43,12 +39,14 @@ def trial(request):
     return render(request, 'sitting.html', {'sitting': sitting, 'question': question})
 
 @login_required
+@activation_required
+@valid_sitting_required
 def sitting_results(request, sitting_id):
     sitting = get_object_or_404(Sitting, pk=sitting_id)
     return render(request, 'results.html', {'sitting': sitting})
 
 @login_required
-@user_passes_test(activation_required, '/purchase/')
+@activation_required
 def sitting_new(request, test_id, is_timed=False):
     # check if no active sitting exists
     try:
@@ -60,8 +58,8 @@ def sitting_new(request, test_id, is_timed=False):
     return render(request, 'sitting.html', {'sitting': sitting, 'question': question})
 
 @login_required
+@activation_required
 def sitting_question(request, sitting_id, question_id):
-
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question = sitting.test.question_set.all()[int(question_id)-1]
     try:
@@ -74,18 +72,19 @@ def sitting_question(request, sitting_id, question_id):
     except IndexError:
         question.next = None
     question.text = getattr(sitting.test, 'text' + str(question.text_idx))
-    options = [getattr(question, 'option' + str(idx)) for idx in range(1,5)]
+    options = [getattr(question, 'option' + str(idx)) for idx in range(1,6)]
     if request.POST:
         form = QuestionForm(request.POST, options=options)
         if form.is_valid():
             #save answer
-            answer_idx = form.cleaned_data['answer'] or None
-            if not answer:
-                answer = Answer(sitting=sitting, question=question, user=request.user, answer_idx=answer_idx)
-                answer.save()
-            if answer.answer_idx is not answer_idx:
-                answer.answer_idx = answer_idx
-                answer.save()
+            if sitting.is_active:
+                answer_idx = form.cleaned_data['answer'] or None
+                if not answer:
+                    answer = Answer(sitting=sitting, question=question, user=request.user, answer_idx=answer_idx)
+                    answer.save()
+                if answer.answer_idx is not answer_idx:
+                    answer.answer_idx = answer_idx
+                    answer.save()
             #return next/prev question
             offset = 1 if "submit_next" in request.POST else -1
             return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
@@ -97,21 +96,23 @@ def sitting_question(request, sitting_id, question_id):
         return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
 
 @login_required
-@user_passes_test(activation_required, '/purchase/')
+@activation_required
 def sitting_mark(request, sitting_id, question_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question = sitting.test.question_set.all()[int(question_id)-1]
-    # check if no answer exists
-    try:
-        answer = sitting.answer_set.filter(question_id=question_id)[0]
-        answer.is_marked = not answer.is_marked
-        answer.save()
-    except Answer.DoesNotExist:
-        answer = Answer(user=request.user, sitting=sitting, question_id=question_id, is_marked=True)
-        answer.save()
-    return render(request, 'question.html', {'sitting': sitting, 'question': question})
+    if sitting.is_active:
+        # check if no answer exists
+        try:
+            answer = sitting.answer_set.filter(question_id=question_id)[0]
+            answer.is_marked = not answer.is_marked
+            answer.save()
+        except Answer.DoesNotExist:
+            answer = Answer(user=request.user, sitting=sitting, question_id=question_id, is_marked=True)
+            answer.save()
+    return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': question_id}))
 
 @login_required
+@activation_required
 def sitting_review(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question_data = []
@@ -126,17 +127,18 @@ def sitting_review(request, sitting_id):
     return render(request, 'review.html', {'sitting': sitting, 'question_data': question_data})
 
 @login_required
+@activation_required
 def sitting_results(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     return render(request, 'results.html', {'sitting': sitting})
 
 @login_required
-@user_passes_test(activation_required, '/purchase/')
+@activation_required
 def sitting_end(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     sitting.is_active = False
     sitting.save()
-    return HttpResponse('sitting_end')
+    return HttpResponseRedirect(reverse('sitting_results', kwargs={'sitting_id': sitting_id}))
 
 def purchase(request):
     return HttpResponse('purchase')
