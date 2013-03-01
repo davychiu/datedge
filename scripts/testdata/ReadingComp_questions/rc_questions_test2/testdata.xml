@@ -409,10 +409,10 @@
             <additionalTextPath>texts/text_2.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>&lt;200/uL is susceptible to opportunistic disease.</text>
+                    <text><![CDATA[<html>&lt; 200/uL is susceptible to opportunistic disease.</html>]]></text>
                 </option>
                 <option id="B">
-                    <text>&gt;350/uL can present with symptoms of dementia.</text>
+                    <text><![CDATA[<html>&gt; 350/uL can present with symptoms of dementia.</html>]]></text>
                 </option>
                 <option id="C">
                     <text>May drop to zero during chronic infection instantly leading to death.</text>
@@ -530,7 +530,7 @@
             </answers>
         </question>
         <question id="25">
-            <text>The hallmark of HIV acts to:</text>
+            <text>The hallmark of HIV is to:</text>
             <imgPath/>
             <additionalTextPath>texts/text_2.txt</additionalTextPath>
             <answers>
@@ -614,13 +614,13 @@
             <additionalTextPath>texts/text_2.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>&lt;200/uL; Lisa is currently presenting as a case of AIDS</text>
+                    <text><![CDATA[<html>&lt; 200/uL; Lisa is currently presenting as a case of AIDS.</html>]]></text>
                 </option>
                 <option id="B">
-                    <text>&gt;350/uL; Lisa is just in the early stage of AIDS dementia complex</text>
+                    <text><![CDATA[<html>&gt; 350/uL; Lisa is just in the early stage of AIDS dementia complex.</html>]]></text>
                 </option>
                 <option id="C">
-                    <text>Between 200 - 350/uL; Lisa is near the end-stage of AIDS</text>
+                    <text>Between 200 - 350/uL; Lisa is near the end-stage of AIDS.</text>
                 </option>
                 <option id="D" correct="true">
                     <text>At any level, Lisa is still a case of HIV and diagnosis of AIDS is still unknown.</text>

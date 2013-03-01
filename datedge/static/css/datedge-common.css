@@ -8,15 +8,56 @@ footer {
     margin: 0 auto !important;
     float: none !important;
 }
+.sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:250px;
+}
+@media (max-width: 907px) {
+    .sidebar-nav-fixed {
+        position:static;
+        width:auto;
+    }
+}
+@media (max-width: 979px) {
+    .sidebar-nav-fixed {
+        top:70px;
+    }
+}
 div .userhome {
 }
+div .userhome .testpanel_container {
+    position: relative;
+}
+div .userhome .testpanel_container .new_button  {
+    position: absolute;
+    right: -15px;
+    top: 35px;
+}
+div .userhome .testpanel_container .review_button {
+    position: absolute;
+    right: -15px;
+    top: 85px;
+}
+.review_button a, .new_button a, #backarrow input, #nextarrow input, #bookmark a, #review a, #end a {
+    outline: none;
+}
 div .userhome .testpanel {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 div .userhome .testpanel h4 {
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
     background-color: #378d42;
     padding: 3px 20px;
     color: #fff;
@@ -24,6 +65,19 @@ div .userhome .testpanel h4 {
 }
 div .userhome .testpanel .tp_content {
     padding: 30px 10px 5px 10px;
+    min-height: 100px;
+}
+div .userhome .testpanel .tp_history {
+    padding: 0px 10px;
+    margin-top: 15px;
+    background-color: #ddd;
+}
+div .userhome .testpanel .tp_history_control {
+    background-color: #aaa;
+    text-align: center;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 div .userhome .testpanel .tp_content .scaled {
     margin-top: 18px;
@@ -33,6 +87,7 @@ div .userhome .testpanel .tp_content .scaled {
 div .userhome .testpanel .tp_content .score, div .userhome .testpanel .tp_content .percent {
     color: grey;
     font-size: 30px;
+    line-height: 28px;
 }
 div #test_container {
     position: relative;
@@ -58,9 +113,11 @@ div #test h1 {
 div #test_question {
     padding-top: 20px;
     padding-bottom: 16px;
-    min-height: 230px;
+    min-height: 200px;
 }
-
+div .divider {
+    padding-bottom: 16px;
+}
 div #test_question_description {
     padding-bottom: 25px;
 }
@@ -83,8 +140,28 @@ div #test_question_text {
 
 div #backarrow {
     position: absolute;
-    left: -18px;
-    top: 100px;
+    left: -14px;
+    top: 80px;
+}
+div #nextarrow {
+    position: absolute;
+    right: -13px;
+    top: 80px;
+}
+div #bookmark {
+    position: absolute;
+    right: -13px;
+    top: 180px;
+}
+div #review {
+    position: absolute;
+    right: -13px;
+    top: 243px;
+}
+div #end {
+    position: absolute;
+    right: -13px;
+    top: 400px;
 }
 
 div #test_question_text .content, #test_review_content .content {

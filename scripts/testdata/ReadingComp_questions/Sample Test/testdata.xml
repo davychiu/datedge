@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<section value="Reading Comprehension Sample Test">
+    <questionsCount>17</questionsCount>
+    <time>15</time>
+    <description>
+        <![CDATA[<html>Sample Reading Comprehension Test<br><br>
+            
+            Time Limit: 15 minutes (Actual test will contain three passages with questions and the time will be 50 minutes.)
+</html>]]></description>
+    <questions>
+        <question id="0">
+            <text>Tendons contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type I
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type XII
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Type IV
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="1">
+            <text>Cartilages contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type II
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type IX</text>
+                </option>
+                <option id="C">
+                    <text>Fibril-associated collagen
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="2">
+            <text>Blood vessels such as arteries contain what type(s) of collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Type II
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Type IX
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>Fibril-forming collagen
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="3">
+            <text>Brenda, a 25-year old female came into the clinic for check-up. Brenda was born with stretchy skin and loose joints. Brenda is 5 months pregnant and wanted to ask about her condition. Which of the following would you tell Brenda?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Her disease resulted from an inheritable deficiency of collagen-processing enzymes.</text>
+                </option>
+                <option id="B">
+                    <text>Her disease may have resulted from mutations in the protein sequence of collagen types I, II or III.</text>
+                </option>
+                <option id="C">
+                    <text>Her disease only manifests with stretchy skin and loose joints; there are no other potentially lethal problems to worry about.</text>
+                </option>
+                <option id="D">
+                    <text>Collagen containing mutant chains is not secreted and is degraded or accumulated to high levels in extracellular compartments.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="4">
+            <text>In Ehlers-Danlos syndrome, the collagen types affected can manifest defects in:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Arteries
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Tendons
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Cartilages
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="5">
+            <text>Which of the following amino acids maximizes interchain hydrogen bond formation in the collagen
+                triple-helix structure?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Proline
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Glycine
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Hydroxylysine
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Hydroxyproline
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="6">
+            <text>Which of the following amino acids causes kinks in the peptide chain of the collagen triple-helix
+                structure?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Proline
+                    </text>
+                </option>
+                <option id="B">
+                    <text>Glycine
+                    </text>
+                </option>
+                <option id="C">
+                    <text>Hydroxylysine
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Hydroxyproline
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="7">
+            <text>Which of the following statements is NOT true about fibrous proteins?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They have axial ratios greater than 10.
+                    </text>
+                </option>
+                <option id="B" correct="true">
+                    <text>They are soluble as hydrophobic side chains in the center of structure.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>They have long parallel polypeptide chains with cross linkages at intervals forming long
+                        sheets.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Its structure is obtained by combining specific amino acids into regular, secondary,
+                        structural elements.
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>Anna, a 20-year old female just had her prenatal ultrasound. Her obstetrician told her that the ultrasound revealed bowing of long bones. Which of the following is NOT true about the baby's condition?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Her baby may have osteogenesis imperfecta.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>This type of disorder is severe and may die in utero due to lung problems.</text>
+                </option>
+                <option id="C">
+                    <text>Her baby may suffer from retarded wound healing and twisted spine in the future.</text>
+                </option>
+                <option id="D">
+                    <text>This type of disorder usually presents with fractures due to minor trauma in early infancy.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>Which of the following does NOT describe glycine?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>It is the smallest amino acid</text>
+                </option>
+                <option id="B">
+                    <text>It is found in every 3rd position of the polypeptide chain.</text>
+                </option>
+                <option id="C" correct="true">
+                    <text>It is the most commonly mutated amino acid in Marfan's syndrome.</text>
+                </option>
+                <option id="D">
+                    <text>Its mutation prevents folding of the protein into a triple-helical structure.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="10">
+            <text>Which of the following promotes collapse of the alveolar walls if left unopposed?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C" correct="true">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="11">
+            <text>Marfan's syndrome results from mutation of which of the following?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E" correct="true">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="12">
+            <text>Marfan's syndrome results from mutation of which of the following?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text><![CDATA[<html>Elastin</html>]]></text>
+                </option>
+                <option id="B">
+                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                </option>
+                <option id="C">
+                    <text><![CDATA[<html>Elastase</html>]]></text>
+                </option>
+                <option id="D" correct="true">
+                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                </option>
+                <option id="E">
+                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                </option>
+            </answers>
+        </question>
+        <question id="13">
+            <text>Which of the following statements does NOT describe type I collagen?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They are found in supporting elements of high tensile strength.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>They form banding patterns under the electron microscope.
+                    </text>
+                </option>
+                <option id="C" correct="true">
+                    <text>They are found in skin, bone, tendon, and cartilages.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>Their structure reflects the regular staggered packing of individual collagen molecules.
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="14">
+            <text>True about the different functions of collagen:
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>In bones, collagen may be bundled in tight, parallel fibers that provide great strength.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>In the cornea of the eye, collagen may be dispersed as a gel that gives support to the
+                        structure.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>In tendons, collagen fibers are arranged at an angle to each other to resist mechanical shear
+                        from any direction.
+                    </text>
+                </option>
+                <option id="D">
+                    <text>All of the above
+                    </text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+        <question id="15">
+            <text>Type III collagen:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A" correct="true">
+                    <text>Defects in type III collagen can cause potentially lethal blood vessel problems.</text>
+                </option>
+                <option id="B">
+                    <text>Belongs to network-forming group of collagens.</text>
+                </option>
+                <option id="C">
+                    <text>Can be found in distensible tissues such as cartilages and ligaments.</text>
+                </option>
+                <option id="D">
+                    <text>They link collagen fibrils to one another in the extracellular matrix.</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>The kidneys and lungs contain sheet-like structures that can function as a semipermeable filtration
+                barrier for macromolecules. Which of the following statements does NOT describe these sheet-like
+                structures?
+            </text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>They contain fibril-forming collagens.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>They contain type VII collagens.
+                    </text>
+                </option>
+                <option id="C">
+                    <text>They provide mechanical support for adjacent cells.
+                    </text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both A and B
+                    </text>
+                </option>
+                <option id="E">
+                    <text>All of the above
+                    </text>
+                </option>
+            </answers>
+        </question>
+    </questions>
+</section>

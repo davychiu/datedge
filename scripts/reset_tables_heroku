@@ -1,0 +1,1 @@
+echo "delete from datedge_answer; delete from datedge_sitting; delete from datedge_scaling; delete from datedge_question; delete from datedge_test;" | heroku pg:psql --app datedge

@@ -10,419 +10,379 @@
         <![CDATA[<html>This section is comprised of 50 questions and must be completed within 60 minutes.<br><br>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.<br><br>The reading passages are longer than the screen, so they are placed in a window.  A scroll bar to the right of the passage can be used to scroll down to read the full passage.</html>]]></description>
     <questions>
         <question id="0">
-            <text>Tendons contain what type(s) of collagen?
-            </text>
+            <text>TRUE about embryogenesis:</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>Type I
-                    </text>
+                    <text>The process of cleavage partitions the egg substance into an increasing number of smaller cells with smaller number of chromosomes.</text>
                 </option>
-                <option id="B">
-                    <text>Type XII
-                    </text>
+                <option id="B" correct="true">
+                    <text>At the end of gastrulation, when all the endoderm is inside, the original egg has rotated about 90 degrees.</text>
                 </option>
                 <option id="C">
-                    <text>Type IV
-                    </text>
+                    <text>Epiboly and invagination causes a change in the overall mass of the embryo.</text>
                 </option>
-                <option id="D" correct="true">
-                    <text>Both A and B
-                    </text>
+                <option id="D">
+                    <text>Amphibians, like frogs, undergo meroblastic cleavage.</text>
                 </option>
                 <option id="E">
-                    <text>All of the above
-                    </text>
+                    <text>All of the above.</text>
                 </option>
             </answers>
         </question>
         <question id="1">
-            <text>Cartilages contain what type(s) of collagen?
-            </text>
+            <text>The mesoderm gives rise to which part(s) of the body?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
-                <option id="A">
-                    <text>Type II
-                    </text>
+                <option id="A" correct="true">
+                    <text>Muscles</text>
                 </option>
                 <option id="B">
-                    <text>Type IX</text>
+                    <text>Cartilage elements</text>
                 </option>
                 <option id="C">
-                    <text>Fibril-associated collagen
-                    </text>
+                    <text>Nervous system</text>
                 </option>
                 <option id="D">
-                    <text>Both A and B
-                    </text>
+                    <text>Mouth </text>
                 </option>
-                <option id="E" correct="true">
-                    <text>All of the above
-                    </text>
+                <option id="E">
+                    <text>None of the above</text>
                 </option>
             </answers>
         </question>
         <question id="2">
-            <text>Blood vessels such as arteries contain what type(s) of collagen?
-            </text>
+            <text>Kevin, a 20 year-old male, came into the veterinarian's clinic to consult something regarding his dog named Troy. According to Kevin, Troy seemed "not to hear" anything since his puppy days. Kevin also reported that he also had a hard time calling Troy and that Troy seldom barks. After some tests, the veterinarian said that Troy is deaf and that Troy did not develop his sense organ for hearing. Defect in which germ layer caused Troy's deafness?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>Type II
-                    </text>
+                    <text>Endoderm</text>
                 </option>
                 <option id="B">
-                    <text>Type IX
-                    </text>
+                    <text>Mesoderm</text>
                 </option>
-                <option id="C" correct="true">
-                    <text>Fibril-forming collagen
-                    </text>
+                <option id="C">
+                    <text>Entoderm</text>
                 </option>
-                <option id="D">
-                    <text>Both A and B
-                    </text>
+                <option id="D" correct="true">
+                    <text>Ectoderm </text>
                 </option>
                 <option id="E">
-                    <text>All of the above
-                    </text>
+                    <text>Chordamesoderm </text>
                 </option>
             </answers>
         </question>
-           <question id="3">
-            <text>Brenda, a 25-year old female came into the clinic for check-up. Brenda was born with stretchy skin and loose joints. Brenda is 5 months pregnant and wanted to ask about her condition. Which of the following would you tell Brenda?
-</text>
+        
+        <question id="3">
+            <text>Knowing a defect in this germ layer, what other body parts of Troy could also have been affected?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
-                <option id="A" correct="true">
-                    <text>Her disease resulted from an inheritable deficiency of collagen-processing enzymes.</text>
+                <option id="A">
+                    <text>Anal canal</text>
                 </option>
                 <option id="B">
-                    <text>Her disease may have resulted from mutations in the protein sequence of collagen types I, II or III.</text>
+                    <text>Myotomes</text>
                 </option>
                 <option id="C">
-                    <text>Her disease only manifests with stretchy skin and loose joints; there are no other potentially lethal problems to worry about.</text>
+                    <text>Visceral peritoneum</text>
                 </option>
                 <option id="D">
-                    <text>Collagen containing mutant chains is not secreted and is degraded or accumulated to high levels in extracellular compartments.</text>
+                    <text>Larynx</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>Nervous system</text>
                 </option>
             </answers>
         </question>
         <question id="4">
-            <text>In Ehlers-Danlos syndrome, the collagen types affected can manifest defects in:
-            </text>
+            <text>Kevin also asked the veterinarian if Troy's deafness would affect his reproductive system. According to Kevin, he wants to have puppies from Troy that's why he is concerned about this matter. The veterinarian told Kevin that Troy can still have puppies because the reproductive system arises from a different germ layer called:</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>Arteries
-                    </text>
+                    <text>Endoderm</text>
                 </option>
-                <option id="B">
-                    <text>Tendons
-                    </text>
+                <option id="B" correct="true">
+                    <text>Mesoderm</text>
                 </option>
                 <option id="C">
-                    <text>Cartilages
-                    </text>
+                    <text>Entoderm</text>
                 </option>
-                <option id="D" correct="true">
-                    <text>Both A and B
-                    </text>
+                <option id="D">
+                    <text>Ectoderm</text>
                 </option>
                 <option id="E">
-                    <text>All of the above
-                    </text>
+                    <text>Chordamesoderm</text>
                 </option>
             </answers>
         </question>
         <question id="5">
-            <text>Which of the following amino acids maximizes interchain hydrogen bond formation in the collagen
-                triple-helix structure?
-            </text>
+            <text>Which of the following processes causes obliteration of the blastocoel?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>Proline
-                    </text>
+                    <text>Cleavage</text>
                 </option>
                 <option id="B">
-                    <text>Glycine
-                    </text>
+                    <text>Epiboly</text>
                 </option>
-                <option id="C">
-                    <text>Hydroxylysine
-                    </text>
+                <option id="C" correct="true">
+                    <text>Invagination</text>
                 </option>
-                <option id="D" correct="true">
-                    <text>Hydroxyproline
-                    </text>
+                <option id="D">
+                    <text>Gastrulation</text>
+                </option>
+                <option id="E">
+                    <text>None of the above</text>
                 </option>
             </answers>
         </question>
         <question id="6">
-            <text>Which of the following amino acids causes kinks in the peptide chain of the collagen triple-helix
-                structure?
-            </text>
+            <text>Which of the following statements are NOT true about the nervous system formation?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
-                <option id="A" correct="true">
-                    <text>Proline
-                    </text>
+                <option id="A">
+                    <text>The nervous system starts dorsally as a pair of neural folds.</text>
                 </option>
-                <option id="B">
-                    <text>Glycine
-                    </text>
+                <option id="B" correct="true">
+                    <text>Motor roots grow out dorsally from the cord.</text>
                 </option>
                 <option id="C">
-                    <text>Hydroxylysine
-                    </text>
+                    <text>The nervous system originates from the ectoderm.</text>
                 </option>
                 <option id="D">
-                    <text>Hydroxyproline
-                    </text>
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
                 </option>
             </answers>
         </question>
         <question id="7">
-            <text>Which of the following statements is NOT true about fibrous proteins?
+            <text>Which of the following is the counterpart of the mouth cavity during the embryonic stage?
             </text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>They have axial ratios greater than 10.
-                    </text>
-                </option>
-                <option id="B" correct="true">
-                    <text>They are soluble as hydrophobic side chains in the center of structure.
-                    </text>
-                </option>
-                <option id="C">
-                    <text>They have long parallel polypeptide chains with cross linkages at intervals forming long
-                        sheets.
-                    </text>
-                </option>
-                <option id="D">
-                    <text>Its structure is obtained by combining specific amino acids into regular, secondary,
-                        structural elements.
-                    </text>
-                </option>
-            </answers>
-        </question>
-           <question id="8">
-            <text>Anna, a 20-year old female just had her prenatal ultrasound. Her obstetrician told her that the ultrasound revealed bowing of long bones. Which of the following is NOT true about the baby's condition?</text>
-            <imgPath/>
-            <additionalTextPath>texts/text_1.txt</additionalTextPath>
-            <answers>
-                <option id="A">
-                    <text>Her baby may have osteogenesis imperfecta.</text>
-                </option>
-                <option id="B" correct="true">
-                    <text>This type of disorder is severe and may die in utero due to lung problems.</text>
-                </option>
-                <option id="C">
-                    <text>Her baby may suffer from retarded wound healing and twisted spine in the future.</text>
-                </option>
-                <option id="D">
-                    <text>This type of disorder usually presents with fractures due to minor trauma in early infancy.</text>
-                </option>
-            </answers>
-        </question>
-           <question id="9">
-            <text>Which of the following does NOT describe glycine?</text>
-            <imgPath/>
-            <additionalTextPath>texts/text_1.txt</additionalTextPath>
-            <answers>
-                <option id="A">
-                    <text>It is the smallest amino acid</text>
+                    <text>Epimere</text>
                 </option>
                 <option id="B">
-                    <text>It is found in every 3rd position of the polypeptide chain.</text>
+                    <text>Proctodeum</text>
                 </option>
-                <option id="C" correct="true">
-                    <text>It is the most commonly mutated amino acid in Marfan's syndrome.</text>
+                <option id="C">
+                    <text>Neural crest</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Stomodeum</text>
+                </option>
+                <option id="E">
+                    <text>Hypomere </text>
+                </option>
+            </answers>
+        </question>
+        <question id="8">
+            <text>NOT true about gastrulation:</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>The gastrula consists of an outer layer of ectoderm from cells of the animal hemisphere.
+                    </text>
+                </option>
+                <option id="B">
+                    <text>At the end of gastrulation, the former lower end of the axis then at the completed blastopore marks the posterior the end of the future animal.</text>
+                </option>
+                <option id="C">
+                    <text>After gastrulation major differentiation of the embryo begins.</text>
                 </option>
                 <option id="D">
-                    <text>Its mutation prevents folding of the protein into a triple-helical structure.</text>
+                    <text>All of the above</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="9">
+            <text>The notochord gives rise to which of the following?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Bile duct</text>
+                </option>
+                <option id="B">
+                    <text>Smooth muscles of the gut</text>
+                </option>
+                <option id="C">
+                    <text>Excretory organs</text>
+                </option>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
+                </option>
+                <option id="E">
+                    <text>All of the above</text>
                 </option>
             </answers>
         </question>
         <question id="10">
-            <text>Which of the following promotes collapse of the alveolar walls if left unopposed?
-            </text>
+            <text>Which of the following processes forms a ring of involuting tissue, moves over and increasingly encloses the yolk-laden vegetal hemisphere?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text><![CDATA[<html>Elastin</html>]]></text>
+                    <text>Cleavage</text>
                 </option>
-                <option id="B">
-                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                <option id="B" correct="true">
+                    <text>Epiboly</text>
                 </option>
-                <option id="C" correct="true">
-                    <text><![CDATA[<html>Elastase</html>]]></text>
+                <option id="C">
+                    <text>Invagination</text>
                 </option>
                 <option id="D">
-                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                    <text>Gastrulation</text>
                 </option>
                 <option id="E">
-                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                    <text>None of the above</text>
                 </option>
             </answers>
         </question>
         <question id="11">
-            <text>Marfan's syndrome results from mutation of which of the following?
-            </text>
+            <text>Which of the following statements are NOT true?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text><![CDATA[<html>Elastin</html>]]></text>
+                    <text>The outer surface of the optic vesicle becomes concave by invagination and forms the retina.</text>
                 </option>
                 <option id="B">
-                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                    <text>The upper most mesoderm is called hypomere at the either side of the nerve tube and notochord and forms the somites.</text>
                 </option>
                 <option id="C">
-                    <text><![CDATA[<html>Elastase</html>]]></text>
+                    <text>The ectoderm of the primitive gut becomes the lining of the digestive tract.</text>
                 </option>
-                <option id="D">
-                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                <option id="D" correct="true">
+                    <text>Both B and C</text>
                 </option>
-                <option id="E" correct="true">
-                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                <option id="E">
+                    <text>All of the above</text>
                 </option>
             </answers>
         </question>
         <question id="12">
-            <text>Marfan's syndrome results from mutation of which of the following?
-            </text>
+            <text>In each stage of embryonic development, different germ layers are formed. Which of the following stages correctly matches the germ layers?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text><![CDATA[<html>Elastin</html>]]></text>
+                    <text>Blastula: hypomere, mesomere, epimere</text>
                 </option>
                 <option id="B">
-                    <text><![CDATA[<html>Tropoelastin</html>]]></text>
+                    <text>Gastrula: neural folds, neural crests, neural tubes</text>
                 </option>
                 <option id="C">
-                    <text><![CDATA[<html>Elastase</html>]]></text>
+                    <text>Notochord: ectoderm, mesoderm, endoderm</text>
                 </option>
-                <option id="D" correct="true">
-                    <text><![CDATA[<html>Fibrillin</html>]]></text>
+                <option id="D">
+                    <text>All of the above</text>
                 </option>
-                <option id="E">
-                    <text><![CDATA[<html>&alpha;<sup>1</sup-AT</html>]]></text>
+                <option id="E" correct="true">
+                    <text>None of the above</text>
                 </option>
             </answers>
         </question>
         <question id="13">
-            <text>Which of the following statements does NOT describe type I collagen?
-            </text>
+            <text>Which of the following statements are TRUE?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>They are found in supporting elements of high tensile strength.
-                    </text>
+                    <text>Cleavage of the zygote forms the blastomeres with an equal number of chromosomes.</text>
                 </option>
                 <option id="B">
-                    <text>They form banding patterns under the electron microscope.
-                    </text>
+                    <text>Involution of cells away from the blastopore leads to the formation of archenteron.</text>
                 </option>
-                <option id="C" correct="true">
-                    <text>They are found in skin, bone, tendon, and cartilages.
-                    </text>
+                <option id="C">
+                    <text>The entoderm is derived from the cells of the vegetal hemisphere.</text>
                 </option>
                 <option id="D">
-                    <text>Their structure reflects the regular staggered packing of individual collagen molecules.
-                    </text>
+                    <text>Both B and C</text>
+                </option>
+                <option id="E" correct="true">
+                    <text>All of the above</text>
                 </option>
             </answers>
         </question>
         <question id="14">
-            <text>True about the different functions of collagen:
-            </text>
-            <imgPath/>
-            <additionalTextPath>texts/text_1.txt</additionalTextPath>
-            <answers>
-                <option id="A">
-                    <text>In bones, collagen may be bundled in tight, parallel fibers that provide great strength.
-                    </text>
-                </option>
-                <option id="B">
-                    <text>In the cornea of the eye, collagen may be dispersed as a gel that gives support to the
-                        structure.
-                    </text>
-                </option>
-                <option id="C">
-                    <text>In tendons, collagen fibers are arranged at an angle to each other to resist mechanical shear
-                        from any direction.
-                    </text>
-                </option>
-                <option id="D">
-                    <text>All of the above
-                    </text>
-                </option>
-                <option id="E" correct="true">
-                    <text>None of the above
-                    </text>
-                </option>
-            </answers>
-        </question>
-           <question id="15">
-            <text>Type III collagen:</text>
+            <text>Peacocks are well known for their feathers that are of crescent sheens of blue and green. These external coverings of peacocks are a derivative of which germ layer?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A" correct="true">
-                    <text>Defects in type III collagen can cause potentially lethal blood vessel problems.</text>
+                    <text>Ectoderm</text>
                 </option>
                 <option id="B">
-                    <text>Belongs to network-forming group of collagens.</text>
+                    <text>Mesoderm</text>
                 </option>
                 <option id="C">
-                    <text>Can be found in distensible tissues such as cartilages and ligaments.</text>
+                    <text>Endoderm</text>
                 </option>
                 <option id="D">
-                    <text>They link collagen fibrils to one another in the extracellular matrix.</text>
+                    <text>Entoderm</text>
+                </option>
+                <option id="E">
+                    <text>Chordamesoderm</text>
                 </option>
             </answers>
         </question>
-        <question id="16">
-            <text>The kidneys and lungs contain sheet-like structures that can function as a semipermeable filtration
-                barrier for macromolecules. Which of the following statements does NOT describe these sheet-like
-                structures?
-            </text>
+        <question id="15">
+            <text>If an abnormality in embryonic development occurred in the notochord, which of the following might happen?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A">
-                    <text>They contain fibril-forming collagens.
-                    </text>
+                    <text>The developing animal might be blind.</text>
                 </option>
                 <option id="B">
-                    <text>They contain type VII collagens.
-                    </text>
+                    <text>The developing animal might not have a patent anus.</text>
                 </option>
                 <option id="C">
-                    <text>They provide mechanical support for adjacent cells.
-                    </text>
+                    <text>The developing animal might have soft, brittle and weak vertebrae.</text>
                 </option>
                 <option id="D" correct="true">
-                    <text>Both A and B
-                    </text>
+                    <text>Both B and C</text>
                 </option>
                 <option id="E">
-                    <text>All of the above
-                    </text>
+                    <text>All of the above</text>
+                </option>
+            </answers>
+        </question>
+        <question id="16">
+            <text>Which of the following statements are correct?</text>
+            <imgPath/>
+            <additionalTextPath>texts/text_1.txt</additionalTextPath>
+            <answers>
+                <option id="A">
+                    <text>Sclerotomes give rise to voluntary muscles.</text>
+                </option>
+                <option id="B" correct="true">
+                    <text>The sendoderm gives rise to the linings of the digestive tract.</text>
+                </option>
+                <option id="C">
+                    <text>The mesoderm gives rise to the trachea.</text>
+                </option>
+                <option id="D">
+                    <text>The hindbrain gives rise to the diencephalon.</text>
+                </option>
+                <option id="E">
+                    <text>The ectoderm gives rise to the larynx.</text>
                 </option>
             </answers>
         </question>

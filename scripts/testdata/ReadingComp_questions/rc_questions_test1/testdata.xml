@@ -55,7 +55,7 @@
                 <option id="A">
                     <text>He is suffering from Primary Koch's infection which can be treated for 6 months.</text>
                 </option>
-                <option id="B">g
+                <option id="B">
                     <text>Positive PPD for this patient will be seen at the end of 24 hours.</text>
                 </option>
                 <option id="C" correct="true">

@@ -262,7 +262,7 @@
             </answers>
         </question>
            <question id="12">
-            <text>Which of the following is/are NOT true regarding Johnny's illness?</text>
+            <text>Which of the following is NOT true regarding Johnny's illness?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>

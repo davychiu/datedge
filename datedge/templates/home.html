@@ -4,37 +4,61 @@
 {% block title %}Home{% endblock %}
 
 {% block base_content %}
-<h1>home</h1>
 <div class="row userhome">
-{% for item in test_data %}
-<div class="span8 testpanel">
-<h4>Practice Test {{ forloop.counter }}</h4>
-<div class="tp_content">
-    {% if item.sittings.0 %}
-    <span class="span2 pull-left">
-    <strong>last sitting results</strong>
-    </span>
-    <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
-    <span class="score">{{ item.sittings.0.score }} / {{ item.sittings.0.test.question_set.count }}</span><br />
-    <span class="percent">{{item.sittings.0.score_percent }}</span><br />
-    <span class="timesince pull-right"><strong>{{ item.sittings.0.created_date|timesince }} ago</strong></span><br />
+<div class="span4">
+    <div class="well sidebar-nav sidebar-nav-fixed">
+    <h4>User</h4>
+    {{ user.username }}
+    <br />
+    <h4>Membership Status</h4>
+    {% if user.has_membership %}
+    Unlimited 6-month License<br />
+    Expires: {{ expiry }}
+    {% else %}
+    Trial<br /><br />
+    <button type="button" class="btn btn-warning">Buy Now</button>
     {% endif %}
-    {% if item.sittings.count == 0 %}
-    <span class="notattempted">Not yet attempted.</span>
-    {% elif item.sittings.count > 1 %}
-    <div id="tp_history{{ forloop.counter }}" class="collapse">
-    {% for sitting in item.sittings %}
-        {% if sitting != item.sittings.0 %}
-        Prior Attempt: ({{ sitting.score_scaled }}) {{ sitting.created_date|timesince }}<br />
-        {% endif %}
-    {% endfor %}
     </div>
-    <button type="button" class="btn" data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}">history</button>
+</div>
+<div class="span7 right_pane">
+{% for item in test_data %}
+<div class="testpanel_container">
+    <div class="new_button"><a href="{% url 'sitting_new' forloop.counter %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
+    {% if item.sittings.0 %}
+    <div class="review_button"><a href="{% url 'sitting_review' item.sittings.0.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
     {% endif %}
-    <div class="newsitting"><a href="{% url 'sitting_new' forloop.counter %}">new sitting</a></div>
-</div>
- </div>
-{% endfor %}
-</div>
 
+    <div class="testpanel">
+        <h4>Practice Test {{ forloop.counter }}</h4>
+        <div class="tp_content">
+            {% if item.sittings.0 %}
+            <span class="span2 pull-left">
+            <strong>last sitting results</strong>
+            </span>
+            <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
+            <span class="score">{{ item.sittings.0.score }} / {{ item.sittings.0.test.question_set.count }}</span><br />
+            <span class="percent">{{item.sittings.0.score_percent }}</span><br /><br />
+            <span class="timesince pull-right"><strong>{{ item.sittings.0.created_date|timesince }} ago</strong></span><br />
+            {% endif %}
+            {% if item.sittings.count == 0 %}
+            <span class="span2 pull-left notattempted">Not yet attempted.</span>
+            {% endif %}
+        </div>
+        {% if item.sittings.count > 1 %}
+        <div id="tp_history{{ forloop.counter }}" class="collapse tp_history">
+        {% for sitting in item.sittings %}
+            {% if sitting != item.sittings.0 %}
+            Prior Attempt {{ sitting.created_date|timesince }} ago: score {{ sitting.score_scaled }} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div class="tp_history_control" data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}">
+            <a data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}"><i class="icon-align-justify"></i></a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+    {% endfor %}
+</div>
+</div>
 {% endblock %}

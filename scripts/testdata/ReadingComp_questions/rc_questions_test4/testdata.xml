@@ -89,7 +89,7 @@
             </answers>
         </question>
         <question id="4">
-            <text>Which of the following statements about cloning is/are TRUE?</text>
+            <text>Which of the following statements about cloning are TRUE?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
@@ -243,7 +243,7 @@
             </answers>
         </question>
         <question id="11">
-            <text>Which of the following criteria is/are used to select a vector molecule?</text>
+            <text>Which of the following criteria is used to select a vector molecule?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
@@ -265,7 +265,7 @@
             </answers>
         </question>
         <question id="12">
-            <text>Which of the following vectors is/are very efficient vehicles for inserting DNA into E. coli cells but cannot make infectious particles in vivo?</text>
+            <text>Which of the following vectors are very efficient vehicles for inserting DNA into E. coli cells but cannot make infectious particles in vivo?</text>
             <imgPath/>
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
@@ -292,7 +292,7 @@
             <additionalTextPath>texts/text_1.txt</additionalTextPath>
             <answers>
                 <option id="A" correct="true">
-                    <text>Pulsed- field electrophoresis</text>
+                    <text>Pulsed-field electrophoresis</text>
                 </option>
                 <option id="B">
                     <text>Northern blotting</text>

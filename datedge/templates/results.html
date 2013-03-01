@@ -2,13 +2,21 @@
 {% load url from future %}
 
 {% block base_content %}
-<div id="test">
-<h1>results</h1>
-<div>
-scaled: {{ sitting.score_scaled }}<br />
-score: {{ sitting.score }} / 50<br />
-percent: {{ sitting.score_percent }}
-</div>
+<div id="test_container">
+    <div id="test">
+        <h1>results</h1>
+        <div class="row-fluid">
+            <div class="span4">
+            <h4>results</h4>
+            </div>
+            <div class="span8">
+            scaled: {{ sitting.score_scaled }}<br />
+            score: {{ sitting.score }} / 50<br />
+            percent: {{ sitting.score_percent }}
+            </div>
+        </div>
+        <br />return <a href="{% url 'home' %}">home</a>.
+    </div>
 </div>
 {% endblock %}
 {% block footer %}{% endblock %}

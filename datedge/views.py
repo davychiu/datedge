@@ -12,9 +12,11 @@ import stripe
 def home(request):
     test_data = []
     tests = Test.objects.exclude(id=6)
+    request.user.has_membership = True if request.user.activation_set.filter(expiry__gte=date.today()) else False
+    expiry = request.user.activation_set.filter(expiry__gte=date.today())[0].expiry if request.user.has_membership else None
     for test in tests:
         test_data.append({'test': test, 'sittings': request.user.sitting_set.filter(test=test)[:5]})
-    return render(request, 'home.html', {'test_data': test_data})
+    return render(request, 'home.html', {'test_data': test_data, 'user': request.user, 'expiry': expiry})
 
 def account_activate(request, user_id=None):
     today = date.today()
@@ -28,7 +30,7 @@ def account_activate(request, user_id=None):
 @login_required
 def trial(request):
     test_id = 6
-    is_timed = True
+    is_timed = False
     # check if no active sitting exists
     try:
         sitting = Sitting.objects.get(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
@@ -86,13 +88,15 @@ def sitting_question(request, sitting_id, question_id):
                     answer.answer_idx = answer_idx
                     answer.save()
             #return next/prev question
-            offset = 1 if "submit_next" in request.POST else -1
+            offset = 1 if "submit_next.x" in request.POST else -1
             return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
         else:
             return HttpResponse(str(form.errors)) 
     else:
         answer_idx = answer.answer_idx if hasattr(answer, 'answer_idx') else None
-        form = QuestionForm(options=options, initial={'answer': answer_idx}, auto_id=False)
+        form = QuestionForm(options=options, active=sitting.is_active, initial={'answer': answer_idx}, auto_id=False)
+        question.num = question_id
+        question.is_marked = answer.is_marked if hasattr(answer, 'is_marked') else None
         return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
 
 @login_required
@@ -103,11 +107,11 @@ def sitting_mark(request, sitting_id, question_id):
     if sitting.is_active:
         # check if no answer exists
         try:
-            answer = sitting.answer_set.filter(question_id=question_id)[0]
+            answer = sitting.answer_set.get(question=question.id)
             answer.is_marked = not answer.is_marked
             answer.save()
         except Answer.DoesNotExist:
-            answer = Answer(user=request.user, sitting=sitting, question_id=question_id, is_marked=True)
+            answer = Answer(user=request.user, sitting=sitting, question_id=question.id, is_marked=True)
             answer.save()
     return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': question_id}))
 
@@ -115,6 +119,7 @@ def sitting_mark(request, sitting_id, question_id):
 @activation_required
 def sitting_review(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
+    sitting.incomplete_count = sitting.test.question_set.count() - sitting.complete.count()
     question_data = []
     for question in sitting.test.question_set.all():
         marked = True if question in sitting.test.question_set.filter(answer__is_marked=True, answer__sitting=sitting) else False
@@ -136,8 +141,9 @@ def sitting_results(request, sitting_id):
 @activation_required
 def sitting_end(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
-    sitting.is_active = False
-    sitting.save()
+    if sitting.is_active:
+        sitting.is_active = False
+        sitting.save()
     return HttpResponseRedirect(reverse('sitting_results', kwargs={'sitting_id': sitting_id}))
 
 def purchase(request):

@@ -19,39 +19,54 @@ function timerCallback() {
 {% endblock %}
 {% block base_content %}
 <div id="test_container">
+<form action="" method="post">
+{% if question.back %}
 <div id="backarrow">
-<img src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" />
+<input type="image" src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" name="submit_back" value="back" />
+</div>
+{% endif %}
+{% if question.next %}
+<div id="nextarrow">
+<input type="image" src="{{STATIC_URL|default:"/s/"}}img/next_arrow.png" alt="next" name="submit_next" value="next"/>
+</div>
+{% endif %}
+<div id="bookmark">
+{% if sitting.is_active %}
+    {% if question.is_marked %}
+    <a href="{% url 'sitting_mark' sitting.id question.num %}"><img src="{{STATIC_URL|default:"/s/"}}img/bookmarked.png" alt="mark" /></a>
+    {% else %}
+    <a href="{% url 'sitting_mark' sitting.id question.num %}"><img src="{{STATIC_URL|default:"/s/"}}img/bookmark.png" alt="mark" /></a>
+    {% endif %}
+{% endif %}
+</div>
+<div id="review">
+<a href="{% url 'sitting_review' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/review.png" alt="review" /></a>
 </div>
 <div id="test">
     <div id="timer" class="pull-right"></div>
     <div id="test_question">
-        <div id="test_question_description">{{ question.description|safe }}</div>
-            <div id="test_question_answer">
-            <form action="" method="post">
-            {% csrf_token %}
-            <ul>
-            {% for item in form.answer %}
-                <li><span class="test_review_checkmark">{% if not sitting.is_active %}{% if forloop.counter0 == question.answer_idx %}<i class="icon-ok"> </i>{% endif %}{% endif %}</span>{{ item|safe }}</li>
-            {% endfor %}
-            </ul>
-            {% if question.back %}
-            <input type="submit" name="submit_back" value="back" class="btn" />
-            {% endif %}
-            {% if question.next %}
-            <input type="submit" name="submit_next" value="next" class="btn" />
-            {% endif %}
-            </form>
-            </div>
-            <div class="text-center">
-            <img src="{{STATIC_URL|default:"/s/"}}img/divider.png" alt="" />
-            </div>
+        <div id="test_question_description">{{ question.num }}. {{ question.description|safe }}</div>
+        <div id="test_question_answer">
+        {% csrf_token %}
+        <ul>
+        {% autoescape off %}
+        {% for item in form.answer %}
+            <li><span class="test_review_checkmark">{% if not sitting.is_active %}{% if forloop.counter0 == question.answer_idx %}<i class="icon-ok"> </i>{% endif %}{% endif %}</span>{{ item|safe }}</li>
+        {% endfor %}
+        {% endautoescape %}
+        </ul>
         </div>
+    </div>
+    <div class="text-center divider">
+        <img src="{{STATIC_URL|default:"/s/"}}img/divider.png" alt="" />
+    </div>
     <div id="test_question_text" class="nano">
         <div class="content">
         {{ question.text|safe }}
         </div>
     </div>
 </div>
+</form>
 </div>
 {% endblock %}
 {% block footer %}{% endblock %}

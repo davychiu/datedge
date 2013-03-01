@@ -13,6 +13,10 @@ $(window).resize(function() {
 {% endblock %}
 
 {% block base_content %}
+<div id="test_container">
+<div id="end">
+<a href="{% url 'sitting_end' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/end.png" alt="end" /></a>
+</div>
 <div id="test">
 <h1>review</h1>
 <div id="test_review_content" class="nano table-center">
@@ -32,14 +36,15 @@ $(window).resize(function() {
     {% else %}
     <tr>
     {% endif %}
-    <td><a href="{% url 'sitting_question' sitting.id item.question.id %}">Question {{ forloop.counter }}</a></td><td class="cell-center">{% if item.marked %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.completed %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.skipped %}<i class="icon-ok"></i>{% endif %}</td>
+    <td><a href="{% url 'sitting_question' sitting.id forloop.counter %}">Question {{ forloop.counter }}</a></td><td class="cell-center">{% if item.marked %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.completed %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.skipped %}<i class="icon-ok"></i>{% endif %}</td>
     {% endfor %}
     </table>
     </div>
 </div>
 <br />
 marked: {{ sitting.marked.count }}<br />
-incomplete: {{ sitting.incomplete.count }}
+incomplete: {{ sitting.incomplete_count }}
+</div>
 </div>
 {% endblock %}
 {% block footer %}{% endblock %}
