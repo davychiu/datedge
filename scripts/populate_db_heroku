@@ -1,1 +1,1 @@
-cat datedge/sql/* | heroku pg:psql --app datedge
+cat datedge/sql/test.sql datedge/sql/scaling.sql datedge/sql/question.sql datedge/sql/sample.sql | heroku pg:psql --app datedge

@@ -55,8 +55,8 @@ for n in range(1,6):
 n = n + 1
 test = ET.parse('testdata/ReadingComp_questions/Sample Test/testdata.xml')
 text1 = "'" + open('testdata/ReadingComprehension_text/sample text/text_1.txt','r').read().replace("'","&apos;").replace('"',"&quot;").replace("\n","").replace("\r","").replace("\t"," ").replace("<html>","").replace("</html>","") + "'"
-text2 = ''
-text3 = ''
+text2 = "''"
+text3 = "''"
 questions =  test.findall('.//question')
 
 sample_out += "INSERT INTO datedge_test (id, text1, text2, text3) VALUES (" + str(n) + ", " + text1 + ", " + text2 + ", " + text3 + ");\n"
