@@ -6,13 +6,14 @@ from datedge.forms import QuestionForm
 from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import date
 from datedge.helpers import activation_required, valid_sitting_required
+from datedge import settings
 import stripe
 
 def main(request):
     is_activated = False
     if request.user:
         is_activated = True if request.user.activation_set.filter(expiry__gte=date.today()) else False
-    return render(request, 'base.html', {'is_activated': is_activated})
+    return render(request, 'base.html', {'is_activated': is_activated, 'STATIC_URL': settings.STATIC_URL})
 
 @login_required
 def home(request):
