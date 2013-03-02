@@ -1,8 +1,24 @@
 {% extends 'base.html' %}
+{% load url from future %}
 
 {% block title %}Purchase Success{% endblock %}
 
+{% block javascript %}
+window.setTimeout(function() {
+    window.location.href = '{% url 'home' %}';
+}, 5000);
+{% endblock %}
+
 {% block base_content %}
-<h1>Purchase Success</h1>
-redirecting to home...
+<h1>Thank You</h1>
+<br /><br />
+<div class="row">
+    <div class="span6 offset3">
+    <h3>Purchase Successful</h3>
+    <br />
+    redirecting to home...
+    </div>
+</div>
+
+
 {% endblock %}

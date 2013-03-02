@@ -8,6 +8,12 @@ from datetime import date
 from datedge.helpers import activation_required, valid_sitting_required
 import stripe
 
+def main(request):
+    is_activated = False
+    if request.user:
+        is_activated = True if request.user.activation_set.filter(expiry__gte=date.today()) else False
+    return render(request, 'base.html', {'is_activated': is_activated})
+
 @login_required
 def home(request):
     test_data = []
@@ -30,15 +36,7 @@ def account_activate(request, user_id=None):
 @login_required
 def trial(request):
     test_id = 6
-    is_timed = False
-    # check if no active sitting exists
-    try:
-        sitting = Sitting.objects.get(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
-    except Sitting.DoesNotExist:
-        sitting = Sitting(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
-        sitting.save()
-    question = sitting.test.question_set.all()[0]
-    return render(request, 'sitting.html', {'sitting': sitting, 'question': question})
+    return render(request, 'sitting.html', {'test_id': test_id})
 
 @login_required
 @activation_required
@@ -49,6 +47,11 @@ def sitting_results(request, sitting_id):
 
 @login_required
 @activation_required
+def sitting_stage(request, test_id):
+    return render(request, 'sitting.html', {'test_id': test_id})
+
+@login_required
+@activation_required
 def sitting_new(request, test_id, is_timed=False):
     # check if no active sitting exists
     try:
@@ -56,13 +59,13 @@ def sitting_new(request, test_id, is_timed=False):
     except Sitting.DoesNotExist:
         sitting = Sitting(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
         sitting.save()
-    question = sitting.test.question_set.all()[0]
-    return render(request, 'sitting.html', {'sitting': sitting, 'question': question})
+    return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting.id, 'question_id': 1}))
 
 @login_required
 @activation_required
 def sitting_question(request, sitting_id, question_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
+    #question_id = sitting.test.question_set.count() if is_last_question else question_id
     question = sitting.test.question_set.all()[int(question_id)-1]
     try:
         answer = Answer.objects.get(sitting=sitting, question=question, user=request.user) 
@@ -89,7 +92,10 @@ def sitting_question(request, sitting_id, question_id):
                     answer.save()
             #return next/prev question
             offset = 1 if "submit_next.x" in request.POST else -1
-            return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
+            if int(question_id) >= sitting.test.question_set.count() and offset == 1:
+                return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))
+            else:
+                return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
         else:
             return HttpResponse(str(form.errors)) 
     else:
@@ -146,13 +152,12 @@ def sitting_end(request, sitting_id):
         sitting.save()
     return HttpResponseRedirect(reverse('sitting_results', kwargs={'sitting_id': sitting_id}))
 
+@login_required
 def purchase(request):
-    return HttpResponse('purchase')
-
-def checkout(request):
     from django.conf import settings
     return render(request, 'checkout.html', {'STRIPE_PUBLISHABLE': settings.STRIPE_PUBLISHABLE})
 
+@login_required
 def process(request):
     from django.conf import settings
     # set your secret key: remember to change this to your live secret key in production
@@ -169,7 +174,13 @@ def process(request):
         card=token,
         description="DATEdge: " + request.user.email
     )
+    today = date.today()
+    expiry = date(today.year, today.month + 6, today.day)
+    activation = Activation(user=request.user, expiry=expiry)
+    activation.save()
+
     return success(request) #HttpResponse('purchase sucess')
 
+@login_required
 def success(request):
-    return HttpResponse('success')
+    return render(request, 'success.html')

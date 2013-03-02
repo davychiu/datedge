@@ -5,17 +5,18 @@
 <div id="test_container">
     <div id="test">
         <h1>results</h1>
-        <div class="row-fluid">
+        <div id="test_results" class="row-fluid">
             <div class="span4">
-            <h4>results</h4>
+            <h4></h4>
             </div>
             <div class="span8">
-            scaled: {{ sitting.score_scaled }}<br />
-            score: {{ sitting.score }} / 50<br />
-            percent: {{ sitting.score_percent }}
+            <span class="scaled pull-left">{{ sitting.score_scaled }}</span>
+            <span class="score">{{ sitting.score }} / {{ sitting.test.question_set.count }}</span><br />
+            <span class="percent">{{ sitting.score_percent }}</span>
             </div>
         </div>
-        <br />return <a href="{% url 'home' %}">home</a>.
+        <br /><br /><br />
+        <a class="btn btn-warning" href="{% url 'home' %}">return home</a>
     </div>
 </div>
 {% endblock %}

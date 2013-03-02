@@ -2,7 +2,7 @@
 
 {% block title %}Checkout{% endblock %}
 
-{% block base_content %}
+{% block custom_js %}
 <script type="text/javascript" src="https://js.stripe.com/v1/"></script>
 <script type="text/javascript">
   // this identifies your website in the createToken call below
@@ -28,7 +28,7 @@ $(function() {
 function stripeResponseHandler(status, response) {
   if (response.error) {
     // Show the errors on the form
-    $('.payment-errors').text(response.error.message);
+    $('.payment-errors').text(response.error.message).show();
     $('.submit-button').prop('disabled', false);
   } else {
     var $form = $('#payment-form');
@@ -41,33 +41,63 @@ function stripeResponseHandler(status, response) {
   }
 }
 </script>
+{% endblock %}
+
+{% block jquery %}
+$('.payment-errors').hide();
+{% endblock %}
+
+{% block base_content %}
 <h1>Checkout</h1>
-<span class="payment-errors"></span>
-<form action="/process/" method="POST" id="payment-form">
-{% csrf_token %}
-  <div class="form-row">
-    <label>
-      <span>Card Number</span>
-      <input type="text" size="20" autocomplete="off" class="card-number" value="4242424242424242"/>
-    </label>
-  </div>
+<br /><br />
+<div class="row">
+<div class="span8 offset2">
+    <div class="row">
+        <div class="span5 muted">
+            DATEdge<br />6-month Unlimited License
+        </div>
+        <div class="span1">
+            x1
+        </div>
+        <div class="span2">
+            $47 CAD
+        </div>
+    </div>
+    <hr />
+    <div class="payment-errors alert"></div>
+    <form action="/process/" method="POST" id="payment-form" class="form-horizontal">
+    {% csrf_token %}
+      <div class="control-group">
+        <label class="control-label">
+          <span>Card Number</span>
+        </label>
+        <div class="controls">
+            <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" value="4242424242424242"/>
+        </div>
+      </div>
 
-  <div class="form-row">
-    <label>
-      <span>CVC</span>
-      <input type="text" size="4" autocomplete="off" class="card-cvc" value="123"/>
-    </label>
-  </div>
+      <div class="control-group">
+        <label class="control-label">
+          <span>CVC</span>      
+        </label>
+        <div class="controls">
+            <input type="text" size="4" maxlength="4" autocomplete="off" class="card-cvc input-mini" value="123"/>
+        </div>
+      </div>
 
-  <div class="form-row">
-    <label>
-      <span>Expiration (MM/YYYY)</span>
-      <input type="text" size="2" class="card-expiry-month" value="12"/>
-    </label>
-    <span> / </span>
-    <input type="text" size="4" class="card-expiry-year" value="2015"/>
-  </div>
+      <div class="control-group">
+        <label class="control-label">
+          <span>Expiration (MM/YYYY)</span>      
+        </label>
+        <div class="controls">
+            <input type="text" size="2" maxlength="2" class="card-expiry-month input-mini" value="12"/>
+            <span> / </span>
+            <input type="text" size="4" maxlength="4" class="card-expiry-year input-small" value="2015"/>
+        </div>
+      </div>
 
-  <button type="submit" class="submit-button">Submit Payment</button>
-</form>
+      <button type="submit" class="btn btn-success submit-button pull-right">Submit Payment</button>
+    </form>
+</div>
+</div>
 {% endblock %}

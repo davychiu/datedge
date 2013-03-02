@@ -1,7 +1,21 @@
 from django.db import models
 from django.contrib.auth.models import User
 from datetime import date, datetime
+from django.db.models import signals
 import time
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    test_date = models.DateField()
+
+    def is_activated(self):
+        return True if request.user.activation_set.filter(expiry__gte=date.today()) else False
+
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        UserProfile.objects.create(user=instance)
+
+signals.post_save.connect(create_user_profile, sender=User)
 
 class Test(models.Model):
     text1 = models.TextField()

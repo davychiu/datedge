@@ -13,8 +13,6 @@
     <link href="{{STATIC_URL|default:"/s/"}}css/bootstrap.min.css" rel="stylesheet" />
     <style type="text/css">
       body {
-        padding-top: 60px;
-        padding-bottom: 40px;
       }
       {% block css %}{% endblock %}
     </style>
@@ -38,6 +36,8 @@
      <link rel="stylesheet" href="{{STATIC_URL|default:"/s/"}}css/nanoscroller.css" /> 
      <script src="{{STATIC_URL|default:"/s/"}}js/jquery.countdown.js"></script>
      <link rel="stylesheet" href="{{STATIC_URL|default:"/s/"}}css/jquery.countdown.css" /> 
+     {% block custom_js %}
+     {% endblock %}
      <script type="text/javascript">
      {% block javascript %}
      $(function(){
@@ -50,14 +50,17 @@
   </head>
 
   <body>
+  <div id="wrap">
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a href="/"><img src="{{STATIC_URL|default:"/s/"}}img/DATEdge_logo.png" width="160px" /></a>
           {% if user.is_authenticated %}
           <ul class="nav pull-right">
+            {% if user.get_profile.is_activated %}
             <li class="active"><a href="/purchase">Buy Now</a></li>
             <li><a href="/trial">Free Trial</a></li>
+            {% endif %}
             <li><a href="/contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-user"></i>{{user.first_name}} <b class="caret"></b></a>
@@ -73,13 +76,17 @@
               </ul>
             </li>
           </ul>
+          <a href="{% url 'home' %}" class="btn btn-success pull-right">Test Dashboard</a>
           {% else %}
+          <a class="btn btn-info pull-right" href="/accounts/login">Login</a>
           <ul class="nav pull-right">
             <li class="active"><a href="/purchase">Buy Now</a></li>
             <li><a href="/trial">Free Trial</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="{% url 'registration_register' %}">Sign up</a>
+            <li><a href="{% url 'registration_register' %}">Sign up</a></li>
+            <li></li>
           </ul>
+          
           {% comment %}
           <form class="navbar-form pull-right" action="{% url 'django.contrib.auth.views.login' %}?next={{ request.path }}" method="post">{% csrf_token %}
               <input class="span2" type="text" name="username" placeholder="Username">
@@ -106,31 +113,32 @@
       {% if debug %}
       <div class="alert"><strong>Running in DEBUG mode</strong></div>
       {% endif %}
+      <div class="base_content">
 {% block base_content %}
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Get 5 DAT Reading Comprehension Tests</h1>
         <p>Use DATEdge to prepare for the most difficult section of the DAT.</p>
-        <p><a class="btn btn-primary btn-large">Buy Now $47 &raquo;</a> <a class="btn btn-info btn-large">Free Trial &raquo;</a></p>
+        <p><a class="btn btn-primary btn-large" href="{% url 'purchase' %}">Buy Now $47 &raquo;</a> <a class="btn btn-info btn-large" href="{% url 'trial' %}">Free Trial &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
-      <ul class="thumbnails">
+      <ul class="thumbnails main_t1">
         <li class="span4">
           <div class="thumbnail">
-          <h2>5 Practice Tests</h2>
+          <h3>5 Practice Tests</h3>
           <p>Five DAT computer-based tests with standardized scoring.</p>
           </div>
         </li>
         <li class="span4">
           <div class="thumbnail">
-          <h2>250 Questions</h2>
+          <h3>250 Questions</h3>
           <p>All 15 Reading passages and 250 questions reflect the difficulty of the exam.</p>          
           </div>
         </li>
         <li class="span4">
           <div class="thumbnail">
-          <h2>6-month License</h2>
+          <h3>6-month License</h3>
           <p>You'll have unlimited access to practice tests for 6 full months.</p>
           </div>
         </li>
@@ -143,7 +151,7 @@ A. We accept payments through Visa, Mastercard, and American Express.</p>
 A. We at DATEdge want you to be completely happy with your purchase. If you have any questions, concerns, or problems, please let us know in the Contact section.</p>
 <p>We are so confident with DATEdge will refund your money in full if you receive a score below 19 in the Reading Comprehension of the DAT after using our DATEdge test preparation material. We back up our claims of success with a full money back guarantee.</p>
       </div>
-      <ul class="thumbnails">
+      <ul class="thumbnails main_t2">
         <li class="span4">
         <div class="thumbnail">
         <ul>
@@ -156,7 +164,9 @@ A. We at DATEdge want you to be completely happy with your purchase. If you have
         <li class="span4">
         <div class="thumbnail">
             <h3>Payment Methods</h3>
-            <img src="{{STATIC_URL|default:"/s/"}}img/creditcardlogos.jpg" width="250px" />
+            <img src="{{STATIC_URL|default:"/s/"}}img/visa.png" width="80px" class="inline" />
+            <img src="{{STATIC_URL|default:"/s/"}}img/mc.png" width="80px" class="inline" />
+            <img src="{{STATIC_URL|default:"/s/"}}img/amex.png" width="80px" class="inline" />
         </div>
         </li>
         <li class="span4">
@@ -173,15 +183,20 @@ A. We at DATEdge want you to be completely happy with your purchase. If you have
       </ul>
 
 {% endblock %}
-      
+        </div>
+        </div> <!-- /container -->
+
+        <div id="push"></div>
+      </div>
 {% block footer %}
-      <hr />
       <footer>
+        <hr />
+        <div class="container">
         <p>&copy; DATEdge 2013</p>
+        </div>
       </footer>
 {% endblock %}
 
-    </div> <!-- /container -->
     <script src="{{STATIC_URL|default:"/s/"}}js/jquery-ui-1.10.0.custom.min.js"></script>
     <script src="{{STATIC_URL|default:"/s/"}}js/bootstrap.min.js"></script>
     {% block extrafooter %}{% endblock %}

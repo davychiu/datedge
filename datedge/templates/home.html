@@ -16,16 +16,16 @@
     Expires: {{ expiry }}
     {% else %}
     Trial<br /><br />
-    <button type="button" class="btn btn-warning">Buy Now</button>
+    <a href="{% url 'purchase' %}" class="btn btn-warning">Buy Now</a>
     {% endif %}
     </div>
 </div>
 <div class="span7 right_pane">
 {% for item in test_data %}
 <div class="testpanel_container">
-    <div class="new_button"><a href="{% url 'sitting_new' forloop.counter %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
+    <div class="new_button" title="take test"><a href="{% url 'sitting_stage' forloop.counter %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
     {% if item.sittings.0 %}
-    <div class="review_button"><a href="{% url 'sitting_review' item.sittings.0.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
+    <div class="review_button" title="review test"><a href="{% url 'sitting_review' item.sittings.0.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
     {% endif %}
 
     <div class="testpanel">
@@ -52,7 +52,7 @@
             {% endif %}
         {% endfor %}
         </div>
-        <div class="tp_history_control" data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}">
+        <div class="tp_history_control" data-toggle="collapse" title="prior results" data-target="#tp_history{{ forloop.counter }}">
             <a data-toggle="collapse" data-target="#tp_history{{ forloop.counter }}"><i class="icon-align-justify"></i></a>
         </div>
         {% endif %}

@@ -18,6 +18,8 @@ STRIPE_SECRET = "sk_test_mzf2V9NBalTc9EzBic0n8MTN"
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/home/'
 
+AUTH_PROFILE_MODULE = 'datedge.UserProfile'
+
 DATABASES = {
     'default': dj_database_url.config()
 }

@@ -21,16 +21,14 @@ function timerCallback() {
 <div id="test_container">
 <form action="" method="post">
 {% if question.back %}
-<div id="backarrow">
+<div id="backarrow" title="back">
 <input type="image" src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" name="submit_back" value="back" />
 </div>
 {% endif %}
-{% if question.next %}
-<div id="nextarrow">
+<div id="nextarrow" title="next">
 <input type="image" src="{{STATIC_URL|default:"/s/"}}img/next_arrow.png" alt="next" name="submit_next" value="next"/>
 </div>
-{% endif %}
-<div id="bookmark">
+<div id="bookmark" title="mark">
 {% if sitting.is_active %}
     {% if question.is_marked %}
     <a href="{% url 'sitting_mark' sitting.id question.num %}"><img src="{{STATIC_URL|default:"/s/"}}img/bookmarked.png" alt="mark" /></a>
@@ -39,7 +37,7 @@ function timerCallback() {
     {% endif %}
 {% endif %}
 </div>
-<div id="review">
+<div id="review" title="review">
 <a href="{% url 'sitting_review' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/review.png" alt="review" /></a>
 </div>
 <div id="test">

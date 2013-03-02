@@ -1,6 +1,27 @@
 footer {
     text-align: right;
 }
+.main_t1 .thumbnail {
+    padding: 15px 30px;
+    height: 140px;
+}
+.main_t1 p {
+    font-size: 16px;
+}
+.main_t2 ul {
+    list-style-type: none;
+}
+.main_t2 .thumbnail {
+    padding: 15px 30px;
+    height: 260px;
+}
+.main_t2 .thumbnail > img {
+    display: inline-block;
+}
+.main_t2 a {
+    font-size: 18px;
+    line-height: 40px;
+}
 .text-center, td.cell-center, th.cell-center {
     text-align: center;
 }
@@ -13,18 +34,34 @@ footer {
     top:60px;
     width:250px;
 }
-@media (max-width: 907px) {
+@media (max-width: 767px) {
     .sidebar-nav-fixed {
         position:static;
-        width:auto;
+        width: auto;
+    }
+    .base_content {
+        margin-top: 0px !important;
     }
 }
 @media (max-width: 979px) {
+    
+}
+@media (min-width: 768px) and (max-width: 979px) {
     .sidebar-nav-fixed {
         top:70px;
+        width: 180px;
+    }
+    .base_content {
+        margin-top: 0 !important;
     }
 }
-div .userhome {
+@media (min-width:1200px) {
+    .base_content {
+        margin-top: 60px;
+    }
+}
+div .base_content {
+    margin-top: 60px;
 }
 div .userhome .testpanel_container {
     position: relative;
@@ -43,7 +80,7 @@ div .userhome .testpanel_container .review_button {
     outline: none;
 }
 div .userhome .testpanel {
-    margin-bottom: 18px;
+    margin-bottom: 36px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -73,18 +110,24 @@ div .userhome .testpanel .tp_history {
     background-color: #ddd;
 }
 div .userhome .testpanel .tp_history_control {
-    background-color: #aaa;
+    background-color: #999;
     text-align: center;
     -webkit-border-bottom-left-radius: 5px;
     -moz-border-bottom-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
-div .userhome .testpanel .tp_content .scaled {
+div .userhome .testpanel .tp_history_control:hover {
+    background-color: #777;
+}
+.scaled {
     margin-top: 18px;
     margin-right: 30px;
     font-size: 80px;
 }
-div .userhome .testpanel .tp_content .score, div .userhome .testpanel .tp_content .percent {
+.score, .percent {
     color: grey;
     font-size: 30px;
     line-height: 28px;
@@ -107,6 +150,10 @@ div #test {
 }
 div #test h1 {
     color: #868686;
+    text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+}
+div #test h4 {
+    color: #565656;
     text-shadow: 0px -1px 0px rgba(0,0,0,.5);
 }
 
@@ -136,6 +183,10 @@ div #test_question_answer input {
 
 div #test_question_text {
     overflow: hidden;
+}
+
+div #test_results {
+    padding-top: 50px;
 }
 
 div #backarrow {
@@ -179,3 +230,35 @@ span.test_review_checkmark {
     position: absolute;
     left: 64px;
 }
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -80px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push { height: 80px; } 
+      footer {
+        height: 60px;
+      }
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
