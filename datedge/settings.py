@@ -66,6 +66,9 @@ STATIC_ROOT = PROJECT_PATH + '/static/'
 # Example: "http://media.lawrence.com/static/"
 STATIC_URL = "http://www.vcn.bc.ca/resume/datedge/static/"
 
+MEDIA_URL = '/media/'
+STATIC_URL = '/static/'
+
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
