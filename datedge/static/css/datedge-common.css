@@ -5,11 +5,17 @@ footer {
     padding: 15px 30px;
     height: 140px;
 }
+.main_t1 h3 {
+    color: #25562c;
+}
 .main_t1 p {
     font-size: 16px;
 }
 .main_t2 ul {
     list-style-type: none;
+}
+.main_t2 a {
+    color: #25562c; 
 }
 .main_t2 .thumbnail {
     padding: 15px 30px;
@@ -226,15 +232,25 @@ div .review_buttons {
 div #test_question_text .content, #test_review_content .content, #test_review_header .content {
     padding-right: 10px;
 }
+div #test_question_text .content {
+    margin-bottom: 10px;
+}
 
 div #test_question_text .pane, div #test_review_content .pane {
     background: transparent;
 }
 
-div #test_review_content, div #test_review_header {
+div #test_review_content, div #test_review_header, div .review_buttons {
     width: 70%;
 }
-table #review_table_header {
+.review_buttons a, .test_buttons a, .test_buttons input {
+    width: 140px;
+}
+.test_buttons input {
+    width: 166px;
+    height: 30px;
+}
+table#review_table_header {
     margin-bottom: 0 !important;
 }
 span.test_review_checkmark {

@@ -4,10 +4,10 @@
 {% block jquery %}
 var window_height = $(window).height()-300;
 $('div#test_review_content').css({'height': window_height + 'px'});
-$('div#test_review_content').nanoScroller({flash: true});
+$('div#test_review_content').nanoScroller({flash: true, flashDelay: 100000});
 $(window).resize(function() {
     var window_height = $(window).height()-300;
-    $('div#test_review_content').css({'height': window_height + 'px'}).nanoScroller({flash: true});
+    $('div#test_review_content').css({'height': window_height + 'px'}).nanoScroller({flash: true, flashDelay:100000});
 
 });
 {% if sitting.is_timed %}
@@ -21,9 +21,6 @@ function timerCallback() {
 
 {% block base_content %}
 <div id="test_container">
-<div id="end">
-<a href="{% url 'sitting_end' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/end.png" title="end test" alt="end" /></a>
-</div>
 <div id="test">
 <div id="timer" class="pull-right"></div>
 <h1>review</h1>
@@ -71,10 +68,15 @@ function timerCallback() {
     </div>
     <br />
 </div>
-<div class="review_buttons span6 offset2">
-<a href="{% url 'sitting_question' sitting.id 1 %}" class="btn">review all</a>
-<a href="{% url 'sitting_review_incomplete' sitting.id 1 %}" class="btn">review incomplete</a>
-<a href="{% url 'sitting_review_marked' sitting.id 1 %}" class="btn">review marked</a>
+<div class="review_buttons table-center">
+<table style="width: 100%">
+<tr>
+<td class="cell-center"><a href="{% url 'sitting_question' sitting.id 1 %}" class="btn">Review All</a></td>
+<td class="cell-center"><a href="{% url 'sitting_review_incomplete' sitting.id 1 %}" class="btn">Review Incomplete</a></td>
+<td class="cell-center"><a href="{% url 'sitting_review_marked' sitting.id 1 %}" class="btn">Review Marked</a></td>
+<td class="cell-center"><a href="{% url 'sitting_end' sitting.id %}" class="btn">End</a></td>
+</tr>
+</table>
 </div>
 {% comment %}
 <br />

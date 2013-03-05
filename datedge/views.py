@@ -100,7 +100,7 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
                     answer.answer_idx = answer_idx
                     answer.save()
             #return next/prev question
-            is_forward = True if "submit_next.x" in request.POST else False
+            is_forward = True if "submit_next" in request.POST else False
             offset = 1 if is_forward else -1
             if int(question_id) >= question_set.count() and offset == 1:
                 return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))

@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% load url from future %}
 {% block jquery %}
-var window_height = $(window).height()-400;
+var window_height = $(window).height()-430;
 $('div#test_question_text').css({'height': window_height + 'px'});
-$('div#test_question_text').nanoScroller({flash: true});
+$('div#test_question_text').nanoScroller({flash: true, flashDelay: 100000});
 $(window).resize(function() {
-    var window_height = $(window).height()-400;
-    $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller({flash: true});
+    var window_height = $(window).height()-430;
+    $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller({flash: true, flashDelay: 100000});
 
 });
 {% if sitting.is_timed %}
@@ -20,26 +20,6 @@ function timerCallback() {
 {% block base_content %}
 <div id="test_container">
 <form action="" method="post">
-{% if question.back %}
-<div id="backarrow" title="back">
-<input type="image" src="{{STATIC_URL|default:"/s/"}}img/back_arrow.png" alt="back" name="submit_back" value="back" />
-</div>
-{% endif %}
-<div id="nextarrow" title="next">
-<input type="image" src="{{STATIC_URL|default:"/s/"}}img/next_arrow.png" alt="next" name="submit_next" value="next"/>
-</div>
-<div id="bookmark" title="mark">
-{% if sitting.is_active %}
-    {% if question.is_marked %}
-    <a href="{% url 'sitting_mark' sitting.id question.num %}"><img src="{{STATIC_URL|default:"/s/"}}img/bookmarked.png" alt="mark" /></a>
-    {% else %}
-    <a href="{% url 'sitting_mark' sitting.id question.num %}"><img src="{{STATIC_URL|default:"/s/"}}img/bookmark.png" alt="mark" /></a>
-    {% endif %}
-{% endif %}
-</div>
-<div id="review" title="review">
-<a href="{% url 'sitting_review' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/review.png" alt="review" /></a>
-</div>
 <div id="test">
     <div id="timer" class="pull-right"></div>
     <div id="test_question">
@@ -63,8 +43,38 @@ function timerCallback() {
         {{ question.text|safe }}
         </div>
     </div>
-</div>
+    <div class="test_buttons">
+    <table style="width: 100%">
+    <tr>
+    <td class="cell-center">
+    {% if question.back %}
+    <input type="submit" class="btn" alt="Back" name="submit_back" value="Back" />
+    {% else %}
+    <input type="submit" class="btn" alt="Back" name="submit_back" value="Back" disabled />
+    {% endif %}
+    </td>
+    <td class="cell-center"><input type="submit" class="btn" alt="Next" name="submit_next" value="Next"/></td>
+    <td class="cell-center">
+    {% if sitting.is_active %}
+        {% if question.is_marked %}
+        <a class="btn btn-warning" href="{% url 'sitting_mark' sitting.id question.num %}">Marked</a>
+        {% else %}
+        <a class="btn" href="{% url 'sitting_mark' sitting.id question.num %}">Mark</a>
+        {% endif %}
+    {% else %}
+        {% if question.is_marked %}
+        <a class="btn btn-warning" href="{% url 'sitting_mark' sitting.id question.num %}" disabled>Marked</a>
+        {% else %}
+        <a class="btn" href="{% url 'sitting_mark' sitting.id question.num %}" disabled>Mark</a>
+        {% endif %}
+    {% endif %}
+    </td>
+    <td class="cell-center"><a class="btn" href="{% url 'sitting_review' sitting.id %}">Review</a></td>
+    </tr>
+    </table>
+    </div>
 </form>
+</div>
 </div>
 {% endblock %}
 {% block footer %}{% endblock %}

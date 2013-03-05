@@ -65,10 +65,10 @@ $(".overlay")
         <div class="tp_content">
             {% if item.sittings.0 %}
             <span class="span2 pull-left">
-            <strong>last sitting results</strong>
+            <strong>Last sitting results</strong>
             </span>
             {% if item.test.id == 6 %}
-            <span data-toggle="tooltip" data-placement="left" title="Standard score is only given in the full version" class="scaled pull-left">?</span>
+            <span data-toggle="tooltip" data-placement="left" title="Standard score is only given in the full version" class="scaled pull-left">n/a</span>
             {% else %}
             <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
             {% endif %}
