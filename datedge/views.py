@@ -10,20 +10,18 @@ from datedge import settings
 import stripe
 
 def main(request):
-    is_activated = False
-    if request.user:
-        is_activated = True if request.user.activation_set.filter(expiry__gte=date.today()) else False
-    return render(request, 'base.html', {'is_activated': is_activated, 'STATIC_URL': settings.STATIC_URL})
+    return render(request, 'base.html', {'STATIC_URL': settings.STATIC_URL})
 
 @login_required
 def home(request):
     test_data = []
     tests = Test.objects.exclude(id=6)
-    request.user.has_membership = True if request.user.activation_set.filter(expiry__gte=date.today()) else False
-    expiry = request.user.activation_set.filter(expiry__gte=date.today())[0].expiry if request.user.has_membership else None
+    sample_test = Test.objects.get(id=6)
+    test_data.append({'test': sample_test, 'sittings': request.user.sitting_set.filter(test=sample_test)[:5]})
+    expiry = request.user.activation_set.filter(expiry__gte=date.today())[0].expiry if request.user.get_profile().is_activated else None
     for test in tests:
         test_data.append({'test': test, 'sittings': request.user.sitting_set.filter(test=test)[:5]})
-    return render(request, 'home.html', {'test_data': test_data, 'user': request.user, 'expiry': expiry})
+    return render(request, 'home.html', {'test_data': test_data, 'expiry': expiry})
 
 def account_activate(request, user_id=None):
     today = date.today()
@@ -64,19 +62,29 @@ def sitting_new(request, test_id, is_timed=False):
 
 @login_required
 @activation_required
-def sitting_question(request, sitting_id, question_id):
+def sitting_question(request, sitting_id, question_id, review_marked=False, review_incomplete=False):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
-    #question_id = sitting.test.question_set.count() if is_last_question else question_id
-    question = sitting.test.question_set.all()[int(question_id)-1]
+    question_set = ''
+    post_redirect = ''
+    if review_marked:
+        question_set = sitting.marked
+        post_redirect = 'sitting_review_marked'
+    elif review_incomplete:
+        question_set = sitting.incomplete
+        post_redirect = 'sitting_review_incomplete'
+    else:
+        question_set = sitting.test.question_set.all()
+        post_redirect = 'sitting_question'
+    question = question_set[int(question_id)-1]        
     try:
         answer = Answer.objects.get(sitting=sitting, question=question, user=request.user) 
     except Answer.DoesNotExist:
         answer = None
     try:
-        question.back = sitting.test.question_set.all()[int(question_id)-2] if int(question_id) > 1 else None
-        question.next = sitting.test.question_set.all()[int(question_id)] if int(question_id) < 50 else None
+        question.back = question_set[int(question_id)-2] if int(question_id) > 1 else None
+        question.next = question_set[int(question_id)] if int(question_id) < 50 else None
     except IndexError:
-        question.next = None
+        question.next = question.back = None
     question.text = getattr(sitting.test, 'text' + str(question.text_idx))
     options = [getattr(question, 'option' + str(idx)) for idx in range(1,6)]
     if request.POST:
@@ -92,17 +100,18 @@ def sitting_question(request, sitting_id, question_id):
                     answer.answer_idx = answer_idx
                     answer.save()
             #return next/prev question
-            offset = 1 if "submit_next.x" in request.POST else -1
-            if int(question_id) >= sitting.test.question_set.count() and offset == 1:
+            is_forward = True if "submit_next.x" in request.POST else False
+            offset = 1 if is_forward else -1
+            if int(question_id) >= question_set.count() and offset == 1:
                 return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))
             else:
-                return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset)}))
+                return HttpResponseRedirect(reverse(post_redirect, kwargs={'sitting_id': sitting_id, 'question_id': str(int(question_id) + offset), 'review_marked': review_marked, 'review_incomplete': review_incomplete}))
         else:
             return HttpResponse(str(form.errors)) 
     else:
         answer_idx = answer.answer_idx if hasattr(answer, 'answer_idx') else None
         form = QuestionForm(options=options, active=sitting.is_active, initial={'answer': answer_idx}, auto_id=False)
-        question.num = question_id
+        question.num = list(sitting.test.question_set.all().values_list('id', flat=True)).index(int(question.id)) + 1
         question.is_marked = answer.is_marked if hasattr(answer, 'is_marked') else None
         return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
 
@@ -176,7 +185,8 @@ def process(request):
         description="DATEdge: " + request.user.email
     )
     today = date.today()
-    expiry = date(today.year, today.month + 6, today.day)
+    [exp_y, exp_m] = divmod(today.month + 6, 12)
+    expiry = date(today.year + exp_y, exp_m, today.day)
     activation = Activation(user=request.user, expiry=expiry)
     activation.save()
 

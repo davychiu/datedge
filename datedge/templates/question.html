@@ -3,10 +3,10 @@
 {% block jquery %}
 var window_height = $(window).height()-400;
 $('div#test_question_text').css({'height': window_height + 'px'});
-$('div#test_question_text').nanoScroller();
+$('div#test_question_text').nanoScroller({flash: true});
 $(window).resize(function() {
     var window_height = $(window).height()-400;
-    $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller();
+    $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller({flash: true});
 
 });
 {% if sitting.is_timed %}

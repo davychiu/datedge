@@ -10,8 +10,8 @@ def activation_required(view_func):
     def wrapper(request, *args, **kwargs):
         sitting_id = kwargs.get('sitting_id', None)
         sitting = Sitting.objects.get(id=sitting_id) if sitting_id else None
-        test_id = sitting.test_id if sitting else kwargs.get('test_id', None)
-        if request.user.activation_set.filter(expiry__gte=date.today()) or test_id is 6:
+        test_id = sitting.test.id if sitting else kwargs.get('test_id', None)
+        if request.user.get_profile().is_activated or int(test_id) is 6:
             return view_func(request, *args, **kwargs)
         else:
             return HttpResponseRedirect(reverse('purchase'))

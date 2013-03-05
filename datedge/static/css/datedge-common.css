@@ -13,7 +13,7 @@ footer {
 }
 .main_t2 .thumbnail {
     padding: 15px 30px;
-    height: 260px;
+    height: 320px;
 }
 .main_t2 .thumbnail > img {
     display: inline-block;
@@ -99,6 +99,9 @@ div .userhome .testpanel h4 {
     padding: 3px 20px;
     color: #fff;
     margin: 0;
+}
+div .userhome .testpanel_container.sample h4 {
+    background-color: #eb0;
 }
 div .userhome .testpanel .tp_content {
     padding: 30px 10px 5px 10px;
@@ -214,8 +217,13 @@ div #end {
     right: -13px;
     top: 400px;
 }
+div .review_buttons {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
 
-div #test_question_text .content, #test_review_content .content {
+div #test_question_text .content, #test_review_content .content, #test_review_header .content {
     padding-right: 10px;
 }
 
@@ -223,8 +231,11 @@ div #test_question_text .pane, div #test_review_content .pane {
     background: transparent;
 }
 
-div #test_review_content {
+div #test_review_content, div #test_review_header {
     width: 70%;
+}
+table #review_table_header {
+    margin-bottom: 0 !important;
 }
 span.test_review_checkmark {
     position: absolute;

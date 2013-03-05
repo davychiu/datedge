@@ -17,6 +17,11 @@ STRIPE_SECRET = "sk_test_mzf2V9NBalTc9EzBic0n8MTN"
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/home/'
+SUCCESS_URL = '/home/'
+
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u:'/home/',
+}
 
 AUTH_PROFILE_MODULE = 'datedge.UserProfile'
 
@@ -54,7 +59,8 @@ MEDIA_ROOT = PROJECT_PATH + '/media/'
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = "http://www.vcn.bc.ca/resume/datedge/media/"
+MEDIA_URL = '/media/'
+#MEDIA_URL = "http://www.vcn.bc.ca/resume/datedge/media/"
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -64,7 +70,8 @@ STATIC_ROOT = PROJECT_PATH + '/static/'
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = "http://www.vcn.bc.ca/resume/datedge/static/"
+STATIC_URL = '/static/'
+#STATIC_URL = "http://www.vcn.bc.ca/resume/datedge/static/"
 
 # Additional locations of static files
 STATICFILES_DIRS = (

@@ -3,6 +3,29 @@
 
 {% block title %}Home{% endblock %}
 
+{% block jquery %}
+{% if not user.get_profile.is_activated %}
+$('.activated').click(function(e) { e.preventDefault(); });
+
+var height = $('.activated').css('height');
+
+$("div.testpanel_container.activated").append("<div class='overlay'></div>");
+
+$(".overlay")
+  .height(height)
+  .css({
+     'opacity' : 0.4,
+     'position': 'absolute',
+     'top': 0,
+     'left': 0,
+     'background-color': 'black',
+     'width': '100%',
+     'z-index': 5000
+  });
+  $('.scaled').tooltip('show');
+{% endif %}
+{% endblock %}
+
 {% block base_content %}
 <div class="row userhome">
 <div class="span4">
@@ -11,7 +34,7 @@
     {{ user.username }}
     <br />
     <h4>Membership Status</h4>
-    {% if user.has_membership %}
+    {% if user.get_profile.is_activated %}
     Unlimited 6-month License<br />
     Expires: {{ expiry }}
     {% else %}
@@ -22,20 +45,33 @@
 </div>
 <div class="span7 right_pane">
 {% for item in test_data %}
-<div class="testpanel_container">
-    <div class="new_button" title="take test"><a href="{% url 'sitting_stage' forloop.counter %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
+    {% if item.test.id == 6 %}
+<div class="testpanel_container sample">
+    <div class="new_button" title="take test"><a href="{% url 'trial' %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
+    {% else %}
+<div class="testpanel_container activated">
+    <div class="new_button" title="take test"><a href="{% url 'sitting_stage' forloop.counter0 %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
+    {% endif %}
     {% if item.sittings.0 %}
     <div class="review_button" title="review test"><a href="{% url 'sitting_review' item.sittings.0.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
     {% endif %}
 
     <div class="testpanel">
-        <h4>Practice Test {{ forloop.counter }}</h4>
+        {% if item.test.id == 6 %}
+        <h4>Sample Test</h4>
+        {% else %}
+        <h4>Practice Test {{ forloop.counter0 }}</h4>
+        {% endif %}
         <div class="tp_content">
             {% if item.sittings.0 %}
             <span class="span2 pull-left">
             <strong>last sitting results</strong>
             </span>
+            {% if item.test.id == 6 %}
+            <span data-toggle="tooltip" data-placement="left" title="Standard score is only given in the full version" class="scaled pull-left">?</span>
+            {% else %}
             <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
+            {% endif %}
             <span class="score">{{ item.sittings.0.score }} / {{ item.sittings.0.test.question_set.count }}</span><br />
             <span class="percent">{{item.sittings.0.score_percent }}</span><br /><br />
             <span class="timesince pull-right"><strong>{{ item.sittings.0.created_date|timesince }} ago</strong></span><br />
@@ -48,7 +84,7 @@
         <div id="tp_history{{ forloop.counter }}" class="collapse tp_history">
         {% for sitting in item.sittings %}
             {% if sitting != item.sittings.0 %}
-            Prior Attempt {{ sitting.created_date|timesince }} ago: score {{ sitting.score_scaled }} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
+            Prior Attempt {{ sitting.created_date|timesince }} ago: score {% if item.test.id == 6 %}?{% else %}{{ sitting.score_scaled }}{% endif %} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
             {% endif %}
         {% endfor %}
         </div>

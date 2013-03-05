@@ -6,10 +6,15 @@ import time
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
-    test_date = models.DateField()
+    test_date = models.DateField(null=True, blank=True)
+    
+    def __unicode__(self):
+        return u'id: %i username:%s' % (self.id, self.user.username)
 
-    def is_activated(self):
-        return True if request.user.activation_set.filter(expiry__gte=date.today()) else False
+    def _is_activated(self):
+        return True if self.user.activation_set.filter(expiry__gte=date.today()) else False
+
+    is_activated = property(_is_activated)
 
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
@@ -77,17 +82,22 @@ class Sitting(models.Model):
     def _complete(self):
         return self.test.question_set.filter(answer__answer_idx__isnull=False, answer__sitting=self)
 
+    def _incomplete(self):
+        return self.test.question_set.exclude(answer__sitting=self) | self.test.question_set.filter(answer__answer_idx__isnull=True, answer__sitting=self)
+
     def _timerstring(self):
         t = self.created_date
         offset = time.timezone if (time.localtime().tm_isdst == 0) else time.altzone
         offset = offset / 60 / 60 * -1
-        return u'%i, %i, %i, %i, %i, %i, %i' % (0, t.year, t.month-1, t.day, t.hour+1, t.minute, t.second)
+        [xh, xm] = divmod(t.minute + (60 if self.test.id is not 6 else 15), 60)
+        return u'%i, %i, %i, %i, %i, %i, %i' % (0, t.year, t.month-1, t.day, t.hour+xh, xm, t.second)
 
     score = property(_score)
     score_scaled = property(_score_scaled)
     score_percent = property(_score_percent)
     marked = property(_marked)
     complete = property(_complete)
+    incomplete = property(_incomplete)
     timerstring = property(_timerstring)
 
 class Answer(models.Model):

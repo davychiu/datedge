@@ -4,30 +4,58 @@
 {% block jquery %}
 var window_height = $(window).height()-300;
 $('div#test_review_content').css({'height': window_height + 'px'});
-$('div#test_review_content').nanoScroller();
+$('div#test_review_content').nanoScroller({flash: true});
 $(window).resize(function() {
     var window_height = $(window).height()-300;
-    $('div#test_review_content').css({'height': window_height + 'px'}).nanoScroller();
+    $('div#test_review_content').css({'height': window_height + 'px'}).nanoScroller({flash: true});
 
 });
+{% if sitting.is_timed %}
+$('#timer').countdown({until: new $.countdown.UTCDate({{ sitting.timerstring }}), expiryUrl: '{% url 'sitting_end' sitting.id %}', layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
+{% endif %}
+
+function timerCallback() {
+    alert('times up');
+}
 {% endblock %}
 
 {% block base_content %}
 <div id="test_container">
 <div id="end">
-<a href="{% url 'sitting_end' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/end.png" alt="end" /></a>
+<a href="{% url 'sitting_end' sitting.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/end.png" title="end test" alt="end" /></a>
 </div>
 <div id="test">
+<div id="timer" class="pull-right"></div>
 <h1>review</h1>
+<div id="test_review_header" class="table-center">
+    <div class="content">
+    <table id="review_table_header" class="table table-condensed">
+    <thead>
+        <tr>
+            <th></th>
+            <th class="cell-center">Marked</th>
+            <th class="cell-center">Completed</th>
+            <th class="cell-center">Skipped</th>
+        </tr>
+    </thead>
+    <tbody style="visibility: collapse;">
+        <tr><td>Question 11</td><td></td><td></td><td></td></tr>
+    </tbody>
+    </table>
+    </div>
+</div>
 <div id="test_review_content" class="nano table-center">
     <div class="content">
     <table id="review_table" class="table table-condensed">
-    <tr>
-        <th></th>
-        <th class="cell-center">Marked</th>
-        <th class="cell-center">Completed</th>
-        <th class="cell-center">Skipped</th>
-    </tr>
+    <thead style="visibility: collapse;">
+        <tr>
+            <th></th>
+            <th class="cell-center">Marked</th>
+            <th class="cell-center">Completed</th>
+            <th class="cell-center">Skipped</th>
+        </tr>
+    </thead>
+    <tbody>
     {% for item in question_data %}
     {% if not item.completed %}
     <tr class="error">
@@ -38,12 +66,21 @@ $(window).resize(function() {
     {% endif %}
     <td><a href="{% url 'sitting_question' sitting.id forloop.counter %}">Question {{ forloop.counter }}</a></td><td class="cell-center">{% if item.marked %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.completed %}<i class="icon-ok"></i>{% endif %}</td><td class="cell-center">{% if item.skipped %}<i class="icon-ok"></i>{% endif %}</td>
     {% endfor %}
+    </tbody>
     </table>
     </div>
+    <br />
 </div>
+<div class="review_buttons span6 offset2">
+<a href="{% url 'sitting_question' sitting.id 1 %}" class="btn">review all</a>
+<a href="{% url 'sitting_review_incomplete' sitting.id 1 %}" class="btn">review incomplete</a>
+<a href="{% url 'sitting_review_marked' sitting.id 1 %}" class="btn">review marked</a>
+</div>
+{% comment %}
 <br />
 marked: {{ sitting.marked.count }}<br />
 incomplete: {{ sitting.incomplete_count }}
+{% endcomment %}
 </div>
 </div>
 {% endblock %}

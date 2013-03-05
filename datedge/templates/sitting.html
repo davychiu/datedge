@@ -5,15 +5,19 @@
 <div id="test">
 <br /><br />
 {% if test_id == 6 %}
-<h1>Trial Practice Test</h1>
+<h1>Sample Test</h1>
+<h4>Reading Comprehension</h4>
+<br /><br /><br />
+<p>Time Limit: 15 minutes (Actual test will contain three passages with questions and the time will be 50 minutes.)</p>
 {% else %}
 <h1>Practice Test {{ test_id }}</h1>
-{% endif %}
 <h4>Reading Comprehension</h4>
 <br /><br /><br />
 <p>This section is comprised of 50 questions and must be completed within 60 minutes.</p>
 <p>The Reading Comprehension section of this test contains reading passages that can be viewed on the same page as the question.</p>
-<p>The reading passages are longer than the screen, so they are placed in a window. A scroll bar to the right of the passage can be used to scroll down to read the full passage.</p><br /><br />
+<p>The reading passages are longer than the screen, so they are placed in a window. A scroll bar to the right of the passage can be used to scroll down to read the full passage.</p>
+{% endif %}
+<br /><br />
 <a class="btn btn-success" href="{% url 'sitting_new_timed' test_id %}">begin timed <i class="icon-chevron-right"></i></a>
 <a class="btn btn-success" href="{% url 'sitting_new' test_id %}">begin untimed <i class="icon-chevron-right"></i></a>
 </div>
