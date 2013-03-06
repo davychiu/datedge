@@ -83,7 +83,7 @@ class Sitting(models.Model):
         return self.test.question_set.filter(answer__answer_idx__isnull=False, answer__sitting=self)
 
     def _incomplete(self):
-        return (self.test.question_set.exclude(answer__sitting=self) | self.test.question_set.filter(answer__answer_idx__isnull=True, answer__sitting=self)).distinct().order_by('id')
+        return (self.test.question_set.exclude(answer__sitting=self) | self.test.question_set.filter(answer__answer_idx__isnull=True, answer__sitting=self)).distinct().order_by('-id')
 
     def _timerstring(self):
         t = self.created_date
