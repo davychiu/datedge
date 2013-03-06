@@ -68,7 +68,7 @@ $(".overlay")
             <strong>Last sitting results</strong>
             </span>
             {% if item.test.id == 6 %}
-            <span data-toggle="tooltip" data-placement="left" title="Standard score is only given in the full version" class="scaled pull-left">n/a</span>
+            <span data-toggle="tooltip" data-placement="left" title="Standard score is only given in the full version" class="scaled pull-left">N/A</span>
             {% else %}
             <span class="scaled pull-left">{{ item.sittings.0.score_scaled }}</span>
             {% endif %}
@@ -84,7 +84,7 @@ $(".overlay")
         <div id="tp_history{{ forloop.counter }}" class="collapse tp_history">
         {% for sitting in item.sittings %}
             {% if sitting != item.sittings.0 %}
-            Prior Attempt {{ sitting.created_date|timesince }} ago: score {% if item.test.id == 6 %}?{% else %}{{ sitting.score_scaled }}{% endif %} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
+            Prior Attempt {{ sitting.created_date|timesince }} ago: score {% if item.test.id == 6 %}N/A{% else %}{{ sitting.score_scaled }}{% endif %} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
             {% endif %}
         {% endfor %}
         </div>

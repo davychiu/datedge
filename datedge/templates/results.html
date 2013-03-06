@@ -4,19 +4,23 @@
 {% block base_content %}
 <div id="test_container">
     <div id="test">
-        <h1>results</h1>
+        <h1>Results</h1>
         <div id="test_results" class="row-fluid">
             <div class="span4">
             <h4></h4>
             </div>
             <div class="span8">
+            {% if sitting.test.id == 6 %}
+            <span class="scaled pull-left">N/A</span>
+            {% else %}
             <span class="scaled pull-left">{{ sitting.score_scaled }}</span>
+            {% endif %}
             <span class="score">{{ sitting.score }} / {{ sitting.test.question_set.count }}</span><br />
             <span class="percent">{{ sitting.score_percent }}</span>
             </div>
         </div>
         <br /><br /><br />
-        <a class="btn btn-warning" href="{% url 'home' %}">return home</a>
+        <a class="btn btn-warning" href="{% url 'home' %}">Return Home</a>
     </div>
 </div>
 {% endblock %}

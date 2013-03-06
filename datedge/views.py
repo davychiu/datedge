@@ -120,14 +120,18 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
 def sitting_mark(request, sitting_id, question_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
     question = sitting.test.question_set.all()[int(question_id)-1]
-    if sitting.is_active:
+    options = [getattr(question, 'option' + str(idx)) for idx in range(1,6)]
+    form = QuestionForm(request.POST, options=options)
+    if sitting.is_active and form.is_valid():
         # check if no answer exists
+        answer_idx = form.cleaned_data['answer'] or None
         try:
             answer = sitting.answer_set.get(question=question.id)
             answer.is_marked = not answer.is_marked
+            answer.answer_idx = answer_idx
             answer.save()
         except Answer.DoesNotExist:
-            answer = Answer(user=request.user, sitting=sitting, question_id=question.id, is_marked=True)
+            answer = Answer(user=request.user, sitting=sitting, question_id=question.id, is_marked=True, answer_idx=answer_idx)
             answer.save()
     return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting_id, 'question_id': question_id}))
 

@@ -74,7 +74,7 @@ class Sitting(models.Model):
         return scaled
 
     def _score_percent(self):
-        return "%.0f%%" % (float(self.score) / 50 * 100)
+        return "%.0f%%" % (float(self.score) / float(self.test.question_set.count()) * 100)
 
     def _marked(self):
         return self.test.question_set.filter(answer__is_marked=True, answer__sitting=self)
@@ -83,7 +83,7 @@ class Sitting(models.Model):
         return self.test.question_set.filter(answer__answer_idx__isnull=False, answer__sitting=self)
 
     def _incomplete(self):
-        return (self.test.question_set.exclude(answer__sitting=self) | self.test.question_set.filter(answer__answer_idx__isnull=True, answer__sitting=self)).distinct()
+        return (self.test.question_set.exclude(answer__sitting=self) | self.test.question_set.filter(answer__answer_idx__isnull=True, answer__sitting=self)).distinct().order_by('id')
 
     def _timerstring(self):
         t = self.created_date
