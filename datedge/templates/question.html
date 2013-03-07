@@ -57,15 +57,15 @@ function timerCallback() {
     <td class="cell-center">
     {% if sitting.is_active %}
         {% if question.is_marked %}
-        <a class="btn btn-warning" href="{% url 'sitting_mark' sitting.id question.num %}">Marked</a>
+        <input type="submit" name="submit_mark" value="Marked" class="btn btn-warning" />
         {% else %}
-        <a class="btn" href="{% url 'sitting_mark' sitting.id question.num %}">Mark</a>
+        <input type="submit" name="submit_mark" value="Mark" class="btn" />
         {% endif %}
     {% else %}
         {% if question.is_marked %}
-        <a class="btn btn-warning" href="{% url 'sitting_mark' sitting.id question.num %}" disabled>Marked</a>
+        <input type="submit" name="submit_mark" value="Marked" class="btn btn-warning" disabled />
         {% else %}
-        <a class="btn" href="{% url 'sitting_mark' sitting.id question.num %}" disabled>Mark</a>
+        <input type="submit" name="submit_mark" value="Mark" class="btn" disabled />
         {% endif %}
     {% endif %}
     </td>

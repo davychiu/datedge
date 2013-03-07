@@ -89,19 +89,22 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
     options = [getattr(question, 'option' + str(idx)) for idx in range(1,6)]
     if request.POST:
         form = QuestionForm(request.POST, options=options)
+        is_mark = True if "submit_mark" in request.POST else False
         if form.is_valid():
             #save answer
             if sitting.is_active:
                 answer_idx = form.cleaned_data['answer'] or None
                 if not answer:
                     answer = Answer(sitting=sitting, question=question, user=request.user, answer_idx=answer_idx)
-                    answer.save()
                 if answer.answer_idx is not answer_idx:
                     answer.answer_idx = answer_idx
-                    answer.save()
+                if is_mark:
+                    answer.is_marked = not answer.is_marked
+                answer.save()
             #return next/prev question
             is_forward = True if "submit_next" in request.POST else False
             offset = 1 if is_forward else -1
+            offset = 0 if is_mark else offset
             if int(question_id) >= question_set.count() and offset == 1:
                 return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))
             else:
