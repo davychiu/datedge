@@ -7,8 +7,12 @@ $('div#test_question_text').nanoScroller({flash: true, flashDelay: 100000});
 $(window).resize(function() {
     var window_height = $(window).height()-430;
     $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller({flash: true, flashDelay: 100000});
-
 });
+{% if sitting.is_active %}
+$('.navbar a').click(function(e) {
+    return confirm('Leaving this page will end the test. Are you sure?');
+});
+{% endif %}
 {% if sitting.is_timed %}
 $('#timer').countdown({until: new $.countdown.UTCDate({{ sitting.timerstring }}), expiryUrl: '{% url 'sitting_end' sitting.id %}', layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
 {% endif %}

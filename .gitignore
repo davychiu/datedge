@@ -4,3 +4,4 @@ venv
 *.swo
 database.sql
 datedge/local_settings.py
+keys

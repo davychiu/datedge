@@ -10,6 +10,11 @@ $(window).resize(function() {
     $('div#test_review_content').css({'height': window_height + 'px'}).nanoScroller({flash: true, flashDelay:100000});
 
 });
+{% if sitting.is_active %}
+$('.navbar a').click(function(e) {
+    return confirm('Leaving this page will end the test. Are you sure?');
+});
+{% endif %}
 {% if sitting.is_timed %}
 $('#timer').countdown({until: new $.countdown.UTCDate({{ sitting.timerstring }}), expiryUrl: '{% url 'sitting_end' sitting.id %}', layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
 {% endif %}
@@ -23,7 +28,7 @@ function timerCallback() {
 <div id="test_container">
 <div id="test">
 <div id="timer" class="pull-right"></div>
-<h1>review</h1>
+<h1>Review</h1>
 <div id="test_review_header" class="table-center">
     <div class="content">
     <table id="review_table_header" class="table table-condensed">

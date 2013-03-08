@@ -53,11 +53,8 @@ def sitting_stage(request, test_id):
 @activation_required
 def sitting_new(request, test_id, is_timed=False):
     # check if no active sitting exists
-    try:
-        sitting = Sitting.objects.get(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
-    except Sitting.DoesNotExist:
-        sitting = Sitting(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
-        sitting.save()
+    sitting = Sitting(user=request.user, test_id=test_id, is_active=True, is_timed=is_timed)
+    sitting.save()
     return HttpResponseRedirect(reverse('sitting_question', kwargs={'sitting_id': sitting.id, 'question_id': 1}))
 
 @login_required
