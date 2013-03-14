@@ -72,7 +72,7 @@ $('.payment-errors').hide();
           <span>Card Number</span>
         </label>
         <div class="controls">
-            <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" value="4242424242424242"/>
+            <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" placeholder="1234123412341234" {% if debug %}value="4242424242424242"{% endif %} />
         </div>
       </div>
 
@@ -81,7 +81,7 @@ $('.payment-errors').hide();
           <span>CVC</span>      
         </label>
         <div class="controls">
-            <input type="text" size="4" maxlength="4" autocomplete="off" class="card-cvc input-mini" value="123"/>
+            <input type="text" size="4" maxlength="4" autocomplete="off" class="card-cvc input-mini" placeholder="123" {% if debug %}value="123"{% endif %} />
         </div>
       </div>
 
@@ -90,9 +90,9 @@ $('.payment-errors').hide();
           <span>Expiration (MM/YYYY)</span>      
         </label>
         <div class="controls">
-            <input type="text" size="2" maxlength="2" class="card-expiry-month input-mini" value="12"/>
+            <input type="text" size="2" maxlength="2" class="card-expiry-month input-mini" placeholder="12" {% if debug %} value="12" {% endif %}/>
             <span> / </span>
-            <input type="text" size="4" maxlength="4" class="card-expiry-year input-small" value="2015"/>
+            <input type="text" size="4" maxlength="4" class="card-expiry-year input-small" placeholder="2015" {% if debug %} value="2015" {% endif %} />
         </div>
       </div>
 
