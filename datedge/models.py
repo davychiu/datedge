@@ -41,6 +41,9 @@ class Question(models.Model):
     answer_idx = models.IntegerField(default=0)
     description = models.TextField()
 
+    class Meta:
+        ordering = ('-id',)
+    
     def __unicode__(self):
         return self.description
 
@@ -77,7 +80,7 @@ class Sitting(models.Model):
         return "%.0f%%" % (float(self.score) / float(self.test.question_set.count()) * 100)
 
     def _marked(self):
-        return self.test.question_set.filter(answer__is_marked=True, answer__sitting=self)
+        return self.test.question_set.filter(answer__is_marked=True, answer__sitting=self).order_by('-id')
     
     def _complete(self):
         return self.test.question_set.filter(answer__answer_idx__isnull=False, answer__sitting=self)

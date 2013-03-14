@@ -51,15 +51,15 @@ $('.payment-errors').hide();
 <h1>Checkout</h1>
 <br /><br />
 <div class="row">
-<div class="span8 offset2">
+<div class="span5 offset3">
     <div class="row">
-        <div class="span5 muted">
+        <div class="span3 muted">
             DATEdge<br />6-month Unlimited License
         </div>
         <div class="span1">
             x1
         </div>
-        <div class="span2">
+        <div class="span1">
             $49 USD
         </div>
     </div>
@@ -69,19 +69,19 @@ $('.payment-errors').hide();
     {% csrf_token %}
       <div class="control-group">
         <label class="control-label">
-          <span>Card Number</span>
+          <span>Credit Card Number</span>
         </label>
         <div class="controls">
-            <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" placeholder="1234123412341234" {% if debug %}value="4242424242424242"{% endif %} />
+            <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" {% if debug %}value="4242424242424242"{% endif %} />
         </div>
       </div>
 
       <div class="control-group">
         <label class="control-label">
-          <span>CVC</span>      
+          <span>Security Code (CVC)</span>      
         </label>
         <div class="controls">
-            <input type="text" size="4" maxlength="4" autocomplete="off" class="card-cvc input-mini" placeholder="123" {% if debug %}value="123"{% endif %} />
+            <input type="text" size="4" maxlength="4" autocomplete="off" class="card-cvc input-mini" {% if debug %}value="123"{% endif %} />
         </div>
       </div>
 
@@ -90,9 +90,9 @@ $('.payment-errors').hide();
           <span>Expiration (MM/YYYY)</span>      
         </label>
         <div class="controls">
-            <input type="text" size="2" maxlength="2" class="card-expiry-month input-mini" placeholder="12" {% if debug %} value="12" {% endif %}/>
+            <input type="text" size="2" maxlength="2" class="card-expiry-month input-mini" {% if debug %} value="12" {% endif %}/>
             <span> / </span>
-            <input type="text" size="4" maxlength="4" class="card-expiry-year input-small" placeholder="2015" {% if debug %} value="2015" {% endif %} />
+            <input type="text" size="4" maxlength="4" class="card-expiry-year input-small" {% if debug %} value="2015" {% endif %} />
         </div>
       </div>
 
