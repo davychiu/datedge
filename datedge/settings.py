@@ -7,6 +7,7 @@ DEBUG = False
 PROJECT_PATH = os.path.join(os.path.dirname(__file__))
 
 ADMINS = (
+    ('Davy Chiu', 'davychiu@gmail.com'),
     # ('Your Name', 'your_email@example.com'),
 )
 
