@@ -183,7 +183,7 @@ def process(request):
 
     # create the charge on Stripe's servers - this will charge the user's card
     charge = stripe.Charge.create(
-        amount=4900, # amount in cents, again
+        amount=100, # amount in cents, again
         currency="usd",
         card=token,
         description="DATEdge: " + request.user.email
