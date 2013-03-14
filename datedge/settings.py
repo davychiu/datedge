@@ -2,7 +2,7 @@
 import os
 import dj_database_url
 
-DEBUG = False 
+DEBUG = True 
 
 PROJECT_PATH = os.path.join(os.path.dirname(__file__))
 
