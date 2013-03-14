@@ -42,7 +42,7 @@ class Question(models.Model):
     description = models.TextField()
 
     class Meta:
-        ordering = ('-id',)
+        ordering = ('id',)
     
     def __unicode__(self):
         return self.description
