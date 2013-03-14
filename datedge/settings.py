@@ -2,7 +2,7 @@
 import os
 import dj_database_url
 
-DEBUG = True 
+DEBUG = False 
 
 PROJECT_PATH = os.path.join(os.path.dirname(__file__))
 
@@ -14,7 +14,7 @@ ADMINS = (
 MANAGERS = ADMINS
 
 STRIPE_SECRET = "sk_live_9TQraefYzP4TDqxttHbh4l4f"
-STRIPE_PUBSHABLE = "pk_live_GmYiNMTJvhDv4psxOHM6Q2I8"
+STRIPE_PUBLISHABLE = "pk_live_GmYiNMTJvhDv4psxOHM6Q2I8"
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/home/'
