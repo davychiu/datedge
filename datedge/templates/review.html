@@ -77,8 +77,8 @@ function timerCallback() {
 <table style="width: 100%">
 <tr>
 <td class="cell-center"><a href="{% url 'sitting_question' sitting.id 1 %}" class="btn">Review All</a></td>
-<td class="cell-center"><a href="{% url 'sitting_review_incomplete' sitting.id 1 %}" class="btn">Review Incomplete</a></td>
-<td class="cell-center"><a href="{% url 'sitting_review_marked' sitting.id 1 %}" class="btn">Review Marked</a></td>
+<td class="cell-center"><a href="{% url 'sitting_review_incomplete' sitting.id 1 %}" class="btn" {% if sitting.incomplete.count == 0 %}disabled onclick="return false;"{% endif %}>Review Incomplete</a></td>
+<td class="cell-center"><a href="{% url 'sitting_review_marked' sitting.id 1 %}" class="btn" {% if sitting.marked.count == 0 %}disabled onclick="return false;"{% endif %}>Review Marked</a></td>
 <td class="cell-center"><a href="{% url 'sitting_end' sitting.id %}" class="btn">End</a></td>
 </tr>
 </table>

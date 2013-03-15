@@ -100,8 +100,21 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
                 answer.save()
             #return next/prev question
             is_forward = True if "submit_next" in request.POST else False
+            #for marked and incomplete, check if set has shrunk and reset question_id
+            if review_marked:
+                question_set = sitting.marked
+            elif review_incomplete:
+                question_set = sitting.incomplete
+            if review_marked or review_incomplete:
+                if question not in question_set:
+                    question_id = str(int(question_id)-1)
+                    is_forward = True
+                    is_mark = False
             offset = 1 if is_forward else -1
             offset = 0 if is_mark else offset
+            print question_id
+            print question_set.count()
+            print offset
             if int(question_id) >= question_set.count() and offset == 1:
                 return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))
             else:
