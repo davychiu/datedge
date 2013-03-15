@@ -78,8 +78,8 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
     except Answer.DoesNotExist:
         answer = None
     try:
-        question.back = question_set[int(question_id)-2] if int(question_id) > 1 else None
-        question.next = question_set[int(question_id)] if int(question_id) < 50 else None
+        question.back = question_set[int(question_id)-1] if int(question_id) > 1 else None
+        question.next = question_set[int(question_id)] if int(question_id) < question_set.count() else None
     except IndexError:
         question.next = question.back = None
     question.text = getattr(sitting.test, 'text' + str(question.text_idx))
