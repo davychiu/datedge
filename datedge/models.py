@@ -33,11 +33,11 @@ class Test(models.Model):
 class Question(models.Model):
     test = models.ForeignKey(Test)
     text_idx = models.IntegerField(default=0)
-    option1 = models.CharField(max_length=500)
-    option2 = models.CharField(max_length=500)
-    option3 = models.CharField(max_length=500)
-    option4 = models.CharField(max_length=500)
-    option5 = models.CharField(max_length=500)
+    option1 = models.CharField(blank=True, max_length=500)
+    option2 = models.CharField(blank=True, max_length=500)
+    option3 = models.CharField(blank=True, max_length=500)
+    option4 = models.CharField(blank=True, max_length=500)
+    option5 = models.CharField(blank=True, max_length=500)
     answer_idx = models.IntegerField(default=0)
     description = models.TextField()
 
