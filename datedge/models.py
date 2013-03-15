@@ -26,6 +26,9 @@ class Test(models.Model):
     text1 = models.TextField()
     text2 = models.TextField()
     text3 = models.TextField()
+
+    class Meta:
+        ordering = ('id',)   
     
     def __unicode__(self):
         return self.text1[:50]
