@@ -10,7 +10,8 @@ from datedge import settings
 import stripe
 
 def main(request):
-    return render(request, 'base.html', {'STATIC_URL': settings.STATIC_URL})
+    meta_description = "Get Instant Access To DAT Edge Practice Exams. Sign Up Now To Get A Free Sample Test!"
+    return render(request, 'base.html', {'STATIC_URL': settings.STATIC_URL, 'META_DESCRIPTION': meta_description})
 
 @login_required
 def home(request):
