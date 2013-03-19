@@ -200,7 +200,7 @@ def process(request):
         amount=4900, # amount in cents, again
         currency="usd",
         card=token,
-        description="DATEdge: " + request.user.email
+        description="DAT Edge: " + request.user.email
     )
     today = date.today()
     [exp_y, exp_m] = divmod(today.month + 6, 12)
