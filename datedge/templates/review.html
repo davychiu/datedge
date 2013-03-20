@@ -14,9 +14,9 @@ $(window).resize(function() {
 $('.navbar a').click(function(e) {
     return confirm('Leaving this page will end the test. Are you sure?');
 });
-{% endif %}
 {% if sitting.is_timed %}
 $('#timer').countdown({until: new $.countdown.UTCDate({{ sitting.timerstring }}), expiryUrl: '{% url 'sitting_end' sitting.id %}', layout: '<i class="icon-time"> </i> {mnn}{sep}{snn}'});
+{% endif %}
 {% endif %}
 
 function timerCallback() {

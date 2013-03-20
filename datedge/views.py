@@ -16,6 +16,8 @@ def main(request):
 @login_required
 def home(request):
     test_data = []
+    sittings = Sitting.objects.filter(user=request.user)
+    sittings.update(is_active=False)
     tests = Test.objects.exclude(id=6)
     sample_test = Test.objects.get(id=6)
     test_data.append({'test': sample_test, 'sittings': request.user.sitting_set.filter(test=sample_test)[:5]})
