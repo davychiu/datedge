@@ -16,7 +16,7 @@ def main(request):
 @login_required
 def home(request):
     test_data = []
-    sittings = Sitting.objects.filter(user=request.user)
+    sittings = Sitting.objects.filter(user=request.user, is_active=True)
     sittings.update(is_active=False)
     tests = Test.objects.exclude(id=6)
     sample_test = Test.objects.get(id=6)
