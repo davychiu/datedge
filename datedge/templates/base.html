@@ -61,7 +61,7 @@
           <ul class="nav pull-right" style="margin-left: 15px;">
             {% if not user.get_profile.is_activated %}
             <li class="{% if request.path == '/purchase/' %}active{% endif %}"><a href="/purchase">Buy Now</a></li>
-            <li class="{% if request.path == '/trial/' %}active{% endif %}"><a href="/trial">Free Trial</a></li>
+            <li class="{% if request.path == '/trial/' %}active{% endif %}"><a href="{% url 'registration_register' %}">Free Trial</a></li>
             {% endif %}
             <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="/contact">Contact</a></li>
             <li class="dropdown">
@@ -83,7 +83,7 @@
           <a class="btn btn-info pull-right" href="/accounts/login">Login</a>
           <ul class="nav pull-right">
             <li class="{% if request.path == '/purchase/' %}active{% endif %}"><a href="/purchase">Buy Now</a></li>
-            <li class="{% if request.path == '/trial/' %}active{% endif %}"><a href="/trial">Free Trial</a></li>
+            <li class="{% if request.path == '/trial/' %}active{% endif %}"><a href="{% url 'registration_register' %}">Free Trial</a></li>
             <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="/contact">Contact</a></li>           
             <li class="{% if request.path == '/accounts/register/' %}active{% endif %}"><a href="{% url 'registration_register' %}">Sign up</a></li>
             <li></li>
@@ -125,7 +125,11 @@
         <br />
         <p>Use DAT Edge to prepare for the most difficult section of the DAT.</p>
         <br />
+        {% if user.is_authenticated %}
         <p><a class="btn btn-warning btn-large" href="{% url 'purchase' %}">Buy Now $49 &raquo;</a> <a class="btn btn-info btn-large" href="{% url 'trial' %}">Free Trial &raquo;</a></p>
+        {% else %}
+        <p><a class="btn btn-warning btn-large" href="{% url 'purchase' %}">Buy Now $49 &raquo;</a> <a class="btn btn-info btn-large" href="{% url 'registration_register' %}">Free Trial &raquo;</a></p>
+        {% endif %}
         </div>
         <div class="span5">
             <img src="{{STATIC_URL|default:"/static/"}}img/hero-img.png" />
