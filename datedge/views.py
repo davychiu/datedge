@@ -24,7 +24,7 @@ def home(request):
     test_data.append({'test': sample_test, 'sittings': request.user.sitting_set.filter(test=sample_test)[:5]})
     expiry = request.user.activation_set.filter(expiry__gte=date.today())[0].expiry if request.user.get_profile().is_activated else None
     for test in tests:
-        test_data.append({'test': test, 'sittings': request.user.sitting_set.filter(test=test)[:5]})
+        test_data.append({'test': test, 'sittings': request.user.sitting_set.prefetch_related('test').filter(test=test)[:5]})
     return render(request, 'home.html', {'test_data': test_data, 'expiry': expiry})
 
 def account_activate(request, user_id=None):
@@ -116,9 +116,6 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
                     is_mark = False
             offset = 1 if is_forward else -1
             offset = 0 if is_mark else offset
-            print question_id
-            print question_set.count()
-            print offset
             if int(question_id) >= question_set.count() and offset == 1:
                 return HttpResponseRedirect(reverse('sitting_review', kwargs={'sitting_id': sitting_id}))
             else:

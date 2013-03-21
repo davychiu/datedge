@@ -66,9 +66,12 @@ class Sitting(models.Model):
 
     def _score(self):
         score = 0
-        for q in self.test.question_set.filter(answer__sitting=self):
-            if q.answer_idx == self.test.question_set.get(id=q.id).answer_set.get(sitting=self,question=q).answer_idx:
-                score += 1
+        all_answers = Answer.objects.prefetch_related('question').filter(sitting=self)
+        all_questions = self.test.question_set.all()
+        for answer in all_answers:
+            if answer.question in all_questions:
+                if answer.answer_idx is answer.question.answer_idx:
+                    score += 1
         return score
 
     def _score_scaled(self):

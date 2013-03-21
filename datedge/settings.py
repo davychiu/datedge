@@ -94,9 +94,11 @@ SECRET_KEY = 'g%56a#_12xz1^99g6z@bb8528b2bmglxv1uny+oflq21a@06aw'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
-    'django.template.loaders.filesystem.Loader',
-    'django.template.loaders.app_directories.Loader',
+    ('django.template.loaders.cached.Loader', (
+        'django.template.loaders.filesystem.Loader',
+        'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
+    )),
 )
 
 MIDDLEWARE_CLASSES = (
@@ -175,10 +177,11 @@ LOGGING = {
         },
     }
 }
-
 try:
-    from local_settings import *
-except:
-#    print "import failed"
-    pass
+    DEV_ENVIRONMENT
+except NameError:
+    try:
+        from local_settings import *
+    except:
+        pass
 
