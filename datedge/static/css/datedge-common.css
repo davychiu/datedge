@@ -1,6 +1,11 @@
 footer {
     text-align: right;
 }
+.btn-huge {
+    padding: 17px 25px;
+    font-size: 27px;
+    border-radius: 6px 6px 6px 6px;
+}
 .hero-unit {
     background-color: transparent;
     padding: 40px;

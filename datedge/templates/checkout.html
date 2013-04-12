@@ -73,6 +73,11 @@ $('.payment-errors').hide();
         </label>
         <div class="controls">
             <input type="text" size="20" maxlength="20" autocomplete="off" class="card-number" {% if debug %}value="4242424242424242"{% endif %} />
+            {% comment %}<br />
+            <img src="{{STATIC_URL|default:"/static/"}}img/visa.png" width="80px" class="inline" />
+            <img src="{{STATIC_URL|default:"/static/"}}img/mc.png" width="80px" class="inline" />
+            <img src="{{STATIC_URL|default:"/static/"}}img/amex.png" width="80px" class="inline" />
+            {% endcomment %}
         </div>
       </div>
 
