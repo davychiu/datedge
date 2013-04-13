@@ -20,7 +20,7 @@ class UserProfile(models.Model):
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
         UserProfile.objects.create(user=instance)
-        send_mail('Welcome to DATEdge', 'Welcome to your DAT Edge accout!\n\n====================\nYour Login Details\n====================\n\nUsername: ' + instance.username + '\n\nLogin to start your Free Trial: http://www.datedge.com/accounts/login/\n\nIf you have any questions, please email us at support@datedge.com\n\nRegards,\nThe DAT Edge Team\nwww.datedge.com','support@datedge.com',[instance.email])
+        send_mail('Welcome to DATEdge', 'Welcome to your DAT Edge account!\n\n====================\nYour Login Details\n====================\n\nUsername: ' + instance.username + '\n\nLogin to start your Free Trial: http://www.datedge.com/accounts/login/\n\nIf you have any questions, please email us at support@datedge.com\n\nRegards,\nThe DAT Edge Team\nwww.datedge.com','support@datedge.com',[instance.email])
 
 signals.post_save.connect(create_user_profile, sender=User)
 
