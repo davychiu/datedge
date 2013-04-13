@@ -11,6 +11,12 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'app12366641@heroku.com'
+EMAIL_HOST_PASSWORD = 'nzfwapwx'
+EMAIL_PORT = 587
+EMAIL_USER_TLS = True
+
 MANAGERS = ADMINS
 
 STRIPE_SECRET = "sk_live_9TQraefYzP4TDqxttHbh4l4f"
