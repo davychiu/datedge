@@ -53,7 +53,7 @@ $(".overlay")
     <div class="new_button" title="take test"><a href="{% url 'sitting_stage' forloop.counter0 %}"><img src="{{STATIC_URL|default:"/s/"}}img/new_sitting.png" alt="new" /></a></div>
     {% endif %}
     {% if item.sittings.0 %}
-    <div class="review_button" title="review test"><a href="{% url 'sitting_review' item.sittings.0.id %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
+    <div class="review_button" title="review test"><a href="{% url 'sitting_question' item.sittings.0.id 1 %}"><img src="{{STATIC_URL|default:"/s/"}}img/sitting_review.png" alt="detail" /></a></div>
     {% endif %}
 
     <div class="testpanel">
@@ -84,7 +84,7 @@ $(".overlay")
         <div id="tp_history{{ forloop.counter }}" class="collapse tp_history">
         {% for sitting in item.sittings %}
             {% if sitting != item.sittings.0 %}
-            Prior Attempt {{ sitting.created_date|timesince }} ago: score {% if item.test.id == 6 %}N/A{% else %}{{ sitting.score_scaled }}{% endif %} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_review' sitting.id %}"><i class="icon-share-alt"></i></a><br />
+            Prior Attempt {{ sitting.created_date|timesince }} ago: score {% if item.test.id == 6 %}N/A{% else %}{{ sitting.score_scaled }}{% endif %} ({{ sitting.score }}/{{ sitting.test.question_set.count }}) {{ sitting.score_percent }} <a class="pull-right" href="{% url 'sitting_question' sitting.id 1 %}"><i class="icon-share-alt"></i></a><br />
             {% endif %}
         {% endfor %}
         </div>
