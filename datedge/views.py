@@ -214,4 +214,5 @@ def process(request):
 @login_required
 def success(request):
     send_mail('DAT Edge Purchase', 'Thank you for purchasing the DAT Edge Reading Comprehension Practice Tests.\n\n====================\nYour Login Details\n====================\n\nUsername: ' + request.user.username + '\n\nLogin to start taking the practice tests: http://www.datedge.com/accounts/login/\n\nIf you have any questions, please email us at support@datedge.com\n\nRegards,\nThe DAT Edge Team\nwww.datedge.com','support@datedge.com',[request.user.email])
+    send_mail('DAT Edge Purchase: ' + request.user.username,'','support@datedge.com','davychiu@gmail.com, umuhamm@gmail.com')
     return render(request, 'success.html')
