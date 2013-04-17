@@ -170,7 +170,18 @@ def sitting_review(request, sitting_id):
 @activation_required
 def sitting_results(request, sitting_id):
     sitting = Sitting.objects.get(id=sitting_id, user=request.user)
-    return render(request, 'results.html', {'sitting': sitting})
+    questions = []
+    for question in sitting.test.question_set.all():
+        try:
+            answer = sitting.answer_set.get(question=question)
+        except Answer.DoesNotExist:
+            answer = None
+        question.is_correct = False
+        if answer:
+            if question.answer_idx is answer.answer_idx:
+                question.is_correct = True
+        questions.append({'question': question})
+    return render(request, 'results.html', {'sitting': sitting, 'questions': questions})
 
 @login_required
 @activation_required

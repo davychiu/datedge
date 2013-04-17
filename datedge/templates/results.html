@@ -6,9 +6,10 @@
     <div id="test">
         <h1>Results</h1>
         <div id="test_results" class="row-fluid">
-            <div class="span4">
+            <div class="span3">
             <h4></h4>
             </div>
+            <div class="span1"><h5>score</h5></div>
             <div class="span8">
             {% if sitting.test.id == 6 %}
             <span class="scaled pull-left">N/A</span>
@@ -17,6 +18,21 @@
             {% endif %}
             <span class="score">{{ sitting.score }} / {{ sitting.test.question_set.count }}</span><br />
             <span class="percent">{{ sitting.score_percent }}</span>
+            </div>
+        </div><br /><br /><br />
+        <div class="row-fluid">
+            <div class="span1 offset3"><h5>review</h5></div>
+            <div class="span4 muted">
+                <sup style="postion: absolute !important; right: 10px; top: 5px; float: left;">1</sup>
+                {% for question in questions %}
+                {% if question.question.is_correct %}
+                <a href="{% url 'sitting_question' sitting.id forloop.counter %}" title="Question {{ forloop.counter }}"><i class="icon-ok"></i></a>
+                {% else %}
+                <a href="{% url 'sitting_question' sitting.id forloop.counter %}" title="Question {{ forloop.counter }}"><i class="icon-remove"></i></a>
+                {% endif %}
+                {% endfor %}
+                <sub>{{ sitting.test.question_set.count }}</sub>
+                <br />(selectable)
             </div>
         </div>
         <br /><br /><br />
