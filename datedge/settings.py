@@ -21,6 +21,8 @@ MANAGERS = ADMINS
 STRIPE_SECRET = "sk_live_9TQraefYzP4TDqxttHbh4l4f"
 STRIPE_PUBLISHABLE = "pk_live_GmYiNMTJvhDv4psxOHM6Q2I8"
 
+MAILCHIMP_API_KEY = "242c1dddd2a5a115ba3df9ed90b6db35-us4"
+
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/home/'
 SUCCESS_URL = '/home/'
@@ -152,6 +154,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'registration',
     'south',
+    'mailchimp',
 )
 
 # A sample logging configuration. The only tangible logging
