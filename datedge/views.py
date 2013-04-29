@@ -65,7 +65,20 @@ def sitting_new(request, test_id, is_timed=False):
 @login_required
 @activation_required
 def sitting_question(request, sitting_id, question_id, review_marked=False, review_incomplete=False):
-    sitting = Sitting.objects.get(id=sitting_id, user=request.user)
+    sitting = Sitting.objects.get(id=sitting_id, user=request.user) 
+# snippet to generate review checks and exes
+    questions = []
+    for question in sitting.test.question_set.all():
+        try:
+            answer = sitting.answer_set.get(question=question)
+        except Answer.DoesNotExist:
+            answer = None
+        question.is_correct = False
+        if answer:
+            if question.answer_idx is answer.answer_idx:
+                question.is_correct = True
+        questions.append({'question': question})
+
     question_set = ''
     post_redirect = ''
     if review_marked:
@@ -128,7 +141,7 @@ def sitting_question(request, sitting_id, question_id, review_marked=False, revi
         form = QuestionForm(options=options, active=sitting.is_active, initial={'answer': answer_idx}, auto_id=False)
         question.num = list(sitting.test.question_set.all().values_list('id', flat=True)).index(int(question.id)) + 1
         question.is_marked = answer.is_marked if hasattr(answer, 'is_marked') else None
-        return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form})
+        return render(request, 'question.html', {'sitting': sitting, 'question': question, 'form':form, 'questions':questions})
 
 @login_required
 @activation_required

@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 {% load url from future %}
 {% block jquery %}
+{% if sitting.is_active %}
 var window_height = $(window).height()-430;
+{% else %}
+var window_height = $(window).height()-450;
+{% endif %}
 $('div#test_question_text').css({'height': window_height + 'px'});
 $('div#test_question_text').nanoScroller({flash: true, flashDelay: 100000});
 $(window).resize(function() {
+    {% if sitting.is_active %}
     var window_height = $(window).height()-430;
+    {% else %}
+    var window_height = $(window).height()-450;
+    {% endif %}
     $('div#test_question_text').css({'height': window_height + 'px'}).nanoScroller({flash: true, flashDelay: 100000});
 });
 {% if sitting.is_active %}
@@ -26,6 +34,22 @@ function timerCallback() {
 <form action="" method="post">
 <div id="test">
     <div id="timer" class="pull-right"></div>
+    {% if not sitting.is_active %}
+    <div class="row-fluid">
+       <div class="span1 muted"><h5 style="margin: 0px">Review</h5></div>
+       <div class="span11 muted">
+           <sup style="postion: absolute !important; right: 10px; top: 5px; float: left;">1</sup>
+           {% for q in questions %}
+           {% if q.question.is_correct %}
+           <a href="{% url 'sitting_question' sitting.id forloop.counter %}" title="Question {{ forloop.counter }}" {% ifequal q.question question %}style="opacity: 1;"{% else %}style="opacity: 0.5;"{% endifequal %}><i class="icon-ok"></i></a>
+           {% else %}
+           <a href="{% url 'sitting_question' sitting.id forloop.counter %}" title="Question {{ forloop.counter }}" {% ifequal q.question question %}style="opacity: 1;"{% else %}style="opacity: 0.5;"{% endifequal %}><i class="icon-remove"></i></a>
+           {% endif %}
+           {% endfor %}
+           <sub>{{ sitting.test.question_set.count }}</sub>
+       </div>
+    </div>  
+    {% endif %}
     <div id="test_question">
         <div id="test_question_description">{{ question.num }}. {{ question.description|safe }}</div>
         <div id="test_question_answer">
