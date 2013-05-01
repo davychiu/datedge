@@ -2,7 +2,7 @@ from django.contrib import admin
 from datedge.models import Sitting, Test, Question, Activation, Answer, Scaling, UserProfile
 
 class SittingAdmin(admin.ModelAdmin):
-    list_display = ('id','test_id','is_active','user','score_percent','created_date','modified_date')
+    list_display = ('id','test_id','is_active','is_timed','user','score_percent','created_date','modified_date')
 
     def test_id(self, instance):
         return instance.test.id if instance.test.id is not 6 else 'trial'
