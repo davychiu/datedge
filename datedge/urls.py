@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings
 from django.views.generic.base import TemplateView
+from django.http import HttpResponse
 from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from datedge import views
@@ -39,6 +40,7 @@ urlpatterns = patterns('',
     url(r'^sitting/(?P<sitting_id>\d+)/end/$', views.sitting_end, name='sitting_end'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('registration.backends.simple.urls')),
+    url(r'^robots\.txt$', lambda r: HttpResponse("User-agent: *\nDisallow: /admin", mimetype="text/plain")),
 )
 
 #monkey patch for django admin static files on heroku
