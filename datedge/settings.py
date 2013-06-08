@@ -12,6 +12,8 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
+SERVER_Email = 'admin@datedge.com'
+
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'app12366641@heroku.com'
 EMAIL_HOST_PASSWORD = 'nzfwapwx'
