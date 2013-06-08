@@ -1,12 +1,14 @@
 # Django settings for datedge project.
 import os
 import dj_database_url
+import re
 
 DEBUG = False 
 
 PROJECT_PATH = os.path.join(os.path.dirname(__file__))
 
 ADMINS = (
+    ('Davy Chiu', 'davychiu@gmail.com'),
     # ('Your Name', 'your_email@example.com'),
 )
 
@@ -36,6 +38,12 @@ AUTH_PROFILE_MODULE = 'datedge.UserProfile'
 DATABASES = {
     'default': dj_database_url.config()
 }
+
+IGNORABLE_404_URLS = (
+    re.compile(r'^/apple-touch-icon.*\.png$'),
+    re.compile(r'^/favicon\.ico$'),
+    re.compile(r'^/robots\.txt$'),
+)
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
