@@ -206,9 +206,9 @@ def sitting_end(request, sitting_id):
     return HttpResponseRedirect(reverse('sitting_results', kwargs={'sitting_id': sitting_id}))
 
 @login_required
-def purchase(request):
+def purchase(request, error=None):
     from django.conf import settings
-    return render(request, 'checkout.html', {'STRIPE_PUBLISHABLE': settings.STRIPE_PUBLISHABLE})
+    return render(request, 'checkout.html', {'STRIPE_PUBLISHABLE': settings.STRIPE_PUBLISHABLE, 'payment_error': error})
 
 @login_required
 def process(request):
@@ -221,12 +221,16 @@ def process(request):
     token = request.POST['stripeToken']
 
     # create the charge on Stripe's servers - this will charge the user's card
-    charge = stripe.Charge.create(
-        amount=4900, # amount in cents, again
-        currency="usd",
-        card=token,
-        description="DAT Edge: " + request.user.email
-    )
+    try:
+        charge = stripe.Charge.create(
+            amount=4900, # amount in cents, again
+            currency="usd",
+            card=token,
+            description="DAT Edge: " + request.user.email
+        )
+    except stripe.CardError as e:
+        return purchase(request, str(e))
+
     today = date.today()
     [exp_y, exp_m] = divmod(today.month + 6, 13)
     expiry = date(today.year + exp_y, exp_m + exp_y, today.day)

@@ -44,7 +44,11 @@ function stripeResponseHandler(status, response) {
 {% endblock %}
 
 {% block jquery %}
+{% if payment_error %}
+$('.payment-errors').text('{{ payment_error }}');
+{% else %}
 $('.payment-errors').hide();
+{% endif %}
 {% endblock %}
 
 {% block base_content %}
