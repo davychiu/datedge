@@ -228,8 +228,8 @@ def process(request):
         description="DAT Edge: " + request.user.email
     )
     today = date.today()
-    [exp_y, exp_m] = divmod(today.month + 6, 12)
-    expiry = date(today.year + exp_y, exp_m, today.day)
+    [exp_y, exp_m] = divmod(today.month + 6, 13)
+    expiry = date(today.year + exp_y, exp_m + exp_y, today.day)
     activation = Activation(user=request.user, expiry=expiry)
     activation.save()
 
